@@ -1,0 +1,21 @@
+---
+title: "E155 Portfolio"
+image: images/headshot.jpeg
+about:
+    template: jolla
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/martha-victoria-parizot/
+        - icon: github
+          text: GitHub
+          href: https://github.com/vparizot
+---
+
+Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. Within engineering, she is interested in mechanical and electrical. She is currently taking MicroPs! In her free time, she enjoy building in the machine shop, taking and developing film photos, and sailing. 
+
+![](images/headshot.jpeg)
+
+
+
+
