@@ -1,12 +1,12 @@
 ---
-# title: "MicroPs Lab 1"
+# title: "MicroPs Lab 2"
 # description: "Welcome to my Quarto portfolio"
 author: "Victoria Parizot"
-date: "9/2/24"
+date: "9/9/24"
 categories:
   - reflection
   - labreport
 draft: false
 ---
-## Lab 1: FPGA and MCU Setup and Testing
+## Lab 2: Multiplexed 7-Segment Display
 

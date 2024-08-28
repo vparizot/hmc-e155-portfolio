@@ -14,7 +14,7 @@ about:
 
 Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. Within engineering, she is interested in mechanical and electrical. She is currently taking MicroPs! In her free time, she enjoy building in the machine shop, taking and developing film photos, and sailing. 
 
-![](images/headshot.jpeg)
+<!-- ![](images/headshot.jpeg) -->
 
 
 

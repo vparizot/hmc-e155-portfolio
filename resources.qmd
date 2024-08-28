@@ -1,0 +1,13 @@
+---
+title: "Resources"
+# description: "Resources for MicroPs"
+author: "Victoria Parizot"
+# date: "9/2/24"
+categories:
+  - resources
+  # - labreport
+draft: false
+---
+To learn more about the course MicroPs, and the motivation of the labs, look at the [MicroPs website](https://hmc-e155.github.io/).
+
+
