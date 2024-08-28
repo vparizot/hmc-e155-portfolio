@@ -11,10 +11,13 @@ about:
           text: GitHub
           href: https://github.com/vparizot
 ---
+<!-- Templates: https://quarto.org/docs/websites/website-about.html -->
 
-Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. Within engineering, she is interested in mechanical and electrical. She is currently taking MicroPs! In her free time, she enjoy building in the machine shop, taking and developing film photos, and sailing. 
+### Victoria Parizot - Norwalk, CT
+Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. She is most interested with mechanical and electrical engineering, and excited to be taking "Microprocessor Systems: Design & Application."
 
-<!-- ![](images/headshot.jpeg) -->
+At Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoy woodworking in the machine shop, taking and developing film photos, and sailing. 
+
 
 
 

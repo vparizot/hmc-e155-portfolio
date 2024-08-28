@@ -1,11 +1,12 @@
 ---
-title: "Resources"
-# description: "Resources for MicroPs"
-author: "Victoria Parizot"
-# date: "9/2/24"
-categories:
-  - resources
-  # - labreport
+title: "MicroPs Resources"
+image: images/headshot.jpeg
+about:
+    template: solana
+    links:
+        - icon: MicroPs
+          text: MicroPs
+          href: https://hmc-e155.github.io/
 draft: false
 ---
 To learn more about the course MicroPs, and the motivation of the labs, look at the [MicroPs website](https://hmc-e155.github.io/).

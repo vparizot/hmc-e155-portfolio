@@ -1,5 +1,5 @@
 ---
-# title: "Hello Quarto"
+title: "MicroPs Lab 4"
 # description: "Welcome to my Quarto portfolio"
 author: "Victoria Parizot"
 date: "9/23/24"
