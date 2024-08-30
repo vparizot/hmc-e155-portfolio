@@ -2,7 +2,7 @@
 title: "E155 Portfolio"
 image: images/headshot.jpeg
 about:
-    template: jolla
+    template: trestles
     links:
         - icon: linkedin
           text: LinkedIn
@@ -16,7 +16,7 @@ about:
 ### Victoria Parizot - Norwalk, CT
 Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. She is most interested with mechanical and electrical engineering, and excited to be taking "Microprocessor Systems: Design & Application."
 
-At Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoy woodworking in the machine shop, taking and developing film photos, and sailing. 
+At Harvey Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoy woodworking in the machine shop, taking and developing film photos, and sailing. 
 
 
 

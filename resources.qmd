@@ -9,6 +9,6 @@ about:
           href: https://hmc-e155.github.io/
 draft: false
 ---
-To learn more about the course MicroPs, and the motivation of the labs, look at the [MicroPs website](https://hmc-e155.github.io/).
+To learn more about the MicroPs Course, and the motivation of the labs, look at the [MicroPs website](https://hmc-e155.github.io/).
 
 
