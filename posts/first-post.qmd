@@ -1,0 +1,11 @@
+---
+title: "Learning Goals of MicroPs"
+# description: "Welcome to my Quarto portfolio"
+author: "Victoria Parizot"
+date: "8/27/24"
+categories:
+  - reflection
+draft: false
+---
+
+I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main goal is to improve my confidence and ability with both FPGAs and MCUs!
