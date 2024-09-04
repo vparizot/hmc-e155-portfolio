@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Victoria Parizot">
-<meta name="dcterms.date" content="2024-09-02">
+<meta name="dcterms.date" content="2024-09-04">
+<meta name="description" content="An exploration and set up of the MCU and FPGA development boards through assembly, programming, simulation, debugging, and hardware implementation.">
 
-<title>MicroPs Lab 1 – E155 Portfolio</title>
+<title>Lab 1: FPGA and MCU Setup and Testing – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,7 +155,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-1-fpga-and-mcu-setup-and-testing" id="toc-lab-1-fpga-and-mcu-setup-and-testing" class="nav-link active" data-scroll-target="#lab-1-fpga-and-mcu-setup-and-testing">Lab 1: FPGA and MCU Setup and Testing</a></li>
+  <li><a href="#introduction-learning-objectives" id="toc-introduction-learning-objectives" class="nav-link active" data-scroll-target="#introduction-learning-objectives">Introduction &amp; Learning Objectives</a></li>
+  <li><a href="#soldering-and-circuitry" id="toc-soldering-and-circuitry" class="nav-link" data-scroll-target="#soldering-and-circuitry">Soldering and Circuitry</a></li>
+  <li><a href="#design-implementation" id="toc-design-implementation" class="nav-link" data-scroll-target="#design-implementation">Design &amp; implementation</a></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -163,13 +168,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MicroPs Lab 1</h1>
+<h1 class="title">Lab 1: FPGA and MCU Setup and Testing</h1>
   <div class="quarto-categories">
     <div class="quarto-category">reflection</div>
     <div class="quarto-category">labreport</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    An exploration and set up of the MCU and FPGA development boards through assembly, programming, simulation, debugging, and hardware implementation.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -184,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 2, 2024</p>
+      <p class="date">September 4, 2024</p>
     </div>
   </div>
   
@@ -196,8 +206,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lab-1-fpga-and-mcu-setup-and-testing" class="level2">
-<h2 class="anchored" data-anchor-id="lab-1-fpga-and-mcu-setup-and-testing">Lab 1: FPGA and MCU Setup and Testing</h2>
+<section id="introduction-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
+<!-- Brief (e.g., 3-5 sentence) description of the main goals of the assignment and what was done. -->
+<p>In this lab, I familiarized myself with the <a href="https://hmc-e155.github.io/assets/doc/ds11451-stm32l432kc.pdf">STM32L432KC</a> microcontroller unit (MCU) and <a href="https://hmc-e155.github.io/assets/doc/FPGA-DS-02008-2-0-iCE40-UltraPlus-Family-Data-Sheet.pdf">UPduino v3.1</a> field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.</p>
+<p>More information on the lab requirements can be found on the <a href="https://hmc-e155.github.io/lab/lab1/">E155 Lab 1 Course Page</a>.</p>
+</section>
+<section id="soldering-and-circuitry" class="level2">
+<h2 class="anchored" data-anchor-id="soldering-and-circuitry">Soldering and Circuitry</h2>
+<p>The first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both THT and SMT components, based on the provided <a href="https://hmc-e155.github.io/assets/doc/E155_v4_Dev_Board_BOM.html">BOM.</a> <!-- include picture of completed sodering (back and front) --></p>
+<p>After soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement the 7 segment display.</p>
+</section>
+<section id="design-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="design-implementation">Design &amp; implementation</h2>
+<!-- Explanation of design approach. How did you go about designing and implementing the design? -->
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<!-- Explanation of testing approach. How did you verify your design was behaving as expected? -->
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<!-- Statement of whether the design meets all the requirements. If not, list the shortcomings. -->
+<!-- Number of hours spent working on the lab are included. -->
 
 
 </section>

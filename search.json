@@ -14,11 +14,53 @@
     "text": "I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main goal is to improve my confidence and ability with both FPGAs and MCUs!"
   },
   {
+    "objectID": "labs/lab1/lab1.html",
+    "href": "labs/lab1/lab1.html",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "href": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#soldering-and-circuitry",
+    "href": "labs/lab1/lab1.html#soldering-and-circuitry",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Soldering and Circuitry",
+    "text": "Soldering and Circuitry\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both THT and SMT components, based on the provided BOM. \nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement the 7 segment display."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#design-implementation",
+    "href": "labs/lab1/lab1.html#design-implementation",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Design & implementation",
+    "text": "Design & implementation"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#testing",
+    "href": "labs/lab1/lab1.html#testing",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Testing",
+    "text": "Testing"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#conclusion",
+    "href": "labs/lab1/lab1.html#conclusion",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Conclusion",
+    "text": "Conclusion"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "E155 Portfolio",
     "section": "",
-    "text": "Victoria Parizot - Norwalk, CT\nVictoria Parizot is a senior at Harvey Mudd College, majoring in engineering. She is most interested with mechanical and electrical engineering, and excited to be taking “Microprocessor Systems: Design & Application.”\nAt Harvey Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoy woodworking in the machine shop, taking and developing film photos, and sailing."
+    "text": "Victoria Parizot - Norwalk, CT\nVictoria Parizot is a senior at Harvey Mudd College, majoring in engineering. She is most interested with mechanical and electrical engineering, and excited to be taking “Microprocessor Systems: Design & Application” (AKA MicroPs)!\nAt Harvey Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoys woodworking in the machine shop, taking and developing film photos, and sailing."
   },
   {
     "objectID": "resources.html",
