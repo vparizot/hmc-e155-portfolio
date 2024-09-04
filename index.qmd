@@ -1,0 +1,24 @@
+---
+title: "E155 Portfolio"
+image: images/headshot.jpeg
+about:
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/martha-victoria-parizot/
+        - icon: github
+          text: GitHub
+          href: https://github.com/vparizot
+---
+<!-- Templates: https://quarto.org/docs/websites/website-about.html -->
+
+### Victoria Parizot - Norwalk, CT
+Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring in engineering. She is most interested with mechanical and electrical engineering, and excited to be taking "Microprocessor Systems: Design & Application" (AKA MicroPs)!
+
+At Harvey Mudd, she is a West Dorm President and a Machine Shop Proctor. In her free time, she enjoys woodworking in the machine shop, taking and developing film photos, and sailing. 
+
+
+
+
+

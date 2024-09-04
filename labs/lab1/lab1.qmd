@@ -1,0 +1,40 @@
+---
+title: "Lab 1: FPGA and MCU Setup and Testing"
+description: "An exploration and set up of the MCU and FPGA development boards through assembly, programming, simulation, debugging, and hardware implementation." 
+
+author: "Victoria Parizot"
+date: "9/4/24"
+categories:
+  - reflection
+  - labreport
+draft: false
+---
+## Introduction & Learning Objectives
+<!-- Brief (e.g., 3-5 sentence) description of the main goals of the assignment and what was done. -->
+In this lab, I familiarized myself with the [STM32L432KC](https://hmc-e155.github.io/assets/doc/ds11451-stm32l432kc.pdf) microcontroller unit (MCU) and [UPduino v3.1](https://hmc-e155.github.io/assets/doc/FPGA-DS-02008-2-0-iCE40-UltraPlus-Family-Data-Sheet.pdf) field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.
+
+More information on the lab requirements can be found on the [E155 Lab 1 Course Page](https://hmc-e155.github.io/lab/lab1/).
+
+## Soldering and Circuitry
+The first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both THT and SMT components, based on the provided [BOM.](https://hmc-e155.github.io/assets/doc/E155_v4_Dev_Board_BOM.html)
+<!-- include picture of completed sodering (back and front) -->
+
+After soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement the 7 segment display.
+
+
+## Design & implementation
+<!-- Explanation of design approach. How did you go about designing and implementing the design? -->
+
+
+## Testing
+<!-- Explanation of testing approach. How did you verify your design was behaving as expected? -->
+
+
+
+## Conclusion
+<!-- Statement of whether the design meets all the requirements. If not, list the shortcomings. -->
+<!-- Number of hours spent working on the lab are included. -->
+
+
+
+
