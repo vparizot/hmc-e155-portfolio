@@ -28,32 +28,32 @@
     "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
   },
   {
-    "objectID": "labs/lab1/lab1.html#soldering-and-circuitry",
-    "href": "labs/lab1/lab1.html#soldering-and-circuitry",
+    "objectID": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
+    "href": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
     "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Soldering and Circuitry",
-    "text": "Soldering and Circuitry\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both THT and SMT components, based on the provided BOM. \nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement the 7 segment display."
+    "section": "Development Board: Soldering and Set up",
+    "text": "Development Board: Soldering and Set up\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided BOM.\n\n\n\nCompleted E155 Development Board\n\n\nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display."
   },
   {
     "objectID": "labs/lab1/lab1.html#design-implementation",
     "href": "labs/lab1/lab1.html#design-implementation",
     "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Design & implementation",
-    "text": "Design & implementation"
+    "section": "Design & Implementation",
+    "text": "Design & Implementation\n\n\nLab Requirements\nThe next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables.\n\n\n\n\nSignal Name\n\n\nSignal Type\n\n\nDescription\n\n\n\n\n\n\nclk\n\n\ninput\n\n\n48 MHz clock on FPGA\n\n\n\n\ns[3:0]\n\n\ninput\n\n\nthe four DIP switches (on the board, SW6)\n\n\n\n\nled[2:0]\n\n\noutput\n\n\n3 LEDs (you may use the on-board LEDs)\n\n\n\n\nseg[6:0]\n\n\noutput\n\n\nthe segments of a common-anode 7-segment display\n\n\n\n\n\nThe following tables define the relationship of the LEDs to the switches and clock.\n\n\n\n\n\n\nS1\n\n\nS0\n\n\nled[0]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nON\n\n\n\n\n1\n\n\n0\n\n\nON\n\n\n\n\n1\n\n\n1\n\n\nOFF\n\n\n\n\n\n\n\n\n\n\nS3\n\n\nS2\n\n\nled[1]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nOFF\n\n\n\n\n1\n\n\n0\n\n\nOFF\n\n\n\n\n1\n\n\n1\n\n\nON\n\n\n\n\n\n\n\n\n\n\nled[2]\n\n\n\n\n\n\nBlink at 2.4 Hz\n\n\n\n\n\n\n\n\nDesign\nTo organize my thoughts I used a block diagram to map the logic.\n\n\n\nLab 1 Block Diagram\n\n\n\nLed Logic Design\nThe truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.\nTo have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require 2*10^7 ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every 10^7 clicks.\n\n\nSeven Segment Logic Design\nTo interface the seven segment display with the board, I conferred with the datasheet to determine resistor values. \n\n\n\nResistor Calculations for Seven Segment Display\n\n\nI opted to use resistor values of 240 ohms, producing 6.25 mA of current.\nA wiring schematic is shown below. \nHere is a photo of the implemented design!"
   },
   {
     "objectID": "labs/lab1/lab1.html#testing",
     "href": "labs/lab1/lab1.html#testing",
     "title": "Lab 1: FPGA and MCU Setup and Testing",
     "section": "Testing",
-    "text": "Testing"
+    "text": "Testing\n\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected.\n\n\n\nWave forms of test bench\n\n\nI tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz."
   },
   {
     "objectID": "labs/lab1/lab1.html#conclusion",
     "href": "labs/lab1/lab1.html#conclusion",
     "title": "Lab 1: FPGA and MCU Setup and Testing",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
   },
   {
     "objectID": "index.html",
