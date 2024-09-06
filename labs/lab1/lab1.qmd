@@ -174,6 +174,8 @@ To verify that the design would work as expected, I ran simulations on ModelSim.
 
 
 I tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz.
+![Frequency verification of led[2]](images/240HzLed%5B2%5D.png) 
+
 
 <!-- ModelSim simulation (either manually force or automatic testbench) to demonstrate that the design is working properly. -->
 
