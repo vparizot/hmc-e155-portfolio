@@ -1,0 +1,11 @@
+---
+title: "Lab 1 Reflection"
+# description: "Welcome to my Quarto portfolio"
+author: "Victoria Parizot"
+date: "9/5/24"
+categories:
+  - reflection
+draft: false
+---
+
+lab2reflection
