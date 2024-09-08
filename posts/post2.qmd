@@ -41,4 +41,24 @@ This has led me to look more about the design choices made in embedded systems t
 
 ## Segmented Displays Around Me
 
+![Multimeter in the digital lab included additional asymetrical segments -- My favorite segmented display yet!](images/multimeter.jpg) 
+
+
+![A Variety of segmented displays available in the engineering stockroom.](images/variety.jpg) 
+
+
+![The temperature gauge in the engineering building.](images/TempGauge.jpg) 
+
+
+![The microwave uses a traditional design.](images/microwave.jpg) 
+
+
+![The water fountain uses a matrix display.](images/WaterFountain2.jpg) 
+
+
+![It seems like most water fountains use the matrix display.](images/WaterFountain1.jpg) 
+
+
+
+
 
