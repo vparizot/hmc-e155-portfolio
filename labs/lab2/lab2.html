@@ -8,6 +8,7 @@
 
 <meta name="author" content="Victoria Parizot">
 <meta name="dcterms.date" content="2024-09-09">
+<meta name="description" content="An introduction to multiplexing with seven segment displays.">
 
 <title>MicroPs Lab 2 – E155 Portfolio</title>
 <style>
@@ -154,7 +155,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-2-multiplexed-7-segment-display" id="toc-lab-2-multiplexed-7-segment-display" class="nav-link active" data-scroll-target="#lab-2-multiplexed-7-segment-display">Lab 2: Multiplexed 7-Segment Display</a></li>
+  <li><a href="#introduction-learning-objectives" id="toc-introduction-learning-objectives" class="nav-link active" data-scroll-target="#introduction-learning-objectives">Introduction &amp; Learning Objectives</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
+  <li><a href="#insert-calculations-for-resistors-here" id="toc-insert-calculations-for-resistors-here" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here">INSERT CALCULATIONS FOR RESISTORS HERE</a></li>
+  <li><a href="#insert-calculations-for-resistors-here-1" id="toc-insert-calculations-for-resistors-here-1" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here-1">INSERT CALCULATIONS FOR RESISTORS HERE</a></li>
+  <li><a href="#insert-calculations-for-resistors-here-2" id="toc-insert-calculations-for-resistors-here-2" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here-2">INSERT CALCULATIONS FOR RESISTORS HERE</a>
+  <ul class="collapse">
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -170,6 +180,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
   </div>
 
+<div>
+  <div class="description">
+    An introduction to multiplexing with seven segment displays.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -196,10 +211,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lab-2-multiplexed-7-segment-display" class="level2">
-<h2 class="anchored" data-anchor-id="lab-2-multiplexed-7-segment-display">Lab 2: Multiplexed 7-Segment Display</h2>
+<section id="introduction-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
+<!-- Brief (e.g., 3-5 sentence) description of the main goals of the assignment and what was done. -->
+<p>In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.</p>
+<p>More information on the lab requirements can be found on the <a href="https://hmc-e155.github.io/lab/lab2/">E155 Lab 2 Course Page</a>.</p>
+</section>
+<section id="design" class="level2">
+<h2 class="anchored" data-anchor-id="design">Design</h2>
+<!-- Explanation of design approach. How did you go about designing and implementing the design? -->
+<p>To implement this lab, I had to consider: How should I organize this module in Verilod? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.</p>
+<p>To work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Lab2BlockDiagram.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Block Diagram</figcaption>
+</figure>
+</div>
+<p>The source code for the project can be found in the associated <a href="https://github.com/vparizot/e155-lab2">Github repository</a>.</p>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<p>To verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would XXXX.</p>
+<p>I also tested the outputs of the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>After confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic.</p>
+</section>
+<section id="insert-calculations-for-resistors-here" class="level1">
+<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
+</section>
+<section id="insert-calculations-for-resistors-here-1" class="level1">
+<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
+</section>
+<section id="insert-calculations-for-resistors-here-2" class="level1">
+<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Lab2Schematic.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Circuit Schematic</figcaption>
+</figure>
+</div>
+<p>Here is a video of the completed design! <video src="images/multiplexDemo.mov" class="img-fluid" controls=""><a href="images/multiplexDemo.mov">Completed design demo!</a></video></p>
+<p>Through trial and error, a suitable switching speed was found so that both sides of the display look like they are on!</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<!-- Number of hours spent working on the lab are included. -->
+<!-- Statement of whether the design meets all the requirements. If not, list the shortcomings.-->
+<p>Lab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.</p>
+<p>Lab 2 meets all the requirements, and took me approximately 9 hours.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

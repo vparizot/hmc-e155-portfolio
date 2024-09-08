@@ -25,7 +25,7 @@
     "href": "posts/post2.html#segmented-displays-around-me",
     "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
     "section": "Segmented Displays Around Me",
-    "text": "Segmented Displays Around Me"
+    "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
   },
   {
     "objectID": "labs/lab1/lab1.html",
@@ -68,6 +68,48 @@
     "title": "Lab 1: FPGA and MCU Setup and Testing",
     "section": "Conclusion",
     "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "MicroPs Lab 2",
+    "section": "",
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "title": "MicroPs Lab 2",
+    "section": "",
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#design",
+    "href": "labs/lab2/lab2.html#design",
+    "title": "MicroPs Lab 2",
+    "section": "Design",
+    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilod? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#testing",
+    "href": "labs/lab2/lab2.html#testing",
+    "title": "MicroPs Lab 2",
+    "section": "Testing",
+    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would XXXX.\nI also tested the outputs of the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#implementation",
+    "href": "labs/lab2/lab2.html#implementation",
+    "title": "MicroPs Lab 2",
+    "section": "Implementation",
+    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#conclusion",
+    "href": "labs/lab2/lab2.html#conclusion",
+    "title": "MicroPs Lab 2",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 9 hours."
   },
   {
     "objectID": "index.html",
