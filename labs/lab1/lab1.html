@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -455,7 +484,7 @@ Blink at 2.4 Hz
 <section id="led-logic-design" class="level4">
 <h4 class="anchored" data-anchor-id="led-logic-design">Led Logic Design</h4>
 <p>The truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.</p>
-<p>To have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require 2*10^7 ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every 10^7 clicks.</p>
+<p>To have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require <span class="math inline">\(2*10^7\)</span> ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every <span class="math inline">\(10^7\)</span> clicks.</p>
 </section>
 <section id="seven-segment-logic-design" class="level4">
 <h4 class="anchored" data-anchor-id="seven-segment-logic-design">Seven Segment Logic Design</h4>

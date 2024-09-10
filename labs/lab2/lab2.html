@@ -215,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="design" class="level2">
 <h2 class="anchored" data-anchor-id="design">Design</h2>
 <!-- Explanation of design approach. How did you go about designing and implementing the design? -->
-<p>To implement this lab, I had to consider: How should I organize this module in Verilod? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.</p>
+<p>To implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.</p>
 <p>To work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
