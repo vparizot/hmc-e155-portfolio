@@ -149,7 +149,7 @@ To organize my thoughts I used a block diagram to map the logic.
 #### Led Logic Design
 The truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2. 
 
-To have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require 2*10^7 ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every 10^7 clicks. 
+To have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require $2*10^7$ ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every $10^7$ clicks. 
 
 #### Seven Segment Logic Design
 To interface the seven segment display with the board, I conferred with the [datasheet](https://www.jameco.com/Jameco/Products/ProdDS/335090.pdf) to determine resistor values. 
