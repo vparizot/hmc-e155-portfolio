@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Victoria Parizot">
-<meta name="dcterms.date" content="2024-09-09">
+<meta name="dcterms.date" content="2024-09-11">
 <meta name="description" content="An introduction to multiplexing with seven segment displays.">
 
-<title>MicroPs Lab 2 – E155 Portfolio</title>
+<title>Lab 2: Multiplexed 7-Segment Display – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -159,12 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
   <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
   <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
-  <li><a href="#insert-calculations-for-resistors-here" id="toc-insert-calculations-for-resistors-here" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here">INSERT CALCULATIONS FOR RESISTORS HERE</a></li>
-  <li><a href="#insert-calculations-for-resistors-here-1" id="toc-insert-calculations-for-resistors-here-1" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here-1">INSERT CALCULATIONS FOR RESISTORS HERE</a></li>
-  <li><a href="#insert-calculations-for-resistors-here-2" id="toc-insert-calculations-for-resistors-here-2" class="nav-link" data-scroll-target="#insert-calculations-for-resistors-here-2">INSERT CALCULATIONS FOR RESISTORS HERE</a>
-  <ul class="collapse">
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -173,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MicroPs Lab 2</h1>
+<h1 class="title">Lab 2: Multiplexed 7-Segment Display</h1>
   <div class="quarto-categories">
     <div class="quarto-category">reflection</div>
     <div class="quarto-category">labreport</div>
@@ -199,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 9, 2024</p>
+      <p class="date">September 11, 2024</p>
     </div>
   </div>
   
@@ -232,21 +227,38 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="testing" class="level2">
 <h2 class="anchored" data-anchor-id="testing">Testing</h2>
-<p>To verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would XXXX.</p>
-<p>I also tested the outputs of the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary.</p>
+<p>To verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.</p>
+<p>The wave forms are below, and the behavior is as expected.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mux_tb_wave.png" class="img-fluid figure-img"></p>
+<figcaption>Wave forms for validation testing of 2-to-1 mux</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sum_tb_wave.png" class="img-fluid figure-img"></p>
+<figcaption>Wave forms for validation testing of summing LEDs</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SevenSegments_tb_wave.png" class="img-fluid figure-img"></p>
+<figcaption>Wave forms for validation testing of seven segment module</figcaption>
+</figure>
+</div>
 </section>
 <section id="implementation" class="level2">
 <h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<p>After confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic.</p>
-</section>
-<section id="insert-calculations-for-resistors-here" class="level1">
-<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
-</section>
-<section id="insert-calculations-for-resistors-here-1" class="level1">
-<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
-</section>
-<section id="insert-calculations-for-resistors-here-2" class="level1">
-<h1>INSERT CALCULATIONS FOR RESISTORS HERE</h1>
+<p>After confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.</p>
+<p>Since the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/resistorCalculations.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Resistor calculations for NPN transistors</figcaption>
+</figure>
+</div>
+<p>I also implemented the necessary resistors for all led display, based on lab 1 calculations.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Lab2Schematic.jpeg" class="img-fluid figure-img"></p>
@@ -255,15 +267,15 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Here is a video of the completed design! <video src="images/multiplexDemo.mov" class="img-fluid" controls=""><a href="images/multiplexDemo.mov">Completed design demo!</a></video></p>
 <p>Through trial and error, a suitable switching speed was found so that both sides of the display look like they are on!</p>
+</section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <!-- Number of hours spent working on the lab are included. -->
 <!-- Statement of whether the design meets all the requirements. If not, list the shortcomings.-->
 <p>Lab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.</p>
-<p>Lab 2 meets all the requirements, and took me approximately 9 hours.</p>
+<p>Lab 2 meets all the requirements, and took me approximately 13 hours.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
