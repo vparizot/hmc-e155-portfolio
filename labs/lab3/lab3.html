@@ -8,8 +8,9 @@
 
 <meta name="author" content="Victoria Parizot">
 <meta name="dcterms.date" content="2024-09-16">
+<meta name="description" content="A deep dive into FSMs">
 
-<title>MicroPs Lab 3 – E155 Portfolio</title>
+<title>Lab 3: Keypad Scanner – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,7 +155,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-3-keypad-scanner" id="toc-lab-3-keypad-scanner" class="nav-link active" data-scroll-target="#lab-3-keypad-scanner">Lab 3: Keypad Scanner</a></li>
+  <li><a href="#introduction-learning-objectives" id="toc-introduction-learning-objectives" class="nav-link active" data-scroll-target="#introduction-learning-objectives">Introduction &amp; Learning Objectives</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a>
+  <ul class="collapse">
+  <li><a href="#scanning-fsm" id="toc-scanning-fsm" class="nav-link" data-scroll-target="#scanning-fsm">Scanning FSM</a></li>
+  <li><a href="#key-debouncing-fsm" id="toc-key-debouncing-fsm" class="nav-link" data-scroll-target="#key-debouncing-fsm">Key Debouncing FSM</a></li>
+  <li><a href="#seven-segment-display" id="toc-seven-segment-display" class="nav-link" data-scroll-target="#seven-segment-display">Seven Segment Display</a></li>
+  <li><a href="#design-tradeoffs" id="toc-design-tradeoffs" class="nav-link" data-scroll-target="#design-tradeoffs">Design Tradeoffs</a></li>
+  </ul></li>
+  <li><a href="#simulation-and-testing" id="toc-simulation-and-testing" class="nav-link" data-scroll-target="#simulation-and-testing">Simulation and Testing</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a>
+  <ul class="collapse">
+  <li><a href="#debugging-in-implementation" id="toc-debugging-in-implementation" class="nav-link" data-scroll-target="#debugging-in-implementation">Debugging in Implementation</a></li>
+  <li><a href="#handling-metastability" id="toc-handling-metastability" class="nav-link" data-scroll-target="#handling-metastability">Handling Metastability</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -163,13 +178,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MicroPs Lab 3</h1>
+<h1 class="title">Lab 3: Keypad Scanner</h1>
   <div class="quarto-categories">
     <div class="quarto-category">reflection</div>
     <div class="quarto-category">labreport</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    A deep dive into FSMs
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -196,8 +216,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lab-3-keypad-scanner" class="level2">
-<h2 class="anchored" data-anchor-id="lab-3-keypad-scanner">Lab 3: Keypad Scanner</h2>
+<section id="introduction-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
+In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:
+<ul>
+<li>
+Design does not lock up when multiple buttons are pressed at once.
+</li>
+<li>
+Design only registers first button press if additional buttons are pressed down while holding down one button.
+</li>
+<li>
+Each button press registered only once (e.g., no switch bouncing)
+</li>
+<li>
+Seven segment displays are same brightness regardless of how many segments are illuminated.
+</li>
+<li>
+Design has no latches.
+</li>
+<li>
+Design has no tristate buffers.
+</li>
+<li>
+Design uses synchronizers on asynchronous inputs to mitigate metastability.
+</li>
+</ul>
+<p>The source code for the project can be found in the associated <a href="https://github.com/vparizot/e155-lab3">Github repository</a>.</p>
+</section>
+<section id="design" class="level2">
+<h2 class="anchored" data-anchor-id="design">Design</h2>
+<p>To quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.</p>
+<section id="scanning-fsm" class="level3">
+<h3 class="anchored" data-anchor-id="scanning-fsm">Scanning FSM</h3>
+<p>The FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. <img src="images/ScanFSM.jpeg" class="img-fluid" alt="Keypad Scanner FSM"></p>
+</section>
+<section id="key-debouncing-fsm" class="level3">
+<h3 class="anchored" data-anchor-id="key-debouncing-fsm">Key Debouncing FSM</h3>
+<p>I then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/keyDebounceFSM.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Button Debouncing FSM</figcaption>
+</figure>
+</div>
+</section>
+<section id="seven-segment-display" class="level3">
+<h3 class="anchored" data-anchor-id="seven-segment-display">Seven Segment Display</h3>
+<p>With the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.</p>
+<p>Printing and multiplexing the seven segment display was handled with the code from <a href="http://localhost:7108/labs/lab2/lab2.html">Lab 2</a></p>
+</section>
+<section id="design-tradeoffs" class="level3">
+<h3 class="anchored" data-anchor-id="design-tradeoffs">Design Tradeoffs</h3>
+<!-- Report explains tradeoffs between the chosen design decisions and alternatives (e.g., why did you select a certain switch debouncing strategy and what are the tradeoffs between your chosen method and others?). -->
+<p>My design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.</p>
+<p>For example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.</p>
+<p>A block diagram of my entire design is here: <img src="images/block.jpeg" class="img-fluid" alt="Lab 3 Block Diagram"></p>
+</section>
+</section>
+<section id="simulation-and-testing" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-and-testing">Simulation and Testing</h2>
+<p>The first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.</p>
+<p>My waveforms for each model is below: <img src="images/scanfsm-tb.png" class="img-fluid" alt="ScanFSM Test Bench"> <img src="images/shifter-tb.png" class="img-fluid" alt="Shifter Test Bench"> <img src="images/keyBounce-tb.png" class="img-fluid" alt="keyBounce Test Bench"></p>
+<p>My mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>The circuit diagram of my implementation, including pin mapping, is here: <img src="images/circuitDiagramlab3.jpeg" class="img-fluid" alt="Lab 3 Circuit Diagram"></p>
+<section id="debugging-in-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="debugging-in-implementation">Debugging in Implementation</h3>
+<p>During the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.</p>
+</section>
+<section id="handling-metastability" class="level3">
+<h3 class="anchored" data-anchor-id="handling-metastability">Handling Metastability</h3>
+<p>To handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Lab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familair with fully defining my system, and how to debug.</p>
+<p>Lab 3 meets all the requirements, and took me approximately 30 hours to complete</p>
 
 
 </section>

@@ -28,6 +28,48 @@
     "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
   },
   {
+    "objectID": "labs/lab3/lab3.html",
+    "href": "labs/lab3/lab3.html",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "",
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "",
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#design",
+    "href": "labs/lab3/lab3.html#design",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Design",
+    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
+    "href": "labs/lab3/lab3.html#simulation-and-testing",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Simulation and Testing",
+    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below:   \nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#implementation",
+    "href": "labs/lab3/lab3.html#implementation",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Implementation",
+    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#conclusion",
+    "href": "labs/lab3/lab3.html#conclusion",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familair with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+  },
+  {
     "objectID": "labs/lab1/lab1.html",
     "href": "labs/lab1/lab1.html",
     "title": "Lab 1: FPGA and MCU Setup and Testing",
