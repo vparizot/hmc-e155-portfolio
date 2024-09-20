@@ -54,7 +54,11 @@ The first step here was to test all the modules in modelSim before running on Ra
 
 My waveforms for each model is below:
 ![ScanFSM Test Bench](images/scanfsm-tb.png) 
-![Shifter Test Bench](images/shifter-tb.png) 
+
+
+![Shifter Test Bench](images/shifter-tb.png)
+
+
 ![keyBounce Test Bench](images/keyBounce-tb.png) 
 
 My mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week. 
@@ -72,7 +76,7 @@ To handle metastability, I implemented two flip flops and temporary variables to
 
 
 ## Conclusion
-Lab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familair with fully defining my system, and how to debug. 
+Lab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug. 
 
 
 Lab 3 meets all the requirements, and took me approximately 30 hours to complete
