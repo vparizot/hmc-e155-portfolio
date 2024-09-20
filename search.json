@@ -53,7 +53,7 @@
     "href": "labs/lab3/lab3.html#simulation-and-testing",
     "title": "Lab 3: Keypad Scanner",
     "section": "Simulation and Testing",
-    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below:   \nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
+    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
   },
   {
     "objectID": "labs/lab3/lab3.html#implementation",
@@ -67,7 +67,7 @@
     "href": "labs/lab3/lab3.html#conclusion",
     "title": "Lab 3: Keypad Scanner",
     "section": "Conclusion",
-    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familair with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
   },
   {
     "objectID": "labs/lab1/lab1.html",
