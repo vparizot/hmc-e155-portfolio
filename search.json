@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "The Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
+    "text": "AI Chat Bots: Kahnmigo + Chat GPT\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/first-post.html",
@@ -28,46 +28,46 @@
     "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
   },
   {
-    "objectID": "labs/lab3/lab3.html",
-    "href": "labs/lab3/lab3.html",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
   },
   {
-    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
   },
   {
-    "objectID": "labs/lab3/lab3.html#design",
-    "href": "labs/lab3/lab3.html#design",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab2/lab2.html#design",
+    "href": "labs/lab2/lab2.html#design",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "Design",
-    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
+    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
-    "href": "labs/lab3/lab3.html#simulation-and-testing",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Simulation and Testing",
-    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
+    "objectID": "labs/lab2/lab2.html#testing",
+    "href": "labs/lab2/lab2.html#testing",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Testing",
+    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
   },
   {
-    "objectID": "labs/lab3/lab3.html#implementation",
-    "href": "labs/lab3/lab3.html#implementation",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab2/lab2.html#implementation",
+    "href": "labs/lab2/lab2.html#implementation",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "Implementation",
-    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
+    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
   },
   {
-    "objectID": "labs/lab3/lab3.html#conclusion",
-    "href": "labs/lab3/lab3.html#conclusion",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab2/lab2.html#conclusion",
+    "href": "labs/lab2/lab2.html#conclusion",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "Conclusion",
-    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
   },
   {
     "objectID": "labs/lab1/lab1.html",
@@ -112,46 +112,53 @@
     "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
   },
   {
-    "objectID": "labs/lab2/lab2.html",
-    "href": "labs/lab2/lab2.html",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html",
+    "href": "labs/lab3/lab3.html",
+    "title": "Lab 3: Keypad Scanner",
     "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "title": "Lab 3: Keypad Scanner",
     "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab2/lab2.html#design",
-    "href": "labs/lab2/lab2.html#design",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#design",
+    "href": "labs/lab3/lab3.html#design",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Design",
-    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
   },
   {
-    "objectID": "labs/lab2/lab2.html#testing",
-    "href": "labs/lab2/lab2.html#testing",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Testing",
-    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
+    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
+    "href": "labs/lab3/lab3.html#simulation-and-testing",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Simulation and Testing",
+    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
   },
   {
-    "objectID": "labs/lab2/lab2.html#implementation",
-    "href": "labs/lab2/lab2.html#implementation",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#implementation",
+    "href": "labs/lab3/lab3.html#implementation",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Implementation",
-    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
+    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
   },
   {
-    "objectID": "labs/lab2/lab2.html#conclusion",
-    "href": "labs/lab2/lab2.html#conclusion",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#conclusion",
+    "href": "labs/lab3/lab3.html#conclusion",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Conclusion",
-    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
+    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+  },
+  {
+    "objectID": "posts/post4.html",
+    "href": "posts/post4.html",
+    "title": "AI Chat Bots: Kahnmigo + Chat GPT",
+    "section": "",
+    "text": "A few weeks ago, Sal Khan came to speak at my school. I remember watching his videos when I was young to learn how to factor and simplify exponents – so I had to go to his talk. In his talk, he talked about Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used.\nThis caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals?\nUpon hearing more of his talk, I felt reassured about the testing and features that they have choosed Khanmigo to support. It is refreshing to see AI used to increase the efficiency of learning, rather than as a way to avoid learning."
   },
   {
     "objectID": "posts/post3.html",

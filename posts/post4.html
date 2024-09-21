@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Victoria Parizot">
+<meta name="dcterms.date" content="2024-09-11">
 
-<title>E155 Blog – E155 Portfolio</title>
+<title>AI Chat Bots: Kahnmigo + Chat GPT – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">E155 Portfolio</span>
     </a>
   </div>
@@ -149,11 +91,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -163,37 +105,37 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
         <li class="dropdown-header">MicroP Labs</li>
         <li>
-    <a class="dropdown-item" href="./labs/lab1/lab1.html">
+    <a class="dropdown-item" href="../labs/lab1/lab1.html">
  <span class="dropdown-text">Lab 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab2/lab2.html">
+    <a class="dropdown-item" href="../labs/lab2/lab2.html">
  <span class="dropdown-text">Lab 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab3/lab3.html">
+    <a class="dropdown-item" href="../labs/lab3/lab3.html">
  <span class="dropdown-text">Lab 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab4/lab4.html">
+    <a class="dropdown-item" href="../labs/lab4/lab4.html">
  <span class="dropdown-text">Lab 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab5/lab5.html">
+    <a class="dropdown-item" href="../labs/lab5/lab5.html">
  <span class="dropdown-text">Lab 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab6/lab6.html">
+    <a class="dropdown-item" href="../labs/lab6/lab6.html">
  <span class="dropdown-text">Lab 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab7/lab7.html">
+    <a class="dropdown-item" href="../labs/lab7/lab7.html">
  <span class="dropdown-text">Lab 7</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -215,14 +157,29 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">E155 Blog</h1>
-</div>
+<h1 class="title">AI Chat Bots: Kahnmigo + Chat GPT</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Victoria Parizot </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 11, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -232,129 +189,16 @@ window.Quarto = {
 </header>
 
 
+<p>A few weeks ago, Sal Khan came to speak at my school. I remember watching his videos when I was young to learn how to factor and simplify exponents – so I had to go to his talk. In his talk, he talked about Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.</p>
+<p>Hearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.</p>
+<p>I remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used.</p>
+<p>This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.</p>
+<p>With this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals?</p>
+<p>Upon hearing more of his talk, I felt reassured about the testing and features that they have choosed Khanmigo to support. It is refreshing to see AI used to increase the efficiency of learning, rather than as a way to avoid learning.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="reflection" data-listing-date-sort="1726038000000" data-listing-file-modified-sort="1726951923998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
-<div class="thumbnail">
-<p><a href="./posts/post4.html" class="no-external"></a></p><a href="./posts/post4.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/post4.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post4.html" class="no-external">AI Chat Bots: Kahnmigo + Chat GPT</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post4.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post4.html" class="no-external">A few weeks ago, Sal Khan came to speak at my school. I remember watching his videos when I was young to learn how to factor and simplify exponents – so I had to go to his…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post4.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="reflection" data-listing-date-sort="1726038000000" data-listing-file-modified-sort="1726418892586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="343">
-<div class="thumbnail">
-<p><a href="./posts/post3.html" class="no-external"></a></p><a href="./posts/post3.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/post3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post3.html" class="no-external">The Embedded Systems Surrounding us</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post3.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post3.html" class="no-external">Throughout this course, I have been working with an MCU and FPGA extensively. As I do so, I admire the reprogrammable aspects, allowing me to test and implement a variety of…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post3.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="reflection" data-listing-date-sort="1725519600000" data-listing-file-modified-sort="1725759940473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="533">
-<div class="thumbnail">
-<p><a href="./posts/post2.html" class="no-external"></a></p><a href="./posts/post2.html" class="no-external">
-<p class="card-img-top"><img src="posts/images/carlKingsey.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/post2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post2.html" class="no-external">An Exploration of the Hidden Aesthetics of Electrical Components</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post2.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post2.html" class="no-external">The Design Behind Segment Displays</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post2.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="reflection" data-listing-date-sort="1724742000000" data-listing-file-modified-sort="1724824707831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<div class="thumbnail">
-<p><a href="./posts/first-post.html" class="no-external"></a></p><a href="./posts/first-post.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/first-post.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/first-post.html" class="no-external">Learning Goals of MicroPs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/first-post.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/first-post.html" class="no-external">I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/first-post.html" class="no-external">
-<div class="listing-date">
-Aug 27, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
