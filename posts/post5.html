@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Victoria Parizot">
+<meta name="dcterms.date" content="2024-11-02">
 
-<title>E155 Blog – E155 Portfolio</title>
+<title>The Art in PCB Design – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">E155 Portfolio</span>
     </a>
   </div>
@@ -149,11 +91,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -163,37 +105,37 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
         <li class="dropdown-header">MicroP Labs</li>
         <li>
-    <a class="dropdown-item" href="./labs/lab1/lab1.html">
+    <a class="dropdown-item" href="../labs/lab1/lab1.html">
  <span class="dropdown-text">Lab 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab2/lab2.html">
+    <a class="dropdown-item" href="../labs/lab2/lab2.html">
  <span class="dropdown-text">Lab 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab3/lab3.html">
+    <a class="dropdown-item" href="../labs/lab3/lab3.html">
  <span class="dropdown-text">Lab 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab4/lab4.html">
+    <a class="dropdown-item" href="../labs/lab4/lab4.html">
  <span class="dropdown-text">Lab 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab5/lab5.html">
+    <a class="dropdown-item" href="../labs/lab5/lab5.html">
  <span class="dropdown-text">Lab 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab6/lab6.html">
+    <a class="dropdown-item" href="../labs/lab6/lab6.html">
  <span class="dropdown-text">Lab 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./labs/lab7/lab7.html">
+    <a class="dropdown-item" href="../labs/lab7/lab7.html">
  <span class="dropdown-text">Lab 7</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -207,22 +149,46 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#silkscreen-easter-eggs" id="toc-silkscreen-easter-eggs" class="nav-link active" data-scroll-target="#silkscreen-easter-eggs">1. Silkscreen Easter Eggs</a></li>
+  <li><a href="#craftsmanship" id="toc-craftsmanship" class="nav-link" data-scroll-target="#craftsmanship">2. Craftsmanship</a></li>
+  <li><a href="#pcb-look-for-other-applications" id="toc-pcb-look-for-other-applications" class="nav-link" data-scroll-target="#pcb-look-for-other-applications">3. PCB Look for other Applications</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">E155 Blog</h1>
-</div>
+<h1 class="title">The Art in PCB Design</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Victoria Parizot </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 2, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -232,179 +198,39 @@ window.Quarto = {
 </header>
 
 
+<p>In class this week, my peers and I are designing our own printed circuit board (PCB) using KiCad. This custom PCB board will interface with the DS1722 temperature sensor integrated circuit (IC). At the end of the week, our designs will be sent to be manufactured so that we can use them in Lab 7.</p>
+<p>PCBs are made up of a layers of substrate, copper, solder mask, solder finish, etc. These boards are the fundamental building blocks of any embedded system, ranging from simple boards that interface with temperature sensors to complex applications like computers, watches, and stereo systems.</p>
+<p>While PCBs are all around us, they remain invisible to most – hidden behind their protective encasings. Yet, the time and effort that engineers invest in these intricate components are far from neglible. In fact, to me, there seems to be a level of artistry involved in crafting a PCB, in both the technical layout and silkscreen designs. Engineers have the option of investing more effort to make their designs follow common standards, scalable, and easy to understand. This in itself is a feat to be appreciated by any future engineer or maker that will use their design. However, some engineers seem to go even farther, and become artists when designing these boards; And while this art is invisible to many, others who interact with the PCB can appreciate this.</p>
+<p>The examples of PCBs as art seems to fall under three umbrellas:</p>
+<section id="silkscreen-easter-eggs" class="level2">
+<h2 class="anchored" data-anchor-id="silkscreen-easter-eggs">1. Silkscreen Easter Eggs</h2>
+<p>In this category, designers integrate an unnecessary design into the silkscreen layer.</p>
+<p>The silkscreen layer is commonly used to offer some level of applicable knowledge, like the revision history or operation data. However, some designers also integrate non-essential designs into the silkscreen layer.</p>
+<p><img src="images/pcbart_1a.jpeg" class="img-fluid"> <img src="images/pcbart_1b.jpeg" class="img-fluid"> <img src="images/pcbart_1c.jpeg" class="img-fluid"> <img src="images/pcbart_1d.jpeg" class="img-fluid"></p>
+<p>These designs could have been an inside joke for the design team, a signature, a political statement, or even a fun easter egg for the unexpected observer. Nonetheless, I think it is inherently beautiful that designer and engineers add these hidden detail for fellow engineers, fixers, and curious minds to stumble upon.</p>
+</section>
+<section id="craftsmanship" class="level2">
+<h2 class="anchored" data-anchor-id="craftsmanship">2. Craftsmanship</h2>
+<p>There is also the category of craftsmanship. This includes engineers that take pride in their craftsmanship, whether that be implementing an elegant solution to make a design more compact or completing a beautiful solder job. There’s something immensely satisfying about the precision and care that goes into attempting “perfection.”</p>
+<p>If you have ever thought, “wow, that is a beautiful soldering job,” that would fall under this category.</p>
+<p><img src="images/pcbart_2a.jpeg" class="img-fluid"></p>
+<p>This type of art also brings to mind the transparent electronics of the 90s, where the internal circuitry were a feature of the product – actively contributing to a very specific aesthetic that emphasizes the beauty of engineerings.</p>
+<p><img src="images/pcbart_2b.jpg" class="img-fluid"></p>
+</section>
+<section id="pcb-look-for-other-applications" class="level2">
+<h2 class="anchored" data-anchor-id="pcb-look-for-other-applications">3. PCB Look for other Applications</h2>
+<p>There are also designs that capitalize on the PCB look, without any thought for technical purposes. These creations often embrace the classic green plated copper look, but step away from practical uses.</p>
+<p>An example of this is the entry badge for a maker convention I went to this past summer with my brother. These badges were working PCBs – able to light up two LEDs if you soldered it. However, they were definitely designed for the primary use of a badge – being irregularly shaped and larger than needed to light up two LEDs.</p>
+</section>
+<section id="final-thoughts" class="level1">
+<h1>Final Thoughts</h1>
+<p>Overall, these artistic details are a novelty, and show off passion for the designing process. These details engage a community of makers – people who take apart their electronics to fix problems, improve functionalites, or out of pure curiosity.</p>
+<p>If you are interested in seeing more examples of “silkscreen easter eggs,” I’ve included some here: <a href="https://blackpanelsonly.com/articles/04secretmessages.html">https://blackpanelsonly.com/articles/04secretmessages.html</a> <a href="https://hackaday.com/2020/07/13/1975-circuit-board-was-a-masterpiece-hidden-on-your-wrist/">https://hackaday.com/2020/07/13/1975-circuit-board-was-a-masterpiece-hidden-on-your-wrist/</a> <a href="https://modwiggler.com/forum/viewtopic.php?t=182366">https://modwiggler.com/forum/viewtopic.php?t=182366</a> <a href="https://www.reddit.com/r/Hiddenpcbeggs/">https://www.reddit.com/r/Hiddenpcbeggs/</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1727907343961">
-<div class="thumbnail">
-<p><a href="./posts/post6.html" class="no-external"></a></p><a href="./posts/post6.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/post6.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post6.html" class="no-external"></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post6.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post6.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/post6.html" class="no-external"></a></p><a href="./posts/post6.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="reflection" data-listing-date-sort="1730530800000" data-listing-file-modified-sort="1727913071994" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="600">
-<div class="thumbnail">
-<p><a href="./posts/post5.html" class="no-external"></a></p><a href="./posts/post5.html" class="no-external">
-<p class="card-img-top"><img src="posts/images/pcbart_1a.jpeg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/post5.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post5.html" class="no-external">The Art in PCB Design</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post5.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post5.html" class="no-external">In class this week, my peers and I are designing our own printed circuit board (PCB) using KiCad. This custom PCB board will interface with the DS1722 temperature sensor…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post5.html" class="no-external">
-<div class="listing-date">
-Nov 2, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="reflection" data-listing-date-sort="1726038000000" data-listing-file-modified-sort="1726974259263" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
-<div class="thumbnail">
-<p><a href="./posts/post4.html" class="no-external"></a></p><a href="./posts/post4.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/post4.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post4.html" class="no-external">Considerations of an AI Chat Bot</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post4.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post4.html" class="no-external">Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post4.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="reflection" data-listing-date-sort="1726038000000" data-listing-file-modified-sort="1726418892586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="343">
-<div class="thumbnail">
-<p><a href="./posts/post3.html" class="no-external"></a></p><a href="./posts/post3.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/post3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post3.html" class="no-external">The Embedded Systems Surrounding us</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post3.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post3.html" class="no-external">Throughout this course, I have been working with an MCU and FPGA extensively. As I do so, I admire the reprogrammable aspects, allowing me to test and implement a variety of…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post3.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="reflection" data-listing-date-sort="1725519600000" data-listing-file-modified-sort="1725759940473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="533">
-<div class="thumbnail">
-<p><a href="./posts/post2.html" class="no-external"></a></p><a href="./posts/post2.html" class="no-external">
-<p class="card-img-top"><img src="posts/images/carlKingsey.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/post2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post2.html" class="no-external">An Exploration of the Hidden Aesthetics of Electrical Components</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post2.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/post2.html" class="no-external">The Design Behind Segment Displays</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post2.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="reflection" data-listing-date-sort="1724742000000" data-listing-file-modified-sort="1724824707831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<div class="thumbnail">
-<p><a href="./posts/first-post.html" class="no-external"></a></p><a href="./posts/first-post.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/first-post.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/first-post.html" class="no-external">Learning Goals of MicroPs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/first-post.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/first-post.html" class="no-external">I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/first-post.html" class="no-external">
-<div class="listing-date">
-Aug 27, 2024
-</div>
-<div class="listing-author">
-Victoria Parizot
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

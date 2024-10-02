@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "Considerations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
+    "text": "The Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/first-post.html",
@@ -26,6 +26,13 @@
     "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
     "section": "Segmented Displays Around Me",
     "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
+  },
+  {
+    "objectID": "posts/post4.html",
+    "href": "posts/post4.html",
+    "title": "Considerations of an AI Chat Bot",
+    "section": "",
+    "text": "Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used. This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals? This could negatively impact their education.\nWith this uncertainty in mind, it was interesting to learn the ways Khan Academy has minimized this risk. The plentiful testing and carefully choosen features lend itself to AI.\nMoreover, it was refreshing to see AI implemented cautiously, and for the overall goal of imoproving education access. Many implementations of AI seem to be a rushed reaction to the AI movement, and used to sell a product. Overall, his talk made me hopeful for the future of AI."
   },
   {
     "objectID": "labs/lab2/lab2.html",
@@ -154,11 +161,32 @@
     "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
   },
   {
-    "objectID": "posts/post4.html",
-    "href": "posts/post4.html",
-    "title": "Considerations of an AI Chat Bot",
+    "objectID": "posts/post5.html",
+    "href": "posts/post5.html",
+    "title": "The Art in PCB Design",
     "section": "",
-    "text": "Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used. This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals? This could negatively impact their education.\nWith this uncertainty in mind, it was interesting to learn the ways Khan Academy has minimized this risk. The plentiful testing and carefully choosen features lend itself to AI.\nMoreover, it was refreshing to see AI implemented cautiously, and for the overall goal of imoproving education access. Many implementations of AI seem to be a rushed reaction to the AI movement, and used to sell a product. Overall, his talk made me hopeful for the future of AI."
+    "text": "In class this week, my peers and I are designing our own printed circuit board (PCB) using KiCad. This custom PCB board will interface with the DS1722 temperature sensor integrated circuit (IC). At the end of the week, our designs will be sent to be manufactured so that we can use them in Lab 7.\nPCBs are made up of a layers of substrate, copper, solder mask, solder finish, etc. These boards are the fundamental building blocks of any embedded system, ranging from simple boards that interface with temperature sensors to complex applications like computers, watches, and stereo systems.\nWhile PCBs are all around us, they remain invisible to most – hidden behind their protective encasings. Yet, the time and effort that engineers invest in these intricate components are far from neglible. In fact, to me, there seems to be a level of artistry involved in crafting a PCB, in both the technical layout and silkscreen designs. Engineers have the option of investing more effort to make their designs follow common standards, scalable, and easy to understand. This in itself is a feat to be appreciated by any future engineer or maker that will use their design. However, some engineers seem to go even farther, and become artists when designing these boards; And while this art is invisible to many, others who interact with the PCB can appreciate this.\nThe examples of PCBs as art seems to fall under three umbrellas:"
+  },
+  {
+    "objectID": "posts/post5.html#silkscreen-easter-eggs",
+    "href": "posts/post5.html#silkscreen-easter-eggs",
+    "title": "The Art in PCB Design",
+    "section": "1. Silkscreen Easter Eggs",
+    "text": "1. Silkscreen Easter Eggs\nIn this category, designers integrate an unnecessary design into the silkscreen layer.\nThe silkscreen layer is commonly used to offer some level of applicable knowledge, like the revision history or operation data. However, some designers also integrate non-essential designs into the silkscreen layer.\n   \nThese designs could have been an inside joke for the design team, a signature, a political statement, or even a fun easter egg for the unexpected observer. Nonetheless, I think it is inherently beautiful that designer and engineers add these hidden detail for fellow engineers, fixers, and curious minds to stumble upon."
+  },
+  {
+    "objectID": "posts/post5.html#craftsmanship",
+    "href": "posts/post5.html#craftsmanship",
+    "title": "The Art in PCB Design",
+    "section": "2. Craftsmanship",
+    "text": "2. Craftsmanship\nThere is also the category of craftsmanship. This includes engineers that take pride in their craftsmanship, whether that be implementing an elegant solution to make a design more compact or completing a beautiful solder job. There’s something immensely satisfying about the precision and care that goes into attempting “perfection.”\nIf you have ever thought, “wow, that is a beautiful soldering job,” that would fall under this category.\n\nThis type of art also brings to mind the transparent electronics of the 90s, where the internal circuitry were a feature of the product – actively contributing to a very specific aesthetic that emphasizes the beauty of engineerings."
+  },
+  {
+    "objectID": "posts/post5.html#pcb-look-for-other-applications",
+    "href": "posts/post5.html#pcb-look-for-other-applications",
+    "title": "The Art in PCB Design",
+    "section": "3. PCB Look for other Applications",
+    "text": "3. PCB Look for other Applications\nThere are also designs that capitalize on the PCB look, without any thought for technical purposes. These creations often embrace the classic green plated copper look, but step away from practical uses.\nAn example of this is the entry badge for a maker convention I went to this past summer with my brother. These badges were working PCBs – able to light up two LEDs if you soldered it. However, they were definitely designed for the primary use of a badge – being irregularly shaped and larger than needed to light up two LEDs."
   },
   {
     "objectID": "posts/post3.html",
