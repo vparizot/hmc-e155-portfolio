@@ -11,7 +11,7 @@ After wrapping up the digital audio lab, I was sitting in Platt, doing my other 
 
 I've made a super realistic reenactment of what happened:
 
-![a super realistic reenactment of what happened](images/AudreyComic.jpeg) 
+![A super realistic reenactment of what happened.](images/AudreyComic.jpeg) 
 
 I'll explain the idea in a sec. But first, let me provide some context. My friends and I have been brainstorming project ideas since we registered for the course, often sending photos or texts when an idea arises. Like over the summer, anything cool that we saw or a fun idea would warrant a text: an automated pasta machine, a jetpack like the one in Spy Kids, a thermal printer photobooth, a self-balancing platform to hold a ball, a pong robot, battle bots, etc. 
 
