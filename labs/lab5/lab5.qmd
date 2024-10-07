@@ -1,6 +1,6 @@
 ---
-title: "MicroPs Lab 5"
-# description: "Welcome to my Quarto portfolio"
+title: "Lab 5: Interrupts"
+description: "Implementation of MCU Interrupts to characterize a motor"
 author: "Victoria Parizot"
 date: "10/7/24"
 categories:
@@ -8,4 +8,28 @@ categories:
   - labreport
 draft: false
 ---
-## Lab 5: Interrupts
+
+## Introduction & Learning Objectives
+
+
+The source code for the project can be found in the associated [Github repository](https://github.com/vparizot/e155-lab5).
+
+## Design
+
+### MCU Design
+
+### Hardware Design
+
+
+## Testing & Debugging
+
+
+## Implementation
+
+
+## Conclusion
+
+Lab 5 meets all the requirements, and took me approximately XXX hours to complete
+
+
+
