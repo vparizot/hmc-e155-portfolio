@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Victoria Parizot">
-<meta name="dcterms.date" content="2024-09-23">
+<meta name="dcterms.date" content="2024-10-01">
+<meta name="description" content="An exploration of MCU timers to play music">
 
-<title>MicroPs Lab 4 – E155 Portfolio</title>
+<title>Lab 4: Digital Audio – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -154,7 +184,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-4-digital-audio" id="toc-lab-4-digital-audio" class="nav-link active" data-scroll-target="#lab-4-digital-audio">Lab 4: Digital Audio</a></li>
+  <li><a href="#introduction-learning-objectives" id="toc-introduction-learning-objectives" class="nav-link active" data-scroll-target="#introduction-learning-objectives">Introduction &amp; Learning Objectives</a></li>
+  <li><a href="#mcu-design" id="toc-mcu-design" class="nav-link" data-scroll-target="#mcu-design">MCU Design</a>
+  <ul class="collapse">
+  <li><a href="#msi-clock" id="toc-msi-clock" class="nav-link" data-scroll-target="#msi-clock">MSI Clock</a></li>
+  <li><a href="#delay-timer-tim-15" id="toc-delay-timer-tim-15" class="nav-link" data-scroll-target="#delay-timer-tim-15">Delay Timer (TIM 15)</a></li>
+  <li><a href="#pulse-width-modulation-pwm-timer-tim-16" id="toc-pulse-width-modulation-pwm-timer-tim-16" class="nav-link" data-scroll-target="#pulse-width-modulation-pwm-timer-tim-16">Pulse Width Modulation (PWM) Timer (TIM 16)</a></li>
+  <li><a href="#gpio-gpioa" id="toc-gpio-gpioa" class="nav-link" data-scroll-target="#gpio-gpioa">GPIO (GPIOA)</a></li>
+  </ul></li>
+  <li><a href="#hardware-design" id="toc-hardware-design" class="nav-link" data-scroll-target="#hardware-design">Hardware Design</a></li>
+  <li><a href="#testing-debugging" id="toc-testing-debugging" class="nav-link" data-scroll-target="#testing-debugging">Testing &amp; Debugging</a></li>
+  <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Demonstration</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -163,13 +204,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MicroPs Lab 4</h1>
+<h1 class="title">Lab 4: Digital Audio</h1>
   <div class="quarto-categories">
     <div class="quarto-category">reflection</div>
     <div class="quarto-category">labreport</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    An exploration of MCU timers to play music
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -184,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 23, 2024</p>
+      <p class="date">October 1, 2024</p>
     </div>
   </div>
   
@@ -196,8 +242,114 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lab-4-digital-audio" class="level2">
-<h2 class="anchored" data-anchor-id="lab-4-digital-audio">Lab 4: Digital Audio</h2>
+<section id="introduction-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
+<p>In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.</p>
+<p>To build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.</p>
+<p>This lab had the following learning objectives:</p>
+<ul>
+<li>
+Built a circuit to enable an I/O pin from your MCU to drive a speaker
+</li>
+<li>
+Implemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch
+</li>
+</ul>
+<p>The source code for the project can be found in the associated <a href="https://github.com/vparizot/e155-lab4">Github repository</a>.</p>
+</section>
+<section id="mcu-design" class="level2">
+<h2 class="anchored" data-anchor-id="mcu-design">MCU Design</h2>
+<p>The MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and generated a corresponding sequence of square waves. To implement this, I used the built-in MSI clock to initialize two timers: Timer 15 to handle duration of each note and Timer 16 to use Pulse Width Modulation (PWM) capabilities to generate the desired pitch. These timers would work together to generate desired square waves out of PA6. This approach is outlined in the image below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/MCU_TIM_Outline.jpeg" class="img-fluid figure-img"></p>
+<figcaption>MCU Timer Design Outline</figcaption>
+</figure>
+</div>
+<section id="msi-clock" class="level3">
+<h3 class="anchored" data-anchor-id="msi-clock">MSI Clock</h3>
+<p>I set the MSI Clock at it’s default frequency of 4 Mhz. The clock’s output frequency can be calculated with: <span class="math inline">\(Output freq = (srcclk) * (N/M) / R\)</span></p>
+<p>I set N = 16, M = 1 and R = 16, to abide by N, M, R constraints.</p>
+<p>The Clock set up was dealt with in my RCC files.</p>
+</section>
+<section id="delay-timer-tim-15" class="level3">
+<h3 class="anchored" data-anchor-id="delay-timer-tim-15">Delay Timer (TIM 15)</h3>
+<p>Timer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx). As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.</p>
+<p><span class="math inline">\(Timer freq = \frac{clkfreq}{PSC + 1} = \frac{4 MHz}{40} = 100 kHz\)</span></p>
+<p>To use the delay timer, I implemented a delay_millis function, that took in a pointer to the Timer to use and an integers of the ms to delay for. The function utilized the ARR register, CNT register, and SR register to wait for x ms.</p>
+<p>The Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to <span class="math inline">\(100*ms_{desired}\)</span>. The Counter (CNT) and Capture/Compare 1 (SR) were reset.</p>
+<p>Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.</p>
+<p>To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.</p>
+<section id="maximum-delay-supported" class="level4">
+<h4 class="anchored" data-anchor-id="maximum-delay-supported">Maximum Delay Supported</h4>
+<p>The ARR is a 16 bit number, meaning the maximum value of <span class="math inline">\(ARR = 2^{16} - 1\)</span> Given the relationship that <span class="math inline">\(ARR = 100*ms_{desired}\)</span>, the maximum wait time is <span class="math inline">\(\frac{2^{16} - 1}{100} = 655.35ms\)</span></p>
+<p>If I wanted to delay for longer, I could call the delay function multiple times, reset the counter during the loop, or further slow the clock.</p>
+</section>
+<section id="minimum-delay-supported" class="level4">
+<h4 class="anchored" data-anchor-id="minimum-delay-supported">Minimum Delay Supported</h4>
+<p>The minimum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before,</p>
+<p><span class="math inline">\(\frac{ARR}{100} = \frac{1}{100} = 0.01ms\)</span></p>
+<p>we see that the minimum delay supported is 0.01ms.</p>
+</section>
+</section>
+<section id="pulse-width-modulation-pwm-timer-tim-16" class="level3">
+<h3 class="anchored" data-anchor-id="pulse-width-modulation-pwm-timer-tim-16">Pulse Width Modulation (PWM) Timer (TIM 16)</h3>
+<p>Timer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz with a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span></p>
+<p>We can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz:</p>
+<section id="percent-error-at-220-hz" class="level4">
+<h4 class="anchored" data-anchor-id="percent-error-at-220-hz">Percent Error at 220 Hz</h4>
+<p><span class="math inline">\(\% error = 100*\frac{{|calculated - actual|}}{actual}\)</span></p>
+<p><span class="math inline">\(ARR = \frac{100 kHz}{pitch_{desired}} = \frac{100000}{220} = 454.54\)</span></p>
+<p>The ARR would round this to 455, as it counts in integers $calculated = 100 kHz/ 455 = 219.78</p>
+<p><span class="math inline">\(\% error = 100*\frac{|219.78 - 220|}{220} = 0.1\%\)</span></p>
+</section>
+<section id="percent-error-at-1000-hz" class="level4">
+<h4 class="anchored" data-anchor-id="percent-error-at-1000-hz">Percent Error at 1000 Hz</h4>
+<p><span class="math inline">\(\% error = 100*\frac{{|calculated - actual|}}{actual}\)</span></p>
+<p><span class="math inline">\(ARR = \frac{100 kHz}{pitch_{desired}} = \frac{100000}{1000} = 100\)</span></p>
+<p>This is an integer value, meanining that no casting would occur, and the frequency would be very precise.</p>
+<p>We can also calulate the maximum and minimum frequencies supported:</p>
+</section>
+<section id="minimum-frequency-supported" class="level4">
+<h4 class="anchored" data-anchor-id="minimum-frequency-supported">Minimum Frequency Supported</h4>
+<p>The ARR is a 16 bit number, meaning the maximum value of <span class="math inline">\(ARR_{max} = 2^{16} - 1\)</span>. Given the relationship that <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span>, the minimum frequncy supported is</p>
+<p><span class="math inline">\(min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}\)</span> <span class="math inline">\(min_{pitch} = 1.5259 Hz\)</span></p>
+</section>
+<section id="maximum-frequency-supported" class="level4">
+<h4 class="anchored" data-anchor-id="maximum-frequency-supported">Maximum Frequency Supported</h4>
+<p>The maximum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before, <span class="math inline">\(max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}\)</span> = 100 kHz <span class="math inline">\(max_{pitch} = 100 kHz\)</span></p>
+</section>
+</section>
+<section id="gpio-gpioa" class="level3">
+<h3 class="anchored" data-anchor-id="gpio-gpioa">GPIO (GPIOA)</h3>
+<p>To interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.</p>
+</section>
+</section>
+<section id="hardware-design" class="level2">
+<h2 class="anchored" data-anchor-id="hardware-design">Hardware Design</h2>
+<p>An LM386 audio amplifier <a href="https://www.ti.com/lit/ds/symlink/lm386.pdf">[LM386 Datasheet]</a> was used to interface MCU pin PA6 with an 8 Ohm speaker.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/WiringDiagram.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Lab 4 Wiring Diagram</figcaption>
+</figure>
+</div>
+</section>
+<section id="testing-debugging" class="level2">
+<h2 class="anchored" data-anchor-id="testing-debugging">Testing &amp; Debugging</h2>
+<p>This lab looked a lot at generating signals at desired frequencies and durations. As a result, the oscilloscope was incredible important in ensuring that clock scaling and timer frequencies were as desired.</p>
+</section>
+<section id="demonstration" class="level2">
+<h2 class="anchored" data-anchor-id="demonstration">Demonstration</h2>
+<p>My lab played Für Elise from provided starter code at the desired pitch and tempo.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/j1fOJsa13eE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>I also tranposed one of the best songs ever to play on my speaker as well:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JBc5Q4JrznM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Lab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.</p>
+<p>Lab 4 meets all the requirements, and took me approximately 24 hours to complete.</p>
 
 
 </section>

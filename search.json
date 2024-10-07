@@ -35,6 +35,55 @@
     "text": "Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used. This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals? This could negatively impact their education.\nWith this uncertainty in mind, it was interesting to learn the ways Khan Academy has minimized this risk. The plentiful testing and carefully choosen features lend itself to AI.\nMoreover, it was refreshing to see AI implemented cautiously, and for the overall goal of imoproving education access. Many implementations of AI seem to be a rushed reaction to the AI movement, and used to sell a product. Overall, his talk made me hopeful for the future of AI."
   },
   {
+    "objectID": "labs/lab4/lab4.html",
+    "href": "labs/lab4/lab4.html",
+    "title": "Lab 4: Digital Audio",
+    "section": "",
+    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#introduction-learning-objectives",
+    "href": "labs/lab4/lab4.html#introduction-learning-objectives",
+    "title": "Lab 4: Digital Audio",
+    "section": "",
+    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#mcu-design",
+    "href": "labs/lab4/lab4.html#mcu-design",
+    "title": "Lab 4: Digital Audio",
+    "section": "MCU Design",
+    "text": "MCU Design\nThe MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and generated a corresponding sequence of square waves. To implement this, I used the built-in MSI clock to initialize two timers: Timer 15 to handle duration of each note and Timer 16 to use Pulse Width Modulation (PWM) capabilities to generate the desired pitch. These timers would work together to generate desired square waves out of PA6. This approach is outlined in the image below.\n\n\n\nMCU Timer Design Outline\n\n\n\nMSI Clock\nI set the MSI Clock at it’s default frequency of 4 Mhz. The clock’s output frequency can be calculated with: \\(Output freq = (srcclk) * (N/M) / R\\)\nI set N = 16, M = 1 and R = 16, to abide by N, M, R constraints.\nThe Clock set up was dealt with in my RCC files.\n\n\nDelay Timer (TIM 15)\nTimer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx). As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.\n\\(Timer freq = \\frac{clkfreq}{PSC + 1} = \\frac{4 MHz}{40} = 100 kHz\\)\nTo use the delay timer, I implemented a delay_millis function, that took in a pointer to the Timer to use and an integers of the ms to delay for. The function utilized the ARR register, CNT register, and SR register to wait for x ms.\nThe Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to \\(100*ms_{desired}\\). The Counter (CNT) and Capture/Compare 1 (SR) were reset.\nOnce the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.\nTo understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.\n\nMaximum Delay Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR = 2^{16} - 1\\) Given the relationship that \\(ARR = 100*ms_{desired}\\), the maximum wait time is \\(\\frac{2^{16} - 1}{100} = 655.35ms\\)\nIf I wanted to delay for longer, I could call the delay function multiple times, reset the counter during the loop, or further slow the clock.\n\n\nMinimum Delay Supported\nThe minimum value of \\(ARR = 1\\), doing similair calculations as before,\n\\(\\frac{ARR}{100} = \\frac{1}{100} = 0.01ms\\)\nwe see that the minimum delay supported is 0.01ms.\n\n\n\nPulse Width Modulation (PWM) Timer (TIM 16)\nTimer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz with a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\)\nWe can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz:\n\nPercent Error at 220 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{220} = 454.54\\)\nThe ARR would round this to 455, as it counts in integers $calculated = 100 kHz/ 455 = 219.78\n\\(\\% error = 100*\\frac{|219.78 - 220|}{220} = 0.1\\%\\)\n\n\nPercent Error at 1000 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{1000} = 100\\)\nThis is an integer value, meanining that no casting would occur, and the frequency would be very precise.\nWe can also calulate the maximum and minimum frequencies supported:\n\n\nMinimum Frequency Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR_{max} = 2^{16} - 1\\). Given the relationship that \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\), the minimum frequncy supported is\n\\(min_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{2^{16} - 1}\\) \\(min_{pitch} = 1.5259 Hz\\)\n\n\nMaximum Frequency Supported\nThe maximum value of \\(ARR = 1\\), doing similair calculations as before, \\(max_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{1}\\) = 100 kHz \\(max_{pitch} = 100 kHz\\)\n\n\n\nGPIO (GPIOA)\nTo interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode."
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#hardware-design",
+    "href": "labs/lab4/lab4.html#hardware-design",
+    "title": "Lab 4: Digital Audio",
+    "section": "Hardware Design",
+    "text": "Hardware Design\nAn LM386 audio amplifier [LM386 Datasheet] was used to interface MCU pin PA6 with an 8 Ohm speaker.\n\n\n\nLab 4 Wiring Diagram"
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#testing-debugging",
+    "href": "labs/lab4/lab4.html#testing-debugging",
+    "title": "Lab 4: Digital Audio",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging\nThis lab looked a lot at generating signals at desired frequencies and durations. As a result, the oscilloscope was incredible important in ensuring that clock scaling and timer frequencies were as desired."
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#demonstration",
+    "href": "labs/lab4/lab4.html#demonstration",
+    "title": "Lab 4: Digital Audio",
+    "section": "Demonstration",
+    "text": "Demonstration\nMy lab played Für Elise from provided starter code at the desired pitch and tempo.\n\nI also tranposed one of the best songs ever to play on my speaker as well:"
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#conclusion",
+    "href": "labs/lab4/lab4.html#conclusion",
+    "title": "Lab 4: Digital Audio",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.\nLab 4 meets all the requirements, and took me approximately 24 hours to complete."
+  },
+  {
     "objectID": "labs/lab2/lab2.html",
     "href": "labs/lab2/lab2.html",
     "title": "Lab 2: Multiplexed 7-Segment Display",
@@ -117,6 +166,48 @@
     "title": "Lab 1: FPGA and MCU Setup and Testing",
     "section": "Conclusion",
     "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html",
+    "href": "labs/lab5/lab5.html",
+    "title": "Lab 5: Interrupts",
+    "section": "",
+    "text": "The source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#introduction-learning-objectives",
+    "href": "labs/lab5/lab5.html#introduction-learning-objectives",
+    "title": "Lab 5: Interrupts",
+    "section": "",
+    "text": "The source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#design",
+    "href": "labs/lab5/lab5.html#design",
+    "title": "Lab 5: Interrupts",
+    "section": "Design",
+    "text": "Design\n\nMCU Design\n\n\nHardware Design"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#testing-debugging",
+    "href": "labs/lab5/lab5.html#testing-debugging",
+    "title": "Lab 5: Interrupts",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#implementation",
+    "href": "labs/lab5/lab5.html#implementation",
+    "title": "Lab 5: Interrupts",
+    "section": "Implementation",
+    "text": "Implementation"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#conclusion",
+    "href": "labs/lab5/lab5.html#conclusion",
+    "title": "Lab 5: Interrupts",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately XXX hours to complete"
   },
   {
     "objectID": "labs/lab3/lab3.html",
