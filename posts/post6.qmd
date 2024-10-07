@@ -40,15 +40,17 @@ In case you are having problems visualizing this, here are some photos and video
 <figcaption>Chiquita Banana is in the produce section. I used to be impressed how she could balance so much fruit on her head. </figcaption>
 
 
-<em> Also, side note about Stew Leonards: When I was was in 3rd grade I was in Oddessy of the Mind, where other kids and I made a seven minute skit to perform, with homemade props and script. Our play was heavily based on Stew's (they gave us empty cartons for props). We won the regional competition, so they gave us a behind-the-scenes tour of Stew Leonards, (we saw the milk and bread factory), and my photo was on their billboard for a week! </em>
+<em> Also, side note about Stew Leonards: When I was was in 3rd grade I was in Oddessy of the Mind, where other kids and I made a seven minute skit to perform, with homemade props and a script. Our play was heavily based on Stew's (they gave us empty cartons for props). We won the regional competition, so they gave us a behind-the-scenes tour of Stew Leonards, (we saw the milk and bread factory), and my photo was on their billboard for a week! </em>
 
 ![Me as a Stew Leonard's corn! Behind us, you can see the corner of the Stew Leonard milk cartons that we used in our skit.](images/stewsOM.jpeg) 
 
 Therefore, for the final project I wanted to create an interactive animatron, that could do different tricks based on user input. Maybe we could even donate it to the store. However, this didn't feel like a true microPs project. 
 
+### Back to Platt...
+
 Here's where Audrey's idea comes to the rescue. Let's jump back to my conversation in Platt, where we had just finished "Lab 4: Digital Audio." Audrey brings up the best idea. 
 
-### She suggests: "What if we made a DJ deck"
+#### She suggests: "What if we made a DJ deck"
 
 Boom, this was an idea that finally clicked. 
 
