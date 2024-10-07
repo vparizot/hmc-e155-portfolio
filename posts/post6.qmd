@@ -76,7 +76,7 @@ So, when Audrey suggested this idea, we were both super into it. We could use po
 
 Overall, it's something we are excited about -- and I'm curious to see if and how this will transform into a final project. 
 
-If we do end up pursuing this path, I want to convince our Linde president friends to let us DJ for the first few minutes of their 5C using our MicroPs board. Not sure how we will be able to handle the current required to go into 5 different speakers, but it's a cool idea. 
+If we do end up pursuing this path, I want to convince our Linde president friends to let us DJ at the start of their 5C using our MicroPs board. Not sure how we will be able to handle the current required to go into 5 different speakers, but it's a cool idea and a thinking exercise.
 
 ![Menace in the Lab](images/donttrustaudrey.jpeg) 
 
