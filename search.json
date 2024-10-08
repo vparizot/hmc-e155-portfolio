@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "Best Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nNov 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
+    "text": "Best Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nNov 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/first-post.html",
@@ -172,42 +172,49 @@
     "href": "labs/lab5/lab5.html",
     "title": "Lab 5: Interrupts",
     "section": "",
-    "text": "The source code for the project can be found in the associated Github repository."
+    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
     "objectID": "labs/lab5/lab5.html#introduction-learning-objectives",
     "href": "labs/lab5/lab5.html#introduction-learning-objectives",
     "title": "Lab 5: Interrupts",
     "section": "",
-    "text": "The source code for the project can be found in the associated Github repository."
+    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
     "objectID": "labs/lab5/lab5.html#design",
     "href": "labs/lab5/lab5.html#design",
     "title": "Lab 5: Interrupts",
     "section": "Design",
-    "text": "Design\n\nMCU Design\n\n\nHardware Design"
+    "text": "Design\nMy design utilized two external interrupts triggered by rising and falling edges of Pin 6 and Pin 8. I used two timers: TIM16 to determine motor speed and TIM2 to control the frequency in which we print the motor speed and direction. I then calculated the speed and direction from the deltaCount between the edges of the encoder pulses.\n\nInterrupt Design\nI used hardware interrupts so that the interrupt handler can be triggered at the falling and rising edge of each encoder pulse. To do so, I followed the procedure listed in “13.3.4 Hardware Interrupt” Selection on page 327 of the reference manual\nI configured the interrupts to enable on the rising and falling edge of each encoder pulse, to achieve the highest resolution measurement. As I used Pin A6 for Encoder Signal A and Pin A8 for Encoder Signal B, both interrupts were handled by the EXTI9_5_IRQHandler. To determine which Encoder triggered the interrupt, I checked the flag in EXTI-&gt;PR1 at the pin offset.\nBelow is a flowchart showing each interrupt and the main loop that is executed.\n\n\n\nInterrupt Flow Chart\n\n\nWe know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable. If the interrupt was triggered by Encoder B, then TIM16 CNT was set to zero. If the interrupt was triggered by Encoder A, then the count would be copied into the delCount variable.\n\n\n\ndelCount with the Encoder Pulses\n\n\nI minimized the code in the interrupts by saving values needed in calculation into global variables, and computing the speed and direction outside of the interrupt.\n\n\nTimer Design\nI used TIM16 as the count timer between encoder pulse edges, which was ultimately used to determine the speed. TIM16 was configured to run at 1 MHz.\nI used TIM2 to act as a delay timer to slow down the printing rate. I counted at a 1ms time base, or a frequency of 1 kHz. To abide by the requirement, “Design measures and displays speed of motor in units of m/s with an update rate of at least 1 Hz,” the delay cannot exceed 1000ms.\nFor more information on timers, see Lab 4.\n\n\nCalculating Speed and Direction\nTo convert the delCount variable to speed in revolutions/second, I used the following conversion. Note that I divide delCount by \\(1,000,000\\) to convert from counts per quarter pulse to seconds per quarter pulse, based on the clock frequency of 1 MHz.\n\n\n\nCalculating speed in [rev/s] from delCount\n\n\nTo determine the direction of the motor, I used conditional statements in my interrupt handler. # INSERT HERE about direction\n\nSmoothing the Speed\nWhen I printed my speed, I noticed that there was a lot of small fluctuation. After some evaluation of the encoder signals with the oscilloscope, I saw that the motors encoder signals had small variations in duty cycle and distance, that when scaled to get the speed would be exacerbated. As a result I implemented a sliding window, that calculated the average of the last 10 delCount variables to smooth the out speed. This caused a significant improvement in the readability of the output speed, with minimal impact on accuracy.\n\n\n\nHardware Design\nThe encoders used for this lab operate at a 5V logic level. I used PA6 and PA8 as these pins a 5V tolerant, as listed in Tables 13-14 in the STM32L432KC Datasheet.\nThis lab used a 25GA-370 DC Motor datasheet, with the following color coding.\n\n\n\nEncoder Wiring Color Coding\n\n\nI powered the motor with a voltage source, and attatched to my MCU, following the below wiring diagram."
   },
   {
     "objectID": "labs/lab5/lab5.html#testing-debugging",
     "href": "labs/lab5/lab5.html#testing-debugging",
     "title": "Lab 5: Interrupts",
     "section": "Testing & Debugging",
-    "text": "Testing & Debugging"
+    "text": "Testing & Debugging\nTo test, I compared the oscilloscope and printed values at 12 V.\nWhen running the motor at 12V and evaluating the encoder signals with the oscilloscope, I found that the motor ran at 10.417 revolutions/s.\n \nAt 12 V, my MCU read a speed of 10.313 revoluions/s.\nThe motor provided in the lab is expected to spin at approximately 10 rev/s. Both values align with what we would expect."
   },
   {
-    "objectID": "labs/lab5/lab5.html#implementation",
-    "href": "labs/lab5/lab5.html#implementation",
+    "objectID": "labs/lab5/lab5.html#demonstration",
+    "href": "labs/lab5/lab5.html#demonstration",
     "title": "Lab 5: Interrupts",
-    "section": "Implementation",
-    "text": "Implementation"
+    "section": "Demonstration",
+    "text": "Demonstration\nI’ve attatched a video of the printed output of the motor as I vary the motor input voltage. # include screen video"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#comparing-with-polling",
+    "href": "labs/lab5/lab5.html#comparing-with-polling",
+    "title": "Lab 5: Interrupts",
+    "section": "Comparing with Polling",
+    "text": "Comparing with Polling\nInterrupts are more suitable than manual polling at high speeds for the motor encoder When using interrupts, the system signals the CPU when it needs attention, and will jump out of the main loop to undergo the interrupt service protocol. This ensures that each encoder edge is read. When using polling, the CPU continuously the encoder status in the main loop, leaving potential to miss encoder pulses, resulting in an inaccurate speed and direction measurement. This is especially detrimental due to my print delays.\nTo demonstrate this, I implemented high speed polling.\nint main(void) {\nwhile (1){\n  if (sigA == 1){\n    delCount = cntTIM-&gt;CNT;\n    cntTIM-&gt;CNT = 0; \n    cntTIM-&gt;EGR |= 1;   \n  }\n  if (sigB == 1){\n    cntTIM-&gt;CNT = 0;\n    cntTIM-&gt;EGR |= 1;\n  }\n\n  speed = 1.0/(120.0*4.0*(delCount/1000000.0));      \n  printf(\"Current  speed: %f \\n\", speed);\n\n  if (dir == 0){\n    printf(\"Current direction: ccw \\n\");\n  } else {\n    printf(\"Current direction: cw \\n\");\n  }\n\n  delay_millis(printTIM, 1000);\n}\n}"
   },
   {
     "objectID": "labs/lab5/lab5.html#conclusion",
     "href": "labs/lab5/lab5.html#conclusion",
     "title": "Lab 5: Interrupts",
     "section": "Conclusion",
-    "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately XXX hours to complete"
+    "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately 11 hours to complete"
   },
   {
     "objectID": "labs/lab3/lab3.html",
