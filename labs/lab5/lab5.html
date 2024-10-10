@@ -268,11 +268,11 @@ Understand the quadrature encoder protocol and implemented a multi-interrupt rou
 <p>Below is a flowchart showing each interrupt and the main loop that is executed.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/flowchart1.jpeg" class="img-fluid figure-img"></p>
+<p><img src="images/flowchart3.jpeg" class="img-fluid figure-img"></p>
 <figcaption>Interrupt Flow Chart</figcaption>
 </figure>
 </div>
-<p>We know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable. If the interrupt was triggered by Encoder B, then TIM16 CNT was set to zero. If the interrupt was triggered by Encoder A, then the count would be copied into the delCount variable.</p>
+<p>We know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/delCount.jpeg" class="img-fluid figure-img"></p>
@@ -296,7 +296,7 @@ Understand the quadrature encoder protocol and implemented a multi-interrupt rou
 <figcaption>Calculating speed in [rev/s] from delCount</figcaption>
 </figure>
 </div>
-<p>To determine the direction of the motor, I used conditional statements in my interrupt handler. # INSERT HERE about direction</p>
+<p>To determine the direction of the motor, I used conditional statements in my interrupt handler, where the signal’s edge that triggered the interrupt could be used to compute direction.</p>
 <section id="smoothing-the-speed" class="level4">
 <h4 class="anchored" data-anchor-id="smoothing-the-speed">Smoothing the Speed</h4>
 <p>When I printed my speed, I noticed that there was a lot of small fluctuation. After some evaluation of the encoder signals with the oscilloscope, I saw that the motors encoder signals had small variations in duty cycle and distance, that when scaled to get the speed would be exacerbated. As a result I implemented a sliding window, that calculated the average of the last 10 delCount variables to smooth the out speed. This caused a significant improvement in the readability of the output speed, with minimal impact on accuracy.</p>
@@ -325,36 +325,11 @@ Understand the quadrature encoder protocol and implemented a multi-interrupt rou
 </section>
 <section id="demonstration" class="level2">
 <h2 class="anchored" data-anchor-id="demonstration">Demonstration</h2>
-<p>I’ve attatched a video of the printed output of the motor as I vary the motor input voltage. # include screen video <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --> <!-- ####################### --></p>
+<p>Below is a photo of the printed output of the motor as I vary the motor input voltage. <img src="images/output.png" class="img-fluid" alt="Readings of motor speed"></p>
 </section>
 <section id="comparing-with-polling" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-with-polling">Comparing with Polling</h2>
-<p>Interrupts are more suitable than manual polling at high speeds for the motor encoder When using interrupts, the system signals the CPU when it needs attention, and will jump out of the main loop to undergo the interrupt service protocol. This ensures that each encoder edge is read. When using polling, the CPU continuously the encoder status in the main loop, leaving potential to miss encoder pulses, resulting in an inaccurate speed and direction measurement. This is especially detrimental due to my print delays.</p>
-<p>To demonstrate this, I implemented high speed polling.</p>
-<p>int main(void) {</p>
-<pre><code>while (1){
-  if (sigA == 1){
-    delCount = cntTIM-&gt;CNT;
-    cntTIM-&gt;CNT = 0; 
-    cntTIM-&gt;EGR |= 1;   
-  }
-  if (sigB == 1){
-    cntTIM-&gt;CNT = 0;
-    cntTIM-&gt;EGR |= 1;
-  }
-
-  speed = 1.0/(120.0*4.0*(delCount/1000000.0));      
-  printf("Current  speed: %f \n", speed);
-
-  if (dir == 0){
-    printf("Current direction: ccw \n");
-  } else {
-    printf("Current direction: cw \n");
-  }
-
-  delay_millis(printTIM, 1000);
-}</code></pre>
-<p>}</p>
+<p>Interrupts are more suitable than manual polling at high speeds for the motor encoder When using interrupts, the system signals the CPU when it needs attention, and will jump out of the main loop to undergo the interrupt service protocol. This ensures that each encoder edge is read. When using polling, the CPU continuously the encoder status in the main loop, leaving potential to miss encoder pulses, resulting in an inaccurate speed and direction measurement. This would be especially detrimental due to my print delays.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
