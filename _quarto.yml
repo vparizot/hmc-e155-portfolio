@@ -26,6 +26,15 @@ website:
           href: labs/lab6/lab6.qmd
         - text: Lab 7
           href: labs/lab7/lab7.qmd
+      - text: Final Project
+        menu: 
+        - text: Project PariVo
+        - text: Project Proposal
+          href: finalproject/proposal.qmd
+        # - text: Progress
+        #   href: finalproject/progress.qmd
+        # - text: Final Report
+        #   href: finalproject/finalreport.qmd
       - href: resources.qmd
         text: Resources
 

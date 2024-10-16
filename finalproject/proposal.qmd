@@ -1,0 +1,12 @@
+---
+title: "E155 Project Proposal: Project PariVo"
+description: "A DJ Deck that manipulates audio files based on user inputs"
+author: "Victoria Parizot & Audrey Vo"
+date: "10/16/24"
+categories:
+  - Final Project
+  - Brainstorm
+draft: false
+---
+
+## DJ DECK
