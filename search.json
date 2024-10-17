@@ -7,6 +7,55 @@
     "text": "Best Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nNov 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "finalproject/proposal.html#motivation",
+    "href": "finalproject/proposal.html#motivation",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "Motivation",
+    "text": "Motivation\nHarvey Mudd College includes a plethora of student DJs that perform regularly around the 5Cs. As two currently aspiring DJs, we wanted to understand the technical workings of audio modifications and create a functional deck so that we could perform for our friends.\nInsight into how we came up with this project can be found in my blog."
+  },
+  {
+    "objectID": "finalproject/proposal.html#goals",
+    "href": "finalproject/proposal.html#goals",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "Goals",
+    "text": "Goals\nOur overarching goal for this project is to build an operational DJ Deck that manipulates audio files based on user inputs. Our subgoals and our initial thoughts on implementation are the following:\n\n\nRead in a Stereo file into the MCU\n\n\nCommunicate audio data between MCU and FPGA\n\n\nImplement FFT using the FPGA\n\n\nImplement a low pass and high pass filter based on user filter input\n\n\nImplement tempo variations on the MCU based on user tempo input\n\n\nVary audio gain based on user input \n\n\nOutput the manipulated audio onto speakers \n\n\nThe riskiest element of this project is how to input and output the audio data into/out of the FPGA and MCU.\n\nDesign"
+  },
+  {
+    "objectID": "finalproject/proposal.html#block-diagram",
+    "href": "finalproject/proposal.html#block-diagram",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "Block Diagram",
+    "text": "Block Diagram"
+  },
+  {
+    "objectID": "finalproject/proposal.html#fpga-design-details-signal-processing",
+    "href": "finalproject/proposal.html#fpga-design-details-signal-processing",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "FPGA Design Details “Signal Processing”",
+    "text": "FPGA Design Details “Signal Processing”\nWe are planning to use the FPGA to apply a series of low pass and high pass filters based on the user’s input through physical knobs on the DJ deck. The FPGA will perform the Fast Fourier Transform (FFT) to convert the audio data from the time to the frquency domain, allowing us to apply frequency filters. The input from the DJ deck knobs will indicate to the FPGA whether a high pass filter or low pass filter should be applied, along with what the cutoff frequency should be at. In addition, the FPGA will also take care of modifying the gain of the audio files. Thus, it will be used to amplify the signals after going through the various filters."
+  },
+  {
+    "objectID": "finalproject/proposal.html#mcu-design-details-inputoutput-tempo",
+    "href": "finalproject/proposal.html#mcu-design-details-inputoutput-tempo",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "MCU Design Details “Input/output, tempo”",
+    "text": "MCU Design Details “Input/output, tempo”\nThe MCU will act as a bridge between the audio files + user inputs and the FPGA. The MCU will have four key applications. First, the MCU will interpret and pass through the ADC output into the FPGA. Second, the MCU will sample and read in the user inputs from the DJ deck (the gain and filters) and pass it through to the FPGA. Third, the MCU will receive the manipulated audio data from the FPGA and change the tempo by varying clock speed. Fourth, the MCU will output the audio data to the computer.\n\nProject Management"
+  },
+  {
+    "objectID": "finalproject/proposal.html#schedule",
+    "href": "finalproject/proposal.html#schedule",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "Schedule",
+    "text": "Schedule\nFor the work split between the team members we will put in equal hours and implement pair programming. Our timeline is as follows:\n\n\n\nWeek\n\n\nGoals\n\n\nDue Dates\n\n\n\n\nWeek 11 (11/4)\n\n\nImplement ADC and read audio inputs on MCU\n\n\nDesign Review\n\n\n\n\nWeek 12 (11/11)\n\n\nImplement SPI to transfer audio data between MCU and FPGA (both ways), Begin FFT implementation\n\n\nProject Status Report and Demo\n\n\n\n\nWeek 13 (11/18)\n\n\nFinish FFT implementation and be able to modify tempo on MCU\n\n\n\n\n\n\nWeek 14 (11/25)\n\n\nRead output from speaker properly\n\n\nThanksgiving Week\n\n\n\n\nWeek 15 (12/2)\n\n\nFinal bugs and implementations\n\n\nProject Checkoffs and Demo Day"
+  },
+  {
+    "objectID": "finalproject/proposal.html#bill-of-materials",
+    "href": "finalproject/proposal.html#bill-of-materials",
+    "title": "E155 Project Proposal: Project PariVo",
+    "section": "Bill of Materials",
+    "text": "Bill of Materials\n\n\n\nItem (link)\n\n\nPurpose\n\n\nCost\n\n\n\n\nPWM1808 ADC\n\n\nConvert stereo audio into digital format\n\n\n$2.39\n\n\n\n\n10k 1/10W Slide Potentiometer\n\n\nGain Slider\n\n\n$1.78 (shld buy 2)\n\n\n\n\nBreadboard-Friendly 3.5mm Stereo Headphone Jack : ID 1699\n\n\nStereo jack\n\n\n$0.95"
+  },
+  {
     "objectID": "posts/post3.html",
     "href": "posts/post3.html",
     "title": "The Embedded Systems Surrounding us",
