@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Victoria Parizot">
-<meta name="dcterms.date" content="2024-09-05">
-<meta name="description" content="The Design Behind Segment Displays">
+<meta name="author" content="Victoria Parizot &amp; Audrey Vo">
+<meta name="dcterms.date" content="2024-10-16">
+<meta name="description" content="A DJ Deck that manipulates audio files based on user inputs">
 
-<title>An Exploration of the Hidden Aesthetics of Electrical Components – E155 Portfolio</title>
+<title>E155 Project Proposal: Project PariVo – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#segmented-displays-around-me" id="toc-segmented-displays-around-me" class="nav-link active" data-scroll-target="#segmented-displays-around-me">Segmented Displays Around Me</a></li>
+  <li><a href="#dj-deck" id="toc-dj-deck" class="nav-link active" data-scroll-target="#dj-deck">DJ DECK</a></li>
   </ul>
 </nav>
     </div>
@@ -176,15 +176,16 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">An Exploration of the Hidden Aesthetics of Electrical Components</h1>
+<h1 class="title">E155 Project Proposal: Project PariVo</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">reflection</div>
+    <div class="quarto-category">Final Project</div>
+    <div class="quarto-category">Brainstorm</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    The Design Behind Segment Displays
+    A DJ Deck that manipulates audio files based on user inputs
   </div>
 </div>
 
@@ -194,14 +195,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Victoria Parizot </p>
+             <p>Victoria Parizot &amp; Audrey Vo </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 5, 2024</p>
+      <p class="date">October 16, 2024</p>
     </div>
   </div>
   
@@ -213,79 +214,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This week I worked through and completed lab 1. Learn more about the specifications and implementation of lab 1 <a href="labs/lab1">here</a>. This blog is heavily inspired by <a href="https://youtu.be/RTB5XhjbgZA?si=4bg0tpS0L5QZIPHH">Michiel de Boer (Posy)’s video on segmented displays.</a></p>
-<p>As part of this lab, I worked to make a seven segment display count in hexadecimal based on the binary value of a DIP switch. Two requirement of the lab was that the:</p>
-<p>“7-segment display can display all sixteen hexadecimal digits from 0x0 through 0xF”</p>
-<p>“All digits are unique”</p>
-<p>Throughout the week, I was impressed how seven equally sized segments arranged in two stacked squares was able to display unique digits and letters A thru F. I also saw different ways people deployed the display to represent the number and letters – using lowercase, uppercase, centering on different sides, and so on. This led me to look more at the design of segmented displays.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><video src="images/lab1Demo.MOV" class="img-fluid" controls=""><a href="images/lab1Demo.MOV">Video</a></video></p>
-<figcaption>Lab 1 Display</figcaption>
-</figure>
-</div>
-<p>The first recorded segmented display is from a 1903 patent by Carl Kingsey as a way to improve telegraph speeds. Since then, countless different segmented displays for different purposes has emerged.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/carlKingsey.png" class="img-fluid figure-img"></p>
-<figcaption>Carl Kingsey’s segmented display, 1903</figcaption>
-</figure>
-</div>
-<p>Perhaps the most common display is the stacked square design, which I used in lab 1. Looking closely at the display, you can observe the compromises that had been made to simplify the representation of numbers and some letters to fit into 7 equally sized segments. However, these inaccuracies have been heavily normalized to the point where I no longer recognize them. This design has been so heavily widespread that these digit representations are interchangeable with the numbers they represent.</p>
-<p>I ask you to look around your room and see how many segmented displays you can find. I did this exercise in my dorm room and found the segmented display used to show the volume of my speaker, settings of the AC unit, and tell the time from my watch.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/acDisplay.jpeg" class="img-fluid figure-img"></p>
-<figcaption>AC Unit Display</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/speakerDisplay.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Speaker Display</figcaption>
-</figure>
-</div>
-<p>The different implementations of the segmented display goes to show how small changes are used to improve accuracy and influence aesthetics. For example, the edges of the segments could be rounded or pointed. The middle segment is sometimes slanted. The thickness of the segments change from display to display, and sometimes the entire digit is italicized. Different changes will sacrifice complexity and the look of certain numbers in favor of the look of other numbers and letters.This can be particularly useful for displays that only need to display some of the digits.</p>
-<p>These seemingly small changes can change the impact of the design, making them suitable for different applications. A seven segmented display on a sports watch will vary from the display of public transport or a toy.</p>
-<p>This has led me to look more about the design choices made in embedded systems that I interact with. The rest of this blog is dedicated to share different segmented displays that surround me.</p>
-<section id="segmented-displays-around-me" class="level2">
-<h2 class="anchored" data-anchor-id="segmented-displays-around-me">Segmented Displays Around Me</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/multimeter.jpg" class="img-fluid figure-img"></p>
-<figcaption>Multimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/variety.jpg" class="img-fluid figure-img"></p>
-<figcaption>A Variety of segmented displays available in the engineering stockroom.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/TempGauge.jpg" class="img-fluid figure-img"></p>
-<figcaption>The temperature gauge in the engineering building.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/microwave.jpg" class="img-fluid figure-img"></p>
-<figcaption>The microwave uses a traditional design.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/WaterFountain2.jpg" class="img-fluid figure-img"></p>
-<figcaption>The water fountain uses a matrix display.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/WaterFountain1.jpg" class="img-fluid figure-img"></p>
-<figcaption>It seems like most water fountains use the matrix display.</figcaption>
-</figure>
-</div>
+<section id="dj-deck" class="level2">
+<h2 class="anchored" data-anchor-id="dj-deck">DJ DECK</h2>
 
 
 </section>
