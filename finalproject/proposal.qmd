@@ -8,5 +8,102 @@ categories:
   - Brainstorm
 draft: false
 ---
+### Introduction
 
-## DJ DECK
+## Motivation
+Harvey Mudd College includes a plethora of student DJs that perform regularly around the 5Cs. As two currently aspiring DJs, we wanted to understand the technical workings of audio modifications and create a functional deck so that we could perform for our friends.
+
+Insight into how we came up with this project can be found in my [blog](https://vparizot.github.io/hmc-e155-portfolio/posts/post6.html).
+
+## Goals
+Our overarching goal for this project is to build an operational DJ Deck that manipulates audio files based on user inputs. Our subgoals and our initial thoughts on implementation are the following:
+
+<ul class="task-list">
+<li><label><input type="checkbox">Read in a Stereo file into the MCU</label></li>
+<li><label><input type="checkbox">Communicate audio data between MCU and FPGA</label></li>
+<li><label><input type="checkbox">Implement FFT using the FPGA</label></li>
+<li><label><input type="checkbox">Implement a low pass and high pass filter based on user filter input</label></li>
+<li><label><input type="checkbox">Implement tempo variations on the MCU based on user tempo input</label></li>
+<li><label><input type="checkbox">Vary audio gain based on user input
+</label></li>
+<li><label><input type="checkbox">Output the manipulated audio onto speakers
+</label></li>
+</ul>
+
+The riskiest element of this project is how to input and output the audio data into/out of the FPGA and MCU. 
+
+### Design
+## Block Diagram
+
+## FPGA Design Details “Signal Processing”
+We are planning to use the FPGA to apply a series of low pass and high pass filters based on the user’s input through physical knobs on the DJ deck. The FPGA will perform the Fast Fourier Transform (FFT) to convert the audio data from the time to the frquency domain, allowing us to apply frequency filters. The input from the DJ deck knobs will indicate to the FPGA whether a high pass filter or low pass filter should be applied, along with what the cutoff frequency should be at. In addition, the FPGA will also take care of modifying the gain of the audio files. Thus, it will be used to amplify the signals after going through the various filters. 
+
+
+## MCU Design Details “Input/output, tempo”
+The MCU will act as a bridge between the audio files + user inputs and the FPGA. The MCU will have four key applications. First, the MCU will interpret and pass through the ADC output into the FPGA. Second, the MCU will sample and read in the user inputs from the DJ deck (the gain and filters) and pass it through to the FPGA. Third, the MCU will receive the manipulated audio data from the FPGA and change the tempo by varying clock speed. Fourth, the MCU will output the audio data to the computer. 
+
+
+### Project Management
+
+## Schedule
+For the work split between the team members we will put in equal hours and implement pair programming. Our timeline is as follows:
+
+<table>
+  <tr>
+    <th>Week</th>
+    <th>Goals</th>
+    <th>Due Dates</th>
+  </tr>
+  <tr>
+    <td>Week 11 (11/4)</td>
+    <td>Implement ADC and read audio inputs on MCU</td>
+    <td>Design Review</td>
+  </tr>
+  <tr>
+    <td>Week 12 (11/11)</td>
+    <td>Implement SPI to transfer audio data between MCU and FPGA (both ways), Begin FFT implementation</td>
+    <td>Project Status Report and Demo</td>
+  </tr>
+  <tr>
+    <td>Week 13 (11/18)</td>
+    <td>Finish FFT implementation and be able to modify tempo on MCU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Week 14 (11/25)</td>
+    <td>Read output from speaker properly</td>
+    <td>Thanksgiving Week</td>
+  </tr>
+  <tr>
+    <td>Week 15 (12/2)</td>
+    <td>Final bugs and implementations</td>
+    <td>Project Checkoffs and Demo Day</td>
+  </tr>
+</table>
+
+## Bill of Materials
+<table>
+  <tr>
+    <th>Item (link)</th>
+    <th>Purpose</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>PWM1808 ADC</td>
+    <td>Convert stereo audio into digital format</td>
+    <td>$2.39</td>
+  </tr>
+  <tr>
+    <td>10k 1/10W Slide Potentiometer</td>
+    <td>Gain Slider</td>
+    <td>$1.78 (shld buy 2)</td>
+  </tr>
+  <tr>
+    <td>Breadboard-Friendly 3.5mm Stereo Headphone Jack : ID 1699 </td>
+    <td>Stereo jack</td>
+    <td>$0.95</td>
+  </tr>
+</table>
+
+
+

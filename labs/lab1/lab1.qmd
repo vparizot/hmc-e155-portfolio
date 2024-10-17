@@ -8,6 +8,14 @@ categories:
   - reflection
   - labreport
 draft: false
+
+# format:
+#   html:
+#     other-links:
+#       - text: "Specifications"
+#         href: https://hmc-e155.github.io/lab/lab1/specs.html
+#         icon: file-earmark-check
+
 ---
 ## Introduction & Learning Objectives
 <!-- Brief (e.g., 3-5 sentence) description of the main goals of the assignment and what was done. -->
