@@ -1,0 +1,30 @@
+---
+title: "Final Project Thoughts"
+author: "Victoria Parizot"
+date: "10/18/2024"
+categories:
+  - reflection
+draft: false
+---
+
+This week, we had our project proposals due. As a result, Audrey and I spent a lot of our time reading related final projects from previous years and brainstorming how to implement the FPGA and MCU for the DJ deck. 
+
+The components we opted to implement are tempo, gain, and filters. Our subgoals include the following:
+
+<ul class="task-list">
+<li><label><input type="checkbox">Read in a Stereo file into the MCU</label></li>
+<li><label><input type="checkbox">Communicate audio data between MCU and FPGA</label></li>
+<li><label><input type="checkbox">Implement FFT using the FPGA</label></li>
+<li><label><input type="checkbox">Implement a low pass and high pass filter based on user filter input</label></li>
+<li><label><input type="checkbox">Implement tempo variations on the MCU based on user tempo input</label></li>
+<li><label><input type="checkbox">Vary audio gain based on user input
+</label></li>
+<li><label><input type="checkbox">Output the manipulated audio onto speakers
+</label></li>
+</ul>
+
+Most of our brainstorming has been focused on what to implement on the FPGA and what to implement with the MCU. Due to the MCU interfacing and timing abilities, We are opting to use the MCU to pass in the stereo audio and implement tempo. Due to the FPGA's strength in signal processing, we will implement the filters with the FPGA.
+
+We are still confused about how to pass through the audio between the FPGA and MCU, however I think after Lab 6 we will understand SPI communications better. 
+
+After our conversation with Professor Brake, we opted to use digital filters to implement high pass and low pass filters rather than apply FFTs. We are also going to look into the onboard DAC and ADC to use for our project.
