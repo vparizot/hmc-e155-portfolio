@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "Best Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nNov 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
+    "text": "Final Project Thoughts\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nBest Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "finalproject/proposal.html#motivation",
@@ -98,46 +98,137 @@
     "text": "Let me paint a picture…\nAfter wrapping up the digital audio lab, I was sitting in Platt, doing my other (non-mircoP) homework. Then Audrey walks in, also to do her own homework. I convince her to sit with me, even though she says she can’t afford to yap. So I tell her, that’s okay, we’ll listen to our own music. But then SHE starts yapping first, and causually drops the best potential final project idea. Then, after getting me all hyped up with a good idea, she rushed to put back on her headphones to work on the 83 she doesn’t have due for over a week. (She’s as biased as an LM386)\nI’ve made a super realistic reenactment of what happened:\n\n\n\nA super realistic reenactment of what happened.\n\n\nI’ll explain the idea in a sec. But first, let me provide some context. My friends and I have been brainstorming project ideas since we registered for the course, often sending photos or texts when an idea arises. Like over the summer, anything cool that we saw or a fun idea would warrant a text: an automated pasta machine, a jetpack like the one in Spy Kids, a thermal printer photobooth, a self-balancing platform to hold a ball, a pong robot, battle bots, etc.\nUp until Audrey shared her magical idea, my top idea was creating an animatron, like the ones that they have at Stew Leonard’s. For context, Stew Leonard’s is “The World’s Largest Dairy Store,” with seven supermarkets based in the Northeast, with the FIRST and BIGGEST location based in Norwalk, Connecticut (My Home Town!). Stew Leonard’s is as much as a grocery store as a riveting, carnival-esque experience. As you walk through the store, they have animatrons that will swing and sing to you. They also had the cheapest milk and egg prices, and is located on the way home from my swim practice, so I frequented the store often growing up.\nIn case you are having problems visualizing this, here are some photos and videos. My favorite is the Milk Carton Band. When I was a kid, I would race my brothers to press the button first.\n\n\nThe Animatrons of Stew Leonards\n\n\n\nFarm Fresh Five is a band made up of dairy products\n\n\n\n\n\nThis one used to scare me as a kid.\n\n\n\n\nThere are a bunch of different stuffed animals scattered throughout the store, constantly doing different acrobatics.\n\n\n\n\nThis room also has a huge train track tracing the ceiling\n\n\n\n\n\nThe cover band for Norwalk’s OG Farm Fresh Five, at another (non-Norwalk) Stew’s\n\n\n\n\n\nThe Avocado Girls at Stew’s in Norwalk – a more recent animatron\n\n\n\n\nChiquita Banana is in the produce section. I used to be impressed how she could balance so much fruit on her head.\n\n Also, side note about Stew Leonards: When I was was in 3rd grade I was in Oddessy of the Mind, where other kids and I made a seven minute skit to perform, with homemade props and a script. Our play was heavily based on Stew’s (they gave us empty cartons for props). We won the regional competition, so they gave us a behind-the-scenes tour of Stew Leonards, (we saw the milk and bread factory), and my photo was on their billboard for a week! \n\n\n\nMe as a Stew Leonard’s corn! Behind us, you can see the corner of the Stew Leonard milk cartons that we used in our skit.\n\n\nTherefore, for the final project I wanted to create an interactive animatron, that could do different tricks based on user input. Maybe we could even donate it to the store. However, this didn’t feel like a true microPs project.\n\n\nBack to Platt…\nHere’s where Audrey’s idea comes to the rescue. Let’s jump back to my conversation in Platt, where we had just finished “Lab 4: Digital Audio.” Audrey brings up the best idea.\n\nShe suggests: “What if we made a DJ deck”\nBoom, this was an idea that finally clicked.\nTo provide some context, Audrey learned how to DJ last semester with one of her Scripps friends, and it has been a huge boost for our friendship. She has performed for 15 minutes in a 1C, and the first 30 minutes of TWO 5C. I’m her biggest fan.\n\n\n\nPhotos of Audrey in Her Element\n\n\n\nAudrey mesmerizes the crowd!\n\n\n\n\n\nA true pro at DJing!\n\n\n\n\n\nWhat song to play next?\n\n\nOver this past summer, we decided that we would both learn how to DJ (we were both in the Bay). She got a small DJ deck, and I had a deck from when a coworker left her’s at my house years ago.\nUnfortunately, over the summer we realized that our true passions did not lie in DJing. I do have a new found respect for all DJs tho.\nNonetheless, we both thing DJing is cool, and have fun doing really bad transitions together.\n\n\nBack to the idea…\nSo, when Audrey suggested this idea, we were both super into it. We could use potentiometers to act as the faders, we can implement low pass and high pass filters, and we can alter the duration and pitch of a song to change the tempo.\nOverall, it’s something we are excited about – and I’m curious to see if and how this will transform into a final project.\nIf we do end up pursuing this path, I want to convince our Linde president friends to let us DJ at the start of their 5C party using our MicroPs board. Not sure how we will be able to handle the current required to go into 5 different speakers, but it’s a cool idea and a thinking exercise.\n\n\n\nMenace in the Lab"
   },
   {
-    "objectID": "labs/lab3/lab3.html",
-    "href": "labs/lab3/lab3.html",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab4/lab4.html",
+    "href": "labs/lab4/lab4.html",
+    "title": "Lab 4: Digital Audio",
     "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab4/lab4.html#introduction-learning-objectives",
+    "href": "labs/lab4/lab4.html#introduction-learning-objectives",
+    "title": "Lab 4: Digital Audio",
     "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab3/lab3.html#design",
-    "href": "labs/lab3/lab3.html#design",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Design",
-    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
+    "objectID": "labs/lab4/lab4.html#mcu-design",
+    "href": "labs/lab4/lab4.html#mcu-design",
+    "title": "Lab 4: Digital Audio",
+    "section": "MCU Design",
+    "text": "MCU Design\nThe MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and generated a corresponding sequence of square waves. To implement this, I used the built-in MSI clock to initialize two timers: Timer 15 to handle duration of each note and Timer 16 to use Pulse Width Modulation (PWM) capabilities to generate the desired pitch. These timers would work together to generate desired square waves out of PA6. This approach is outlined in the image below.\n\n\n\nMCU Timer Design Outline\n\n\n\nMSI Clock\nI set the MSI Clock at it’s default frequency of 4 Mhz. The clock’s output frequency can be calculated with: \\(Output freq = (srcclk) * (N/M) / R\\)\nI set N = 16, M = 1 and R = 16, to abide by N, M, R constraints.\nThe Clock set up was dealt with in my RCC files.\n\n\nDelay Timer (TIM 15)\nTimer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx). As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.\n\\(Timer freq = \\frac{clkfreq}{PSC + 1} = \\frac{4 MHz}{40} = 100 kHz\\)\nTo use the delay timer, I implemented a delay_millis function, that took in a pointer to the Timer to use and an integers of the ms to delay for. The function utilized the ARR register, CNT register, and SR register to wait for x ms.\nThe Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to \\(100*ms_{desired}\\). The Counter (CNT) and Capture/Compare 1 (SR) were reset.\nOnce the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.\nTo understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.\n\nMaximum Delay Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR = 2^{16} - 1\\) Given the relationship that \\(ARR = 100*ms_{desired}\\), the maximum wait time is \\(\\frac{2^{16} - 1}{100} = 655.35ms\\)\nIf I wanted to delay for longer, I could call the delay function multiple times, reset the counter during the loop, or further slow the clock.\n\n\nMinimum Delay Supported\nThe minimum value of \\(ARR = 1\\), doing similair calculations as before,\n\\(\\frac{ARR}{100} = \\frac{1}{100} = 0.01ms\\)\nwe see that the minimum delay supported is 0.01ms.\n\n\n\nPulse Width Modulation (PWM) Timer (TIM 16)\nTimer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz with a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\)\nWe can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz:\n\nPercent Error at 220 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{220} = 454.54\\)\nThe ARR would round this to 455, as it counts in integers $calculated = 100 kHz/ 455 = 219.78\n\\(\\% error = 100*\\frac{|219.78 - 220|}{220} = 0.1\\%\\)\n\n\nPercent Error at 1000 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{1000} = 100\\)\nThis is an integer value, meanining that no casting would occur, and the frequency would be very precise.\nWe can also calulate the maximum and minimum frequencies supported:\n\n\nMinimum Frequency Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR_{max} = 2^{16} - 1\\). Given the relationship that \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\), the minimum frequncy supported is\n\\(min_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{2^{16} - 1}\\) \\(min_{pitch} = 1.5259 Hz\\)\n\n\nMaximum Frequency Supported\nThe maximum value of \\(ARR = 1\\), doing similair calculations as before, \\(max_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{1}\\) = 100 kHz \\(max_{pitch} = 100 kHz\\)\n\n\n\nGPIO (GPIOA)\nTo interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode."
   },
   {
-    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
-    "href": "labs/lab3/lab3.html#simulation-and-testing",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Simulation and Testing",
-    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
+    "objectID": "labs/lab4/lab4.html#hardware-design",
+    "href": "labs/lab4/lab4.html#hardware-design",
+    "title": "Lab 4: Digital Audio",
+    "section": "Hardware Design",
+    "text": "Hardware Design\nAn LM386 audio amplifier [LM386 Datasheet] was used to interface MCU pin PA6 with an 8 Ohm speaker.\n\n\n\nLab 4 Wiring Diagram"
   },
   {
-    "objectID": "labs/lab3/lab3.html#implementation",
-    "href": "labs/lab3/lab3.html#implementation",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Implementation",
-    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
+    "objectID": "labs/lab4/lab4.html#testing-debugging",
+    "href": "labs/lab4/lab4.html#testing-debugging",
+    "title": "Lab 4: Digital Audio",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging\nThis lab looked a lot at generating signals at desired frequencies and durations. As a result, the oscilloscope was incredible important in ensuring that clock scaling and timer frequencies were as desired."
   },
   {
-    "objectID": "labs/lab3/lab3.html#conclusion",
-    "href": "labs/lab3/lab3.html#conclusion",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "labs/lab4/lab4.html#demonstration",
+    "href": "labs/lab4/lab4.html#demonstration",
+    "title": "Lab 4: Digital Audio",
+    "section": "Demonstration",
+    "text": "Demonstration\nMy lab played Für Elise from provided starter code at the desired pitch and tempo.\n\nI also tranposed one of the best songs ever to play on my speaker as well:"
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#conclusion",
+    "href": "labs/lab4/lab4.html#conclusion",
+    "title": "Lab 4: Digital Audio",
     "section": "Conclusion",
-    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+    "text": "Conclusion\nLab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.\nLab 4 meets all the requirements, and took me approximately 24 hours to complete."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "",
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "",
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#design",
+    "href": "labs/lab2/lab2.html#design",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Design",
+    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#testing",
+    "href": "labs/lab2/lab2.html#testing",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Testing",
+    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#implementation",
+    "href": "labs/lab2/lab2.html#implementation",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Implementation",
+    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#conclusion",
+    "href": "labs/lab2/lab2.html#conclusion",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html",
+    "href": "labs/lab1/lab1.html",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "href": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
+    "href": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Development Board: Soldering and Set up",
+    "text": "Development Board: Soldering and Set up\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided BOM.\n\n\n\nCompleted E155 Development Board\n\n\nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#design-implementation",
+    "href": "labs/lab1/lab1.html#design-implementation",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Design & Implementation",
+    "text": "Design & Implementation\n\n\nLab Requirements\nThe next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables.\n\n\n\n\nSignal Name\n\n\nSignal Type\n\n\nDescription\n\n\n\n\n\n\nclk\n\n\ninput\n\n\n48 MHz clock on FPGA\n\n\n\n\ns[3:0]\n\n\ninput\n\n\nthe four DIP switches (on the board, SW6)\n\n\n\n\nled[2:0]\n\n\noutput\n\n\n3 LEDs (you may use the on-board LEDs)\n\n\n\n\nseg[6:0]\n\n\noutput\n\n\nthe segments of a common-anode 7-segment display\n\n\n\n\n\nThe following tables define the relationship of the LEDs to the switches and clock.\n\n\n\n\n\n\nS1\n\n\nS0\n\n\nled[0]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nON\n\n\n\n\n1\n\n\n0\n\n\nON\n\n\n\n\n1\n\n\n1\n\n\nOFF\n\n\n\n\n\n\n\n\n\n\nS3\n\n\nS2\n\n\nled[1]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nOFF\n\n\n\n\n1\n\n\n0\n\n\nOFF\n\n\n\n\n1\n\n\n1\n\n\nON\n\n\n\n\n\n\n\n\n\n\nled[2]\n\n\n\n\n\n\nBlink at 2.4 Hz\n\n\n\n\n\n\n\n\nDesign\nTo organize my thoughts I used a block diagram to map the logic.\n\n\n\nLab 1 Block Diagram\n\n\n\nLed Logic Design\nThe truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.\nTo have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require \\(2*10^7\\) ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every \\(10^7\\) clicks.\n\n\nSeven Segment Logic Design\nTo interface the seven segment display with the board, I conferred with the datasheet to determine resistor values. \n\n\n\nResistor Calculations for Seven Segment Display\n\n\nI opted to use resistor values of 240 ohms, producing 6.25 mA of current.\nA wiring schematic is shown below. \nHere is a photo of the implemented design!"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#testing",
+    "href": "labs/lab1/lab1.html#testing",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Testing",
+    "text": "Testing\n\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected.\n\n\n\nWave forms of test bench\n\n\nI tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#conclusion",
+    "href": "labs/lab1/lab1.html#conclusion",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
   },
   {
     "objectID": "labs/lab5/lab5.html",
@@ -189,137 +280,53 @@
     "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately 11 hours to complete"
   },
   {
-    "objectID": "labs/lab1/lab1.html",
-    "href": "labs/lab1/lab1.html",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "objectID": "labs/lab3/lab3.html",
+    "href": "labs/lab3/lab3.html",
+    "title": "Lab 3: Keypad Scanner",
     "section": "",
-    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab1/lab1.html#introduction-learning-objectives",
-    "href": "labs/lab1/lab1.html#introduction-learning-objectives",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "title": "Lab 3: Keypad Scanner",
     "section": "",
-    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
-    "href": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Development Board: Soldering and Set up",
-    "text": "Development Board: Soldering and Set up\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided BOM.\n\n\n\nCompleted E155 Development Board\n\n\nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#design-implementation",
-    "href": "labs/lab1/lab1.html#design-implementation",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Design & Implementation",
-    "text": "Design & Implementation\n\n\nLab Requirements\nThe next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables.\n\n\n\n\nSignal Name\n\n\nSignal Type\n\n\nDescription\n\n\n\n\n\n\nclk\n\n\ninput\n\n\n48 MHz clock on FPGA\n\n\n\n\ns[3:0]\n\n\ninput\n\n\nthe four DIP switches (on the board, SW6)\n\n\n\n\nled[2:0]\n\n\noutput\n\n\n3 LEDs (you may use the on-board LEDs)\n\n\n\n\nseg[6:0]\n\n\noutput\n\n\nthe segments of a common-anode 7-segment display\n\n\n\n\n\nThe following tables define the relationship of the LEDs to the switches and clock.\n\n\n\n\n\n\nS1\n\n\nS0\n\n\nled[0]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nON\n\n\n\n\n1\n\n\n0\n\n\nON\n\n\n\n\n1\n\n\n1\n\n\nOFF\n\n\n\n\n\n\n\n\n\n\nS3\n\n\nS2\n\n\nled[1]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nOFF\n\n\n\n\n1\n\n\n0\n\n\nOFF\n\n\n\n\n1\n\n\n1\n\n\nON\n\n\n\n\n\n\n\n\n\n\nled[2]\n\n\n\n\n\n\nBlink at 2.4 Hz\n\n\n\n\n\n\n\n\nDesign\nTo organize my thoughts I used a block diagram to map the logic.\n\n\n\nLab 1 Block Diagram\n\n\n\nLed Logic Design\nThe truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.\nTo have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require \\(2*10^7\\) ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every \\(10^7\\) clicks.\n\n\nSeven Segment Logic Design\nTo interface the seven segment display with the board, I conferred with the datasheet to determine resistor values. \n\n\n\nResistor Calculations for Seven Segment Display\n\n\nI opted to use resistor values of 240 ohms, producing 6.25 mA of current.\nA wiring schematic is shown below. \nHere is a photo of the implemented design!"
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#testing",
-    "href": "labs/lab1/lab1.html#testing",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Testing",
-    "text": "Testing\n\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected.\n\n\n\nWave forms of test bench\n\n\nI tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#conclusion",
-    "href": "labs/lab1/lab1.html#conclusion",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Conclusion",
-    "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html",
-    "href": "labs/lab2/lab2.html",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#design",
-    "href": "labs/lab2/lab2.html#design",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#design",
+    "href": "labs/lab3/lab3.html#design",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Design",
-    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
   },
   {
-    "objectID": "labs/lab2/lab2.html#testing",
-    "href": "labs/lab2/lab2.html#testing",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Testing",
-    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
+    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
+    "href": "labs/lab3/lab3.html#simulation-and-testing",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Simulation and Testing",
+    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
   },
   {
-    "objectID": "labs/lab2/lab2.html#implementation",
-    "href": "labs/lab2/lab2.html#implementation",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#implementation",
+    "href": "labs/lab3/lab3.html#implementation",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Implementation",
-    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
+    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
   },
   {
-    "objectID": "labs/lab2/lab2.html#conclusion",
-    "href": "labs/lab2/lab2.html#conclusion",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "objectID": "labs/lab3/lab3.html#conclusion",
+    "href": "labs/lab3/lab3.html#conclusion",
+    "title": "Lab 3: Keypad Scanner",
     "section": "Conclusion",
-    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
+    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
   },
   {
-    "objectID": "labs/lab4/lab4.html",
-    "href": "labs/lab4/lab4.html",
-    "title": "Lab 4: Digital Audio",
+    "objectID": "posts/post7.html",
+    "href": "posts/post7.html",
+    "title": "Final Project Thoughts",
     "section": "",
-    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#introduction-learning-objectives",
-    "href": "labs/lab4/lab4.html#introduction-learning-objectives",
-    "title": "Lab 4: Digital Audio",
-    "section": "",
-    "text": "In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.\nTo build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.\nThis lab had the following learning objectives:\n\n\nBuilt a circuit to enable an I/O pin from your MCU to drive a speaker\n\n\nImplemented the timer functionality available on the MCU by reading the datasheet and writing your own library in C from scratch\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#mcu-design",
-    "href": "labs/lab4/lab4.html#mcu-design",
-    "title": "Lab 4: Digital Audio",
-    "section": "MCU Design",
-    "text": "MCU Design\nThe MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and generated a corresponding sequence of square waves. To implement this, I used the built-in MSI clock to initialize two timers: Timer 15 to handle duration of each note and Timer 16 to use Pulse Width Modulation (PWM) capabilities to generate the desired pitch. These timers would work together to generate desired square waves out of PA6. This approach is outlined in the image below.\n\n\n\nMCU Timer Design Outline\n\n\n\nMSI Clock\nI set the MSI Clock at it’s default frequency of 4 Mhz. The clock’s output frequency can be calculated with: \\(Output freq = (srcclk) * (N/M) / R\\)\nI set N = 16, M = 1 and R = 16, to abide by N, M, R constraints.\nThe Clock set up was dealt with in my RCC files.\n\n\nDelay Timer (TIM 15)\nTimer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx). As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.\n\\(Timer freq = \\frac{clkfreq}{PSC + 1} = \\frac{4 MHz}{40} = 100 kHz\\)\nTo use the delay timer, I implemented a delay_millis function, that took in a pointer to the Timer to use and an integers of the ms to delay for. The function utilized the ARR register, CNT register, and SR register to wait for x ms.\nThe Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to \\(100*ms_{desired}\\). The Counter (CNT) and Capture/Compare 1 (SR) were reset.\nOnce the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.\nTo understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.\n\nMaximum Delay Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR = 2^{16} - 1\\) Given the relationship that \\(ARR = 100*ms_{desired}\\), the maximum wait time is \\(\\frac{2^{16} - 1}{100} = 655.35ms\\)\nIf I wanted to delay for longer, I could call the delay function multiple times, reset the counter during the loop, or further slow the clock.\n\n\nMinimum Delay Supported\nThe minimum value of \\(ARR = 1\\), doing similair calculations as before,\n\\(\\frac{ARR}{100} = \\frac{1}{100} = 0.01ms\\)\nwe see that the minimum delay supported is 0.01ms.\n\n\n\nPulse Width Modulation (PWM) Timer (TIM 16)\nTimer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz with a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\)\nWe can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz:\n\nPercent Error at 220 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{220} = 454.54\\)\nThe ARR would round this to 455, as it counts in integers $calculated = 100 kHz/ 455 = 219.78\n\\(\\% error = 100*\\frac{|219.78 - 220|}{220} = 0.1\\%\\)\n\n\nPercent Error at 1000 Hz\n\\(\\% error = 100*\\frac{{|calculated - actual|}}{actual}\\)\n\\(ARR = \\frac{100 kHz}{pitch_{desired}} = \\frac{100000}{1000} = 100\\)\nThis is an integer value, meanining that no casting would occur, and the frequency would be very precise.\nWe can also calulate the maximum and minimum frequencies supported:\n\n\nMinimum Frequency Supported\nThe ARR is a 16 bit number, meaning the maximum value of \\(ARR_{max} = 2^{16} - 1\\). Given the relationship that \\(ARR = \\frac{100 kHz}{desired_{pitch}}\\), the minimum frequncy supported is\n\\(min_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{2^{16} - 1}\\) \\(min_{pitch} = 1.5259 Hz\\)\n\n\nMaximum Frequency Supported\nThe maximum value of \\(ARR = 1\\), doing similair calculations as before, \\(max_{pitch} = \\frac{100 kHz}{ARR} = \\frac{100 kHz}{1}\\) = 100 kHz \\(max_{pitch} = 100 kHz\\)\n\n\n\nGPIO (GPIOA)\nTo interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode."
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#hardware-design",
-    "href": "labs/lab4/lab4.html#hardware-design",
-    "title": "Lab 4: Digital Audio",
-    "section": "Hardware Design",
-    "text": "Hardware Design\nAn LM386 audio amplifier [LM386 Datasheet] was used to interface MCU pin PA6 with an 8 Ohm speaker.\n\n\n\nLab 4 Wiring Diagram"
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#testing-debugging",
-    "href": "labs/lab4/lab4.html#testing-debugging",
-    "title": "Lab 4: Digital Audio",
-    "section": "Testing & Debugging",
-    "text": "Testing & Debugging\nThis lab looked a lot at generating signals at desired frequencies and durations. As a result, the oscilloscope was incredible important in ensuring that clock scaling and timer frequencies were as desired."
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#demonstration",
-    "href": "labs/lab4/lab4.html#demonstration",
-    "title": "Lab 4: Digital Audio",
-    "section": "Demonstration",
-    "text": "Demonstration\nMy lab played Für Elise from provided starter code at the desired pitch and tempo.\n\nI also tranposed one of the best songs ever to play on my speaker as well:"
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#conclusion",
-    "href": "labs/lab4/lab4.html#conclusion",
-    "title": "Lab 4: Digital Audio",
-    "section": "Conclusion",
-    "text": "Conclusion\nLab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.\nLab 4 meets all the requirements, and took me approximately 24 hours to complete."
+    "text": "This week, we had our project proposals due. As a result, Audrey and I spent a lot of our time reading related final projects from previous years and brainstorming how to implement the FPGA and MCU for the DJ deck.\nThe components we opted to implement are tempo, gain, and filters. Our subgoals include the following:\n\n\nRead in a Stereo file into the MCU\n\n\nCommunicate audio data between MCU and FPGA\n\n\nImplement FFT using the FPGA\n\n\nImplement a low pass and high pass filter based on user filter input\n\n\nImplement tempo variations on the MCU based on user tempo input\n\n\nVary audio gain based on user input \n\n\nOutput the manipulated audio onto speakers \n\n\nMost of our brainstorming has been focused on what to implement on the FPGA and what to implement with the MCU. Due to the MCU interfacing and timing abilities, We are opting to use the MCU to pass in the stereo audio and implement tempo. Due to the FPGA’s strength in signal processing, we will implement the filters with the FPGA.\nWe are still confused about how to pass through the audio between the FPGA and MCU, however I think after Lab 6 we will understand SPI communications better.\nAfter our conversation with Professor Brake, we opted to use digital filters to implement high pass and low pass filters rather than apply FFTs. We are also going to look into the onboard DAC and ADC to use for our project."
   },
   {
     "objectID": "posts/post4.html",
