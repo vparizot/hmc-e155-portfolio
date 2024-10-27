@@ -1,0 +1,15 @@
+---
+title: "Woodworking"
+description: "A display of my woodworking projects"
+author: "Victoria Parizot"
+categories:
+  - machining
+  - woodworking
+draft: false
+---
+
+## Stackable Bowls
+
+## Wavy Chess Cutting Boards
+
+##
