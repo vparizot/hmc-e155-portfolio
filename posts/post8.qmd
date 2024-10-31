@@ -1,5 +1,5 @@
 ---
-title: "Non-MicroPs"
+title: "A Balance: Non-MicroPs"
 author: "Victoria Parizot"
 date: "10/26/2024"
 categories:
@@ -29,10 +29,19 @@ Ultimately I am happy with how it turned out. Since all the bowls came from the 
 
 ![Bowls in progress](images/bowlsinprogress.jpeg) 
 
-
 ![When stacked, the wood grain continues between the bowls](images/Bowlsmiddle.jpeg) 
 
 ![Bowls after polish](images/bowlspolished.jpeg) 
+
+## Bringing it Back to MicroPs
+You might be thinking: How does this relate to microPs??
+
+Well it doesn't... mostly. As I wrote up my process of making the bowls, I realized that it echoes the process of completing a lab: There's a design stage, research stage, a debugging stage, a polishing stage, and then a sense of pride with my finished work. And, most importantly, I walk away understanding a little more about how it all works.
+
+In this case, the design stage involved deciding how the bowls will fit into eachother. For the labs, it often looks like drawing block diagrams and talking out methods with my peers. The research stage here involved watching videos on how to use the parting tool, wheras for the labs it involves reading the documentation. The breaking of the belt sander was a bug that got resolved once I understood how I ripped it and replaced the belt. Finally, the sanding and polishing of the bowls is simialir to the final touches of the lab, where I connect all my modules and add function stubs to ensure my work is cohesive.
+
+You might think that I'm reaching here, but nonetheless I am glad I spent some time in the woodshop this week.
+
 
 
 
