@@ -1,0 +1,20 @@
+---
+title: "Embedded Systems and MicroPs in Halloween Animatrons"
+author: "Victoria Parizot"
+date: "10/26/2024"
+categories:
+  - reflection
+draft: false
+---
+
+Around this time of year, Halloween decorations are unavoidable. If you have ever gone trick-or-treating or gone to a Spirit Halloween, you might have been startled by one of those scary animatron. 
+
+This halloween, I've engaged with these decorations differently -- and admire the embedded systems that allow these guys to run. 
+
+A motor, led lights
+
+a motor, 
+
+https://www.youtube.com/watch?v=b-kKYJtPMec
+https://www.youtube.com/watch?v=t6dM9zDjjXo
+https://www.youtube.com/watch?v=ccejC5heTpA
