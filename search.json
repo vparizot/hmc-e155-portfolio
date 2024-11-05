@@ -228,7 +228,7 @@
     "href": "labs/lab7/lab7.html#design",
     "title": "Lab 7: The Advanced Encryption Standard",
     "section": "Design",
-    "text": "Design\nThe size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round.\nMy design goes through ten rounds, where the first 9 rounds are handled by module round1to9 that runs through each step of encryption by calling submodules, subBytes, shiftRows, mixcolumns, keyExpansionRound. The tenth round goes through a seperate module round10, that replicate module round1to9 except without the mix columns step.\nImportant variables are updated and kept in global variables. This design is summarized in my Block and Pin diagram below."
+    "text": "Design\nThe size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round.\nMy design goes through ten rounds, where the first 9 rounds are handled by module round1to9 that runs through each step of encryption by calling submodules, subBytes, shiftRows, mixcolumns, keyExpansionRound. The tenth round goes through a seperate module round10, that replicate module round1to9 except without the mix columns step.\nImportant variables are updated and kept in global variables. This design is summarized in my Block and Pin diagram below.\n\n\n\nBlock Diagram of FPGA Operations\n\n\n\n\n\nPin Diagram for Lab 7"
   },
   {
     "objectID": "labs/lab7/lab7.html#testing-debugging",
@@ -242,7 +242,7 @@
     "href": "labs/lab7/lab7.html#conclusion",
     "title": "Lab 7: The Advanced Encryption Standard",
     "section": "Conclusion",
-    "text": "Conclusion\nIn lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high.\n\n\n\nMy Design Passes the AES Core Simulation Textbench\n\n\nWhen running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 20 hours to complete"
+    "text": "Conclusion\nIn lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high.\nI originally opted for not using a FSM for ‘simplicity’, but boy was I wrong. As a result, by design implied many muxes and presented my hardware in an extremely convoluted way, as reflected in the complex block diagram. An FSM would have been a way more organized way to handle the hardware design and varying cases.\nWhen running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete."
   },
   {
     "objectID": "labs/lab1/lab1.html",
