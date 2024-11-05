@@ -324,12 +324,17 @@ Implemented the timer functionality available on the MCU by reading the datashee
 </section>
 <section id="minimum-frequency-supported" class="level4">
 <h4 class="anchored" data-anchor-id="minimum-frequency-supported">Minimum Frequency Supported</h4>
-<p>The ARR is a 16 bit number, meaning the maximum value of <span class="math inline">\(ARR_{max} = 2^{16} - 1\)</span>. Given the relationship that <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span>, the minimum frequncy supported is</p>
-<p><span class="math inline">\(min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}\)</span> <span class="math inline">\(min_{pitch} = 1.5259 Hz\)</span></p>
+<!-- The ARR is a 16 bit number, meaning the maximum value of $ARR_{max} = 2^{16} - 1$.
+Given the relationship that $ARR = \frac{100 kHz}{desired_{pitch}}$, the minimum frequncy supported is 
+
+$min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}$
+$min_{pitch} = 1.5259 Hz$ -->
 </section>
 <section id="maximum-frequency-supported" class="level4">
 <h4 class="anchored" data-anchor-id="maximum-frequency-supported">Maximum Frequency Supported</h4>
-<p>The maximum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before, <span class="math inline">\(max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}\)</span> = 100 kHz <span class="math inline">\(max_{pitch} = 100 kHz\)</span></p>
+<!-- The maximum value of $ARR = 1$, doing similair calculations as before, 
+$max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}$ = 100 kHz
+$max_{pitch} = 100 kHz$ -->
 </section>
 </section>
 <section id="gpio-gpioa" class="level3">
