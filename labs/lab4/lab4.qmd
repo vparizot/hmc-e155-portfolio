@@ -89,17 +89,17 @@ This is an integer value, meanining that no casting would occur, and the frequen
 We can also calulate the maximum and minimum frequencies supported: 
 
 #### Minimum Frequency Supported
-The ARR is a 16 bit number, meaning the maximum value of $ARR_{max} = 2^{16} - 1$.
+<!-- The ARR is a 16 bit number, meaning the maximum value of $ARR_{max} = 2^{16} - 1$.
 Given the relationship that $ARR = \frac{100 kHz}{desired_{pitch}}$, the minimum frequncy supported is 
 
 $min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}$
-$min_{pitch} = 1.5259 Hz$
+$min_{pitch} = 1.5259 Hz$ -->
 
 
 #### Maximum Frequency Supported
-The maximum value of $ARR = 1$, doing similair calculations as before, 
+<!-- The maximum value of $ARR = 1$, doing similair calculations as before, 
 $max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}$ = 100 kHz
-$max_{pitch} = 100 kHz$
+$max_{pitch} = 100 kHz$ -->
 
 ### GPIO (GPIOA)
 To interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.
