@@ -289,7 +289,7 @@ Implemented the timer functionality available on the MCU by reading the datashee
 <p>To use the delay timer, I implemented a delay_millis function that took in a pointer to the Timer to use and an integers of the milliseconds to delay for. The function utilized the ARR register, CNT register, and SR register to wait for the desired amount of time.</p>
 <p>The Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to <span class="math inline">\(100*ms_{desired}\)</span>. The Counter (CNT) and Capture/Compare 1 (SR) were reset.</p>
 <p>Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.</p>
-<p>My calculations for duration are below. <img src="images/durationCalc.jpeg.jpeg" class="img-fluid" alt="Lab 4 Duration Calculations"></p>
+<p>My calculations for duration are below. <img src="images/durationCalc.jpeg" class="img-fluid" alt="Lab 4 Duration Calculations"></p>
 <p>To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.</p>
 <section id="maximum-delay-supported" class="level4">
 <h4 class="anchored" data-anchor-id="maximum-delay-supported">Maximum Delay Supported</h4>
@@ -354,7 +354,7 @@ Implemented the timer functionality available on the MCU by reading the datashee
 <section id="demonstration" class="level2">
 <h2 class="anchored" data-anchor-id="demonstration">Demonstration</h2>
 <p>My lab played Für Elise from provided starter code at the desired pitch and tempo.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/j1fOJsa13eE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/G4RtP4gDpaY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>I also transposed one of the best songs ever to play on my speaker as well:</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JBc5Q4JrznM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
