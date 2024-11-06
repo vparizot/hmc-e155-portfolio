@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction-learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
-<p>In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI to the FPGA to produce and send back cyphertext. The Learning Objectives of this lab are to:</p>
+<p>In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives:</p>
 <ul>
 <li>
 Learned to read and implement a complex specification
@@ -237,8 +237,10 @@ Gained experience with hardware accelerators
 <section id="design" class="level2">
 <h2 class="anchored" data-anchor-id="design">Design</h2>
 <p>The size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round.</p>
-<p>My design goes through ten rounds, where the first 9 rounds are handled by module round1to9 that runs through each step of encryption by calling submodules, subBytes, shiftRows, mixcolumns, keyExpansionRound. The tenth round goes through a seperate module round10, that replicate module round1to9 except without the mix columns step.</p>
-<p>Important variables are updated and kept in global variables. This design is summarized in my Block and Pin diagram below.</p>
+<p>My design goes through ten rounds, where the round being implemented influences the flow of the signals through the modules. For example, the output for rounds 1-9 passes through the mixColumns module, while for round 10 it does not.</p>
+<p>This method allows me to use only one instance of subBytes, shiftRows, mixcolumns, and keyExpansionRound. Important variables are updated and kept in global variables.</p>
+<p>I originally opted for not using a FSM for ‘simplicity’, but boy was I wrong. As a result, my design implied many muxes and presented my hardware in an extremely convoluted way, as reflected in the complex block diagram. An FSM would have been a way more organized way to handle the hardware design and varying cases.</p>
+<p>My design is summarized in my Block and Pin diagram below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/blockdiagramFPGAlab7b.jpeg" class="img-fluid figure-img"></p>
@@ -254,17 +256,33 @@ Gained experience with hardware accelerators
 </section>
 <section id="testing-debugging" class="level2">
 <h2 class="anchored" data-anchor-id="testing-debugging">Testing &amp; Debugging</h2>
-<p>Due to the intense recursive nature of this algorithm, once a signal is incorrect, all subsequent signals are incorrect. As a result, it was beneficial to me to text each module and functionality separately, before combining into my AES_Core. I used ModelSims’ wave window to understand the timing of my system, and isolating my bugs.</p>
-<p>My design passes both the AES core and AES SPI simulation testbenches. <img src="images/aes_cor_tb_success.PNG" class="img-fluid" alt="My Design Passes the AES Core Simulation Textbench"> <img src="images/aes_spi_tb_success.PNG" class="img-fluid" alt="My Design Passes the AES SPI Simulation Textbench"></p>
-<p>After confirming my code works as expected in simulation, is was time to implement in Segger and Radiant.</p>
-<p>One bug I ran into was not having enough RAM to map my design onto my FPGA. This was because I originally made a new module for each round. To solve this issue, I implemented a recurssive design that minimized the number of modules required to go through the 10 rounds.</p>
-<p>I also hooked up my SPI communication to the logic analyzer. D0 as SCK, D2 as MOSI, D4 as Done, D5 as MISO, and D7 as the chip select.</p>
-<p><img src="images/DS1Z_QuickPrint2.png" class="img-fluid" alt="SPI Communication on Logic Analyzer"> <img src="images/DS1Z_QuickPrint3.png" class="img-fluid" alt="SPI Communication on Logic Analyzer"></p>
+<p>Due to the intense recursive nature of this algorithm, once a signal is incorrect, all subsequent signals are incorrect. As a result, it was beneficial to me to text each module and functionality separately, before testing the entire AES through the included AES_Core testbench. I used ModelSim’s wave window to understand the timing of my system, and to isolate my bugs.</p>
+<p>My design passes both the AES core and AES SPI simulation testbenches. <img src="images/aes_cor_tb_success.PNG" class="img-fluid" alt="My Design Passes the AES Core Simulation Textbench"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/aes_spi_tb_success.PNG" class="img-fluid figure-img"></p>
+<figcaption>My Design Passes the AES SPI Simulation Textbench</figcaption>
+</figure>
+</div>
+<p>After confirming my code works as expected in simulation, is was time to upload my code using Segger and Radiant.</p>
+<p>During my hardware integration I ran into a problem of not having enough RAM to map my design onto my FPGA. This was because I had originally made a new module for each round. To solve this issue, I implemented a recurssive design that minimized the number of modules required to go through the 10 rounds.</p>
+<p>I also hooked up my SPI communication to the logic analyzer, where I set D0 as SCK, D2 as MOSI, D4 as Done, D5 as MISO, and D7 as the chip select. The SPI communication is displayed below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/DS1Z_QuickPrint2.png" class="img-fluid figure-img"></p>
+<figcaption>SPI Communication on Logic Analyzer</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/DS1Z_QuickPrint3.png" class="img-fluid figure-img"></p>
+<figcaption>SPI Communication on Logic Analyzer</figcaption>
+</figure>
+</div>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>In lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high.</p>
-<p>I originally opted for not using a FSM for ‘simplicity’, but boy was I wrong. As a result, by design implied many muxes and presented my hardware in an extremely convoluted way, as reflected in the complex block diagram. An FSM would have been a way more organized way to handle the hardware design and varying cases.</p>
 <p>When running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete.</p>
 
 

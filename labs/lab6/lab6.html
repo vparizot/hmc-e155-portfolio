@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Victoria Parizot">
-<meta name="dcterms.date" content="2024-10-21">
+<meta name="dcterms.date" content="2024-11-05">
+<meta name="description" content="An application of SPI to Read Temperature">
 
-<title>MicroPs Lab 6 – Victoria Parizot</title>
+<title>Lab 6: The Internet of Things and Serial Peripheral Interface – Victoria Parizot</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -166,7 +196,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-6-the-internet-of-things-and-serial-peripheral-interface" id="toc-lab-6-the-internet-of-things-and-serial-peripheral-interface" class="nav-link active" data-scroll-target="#lab-6-the-internet-of-things-and-serial-peripheral-interface">Lab 6: The Internet of Things and Serial Peripheral Interface</a></li>
+  <li><a href="#introduction-learning-objectives" id="toc-introduction-learning-objectives" class="nav-link active" data-scroll-target="#introduction-learning-objectives">Introduction &amp; Learning Objectives</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a>
+  <ul class="collapse">
+  <li><a href="#mcu-spi-configuration" id="toc-mcu-spi-configuration" class="nav-link" data-scroll-target="#mcu-spi-configuration">MCU SPI Configuration</a></li>
+  <li><a href="#interfacing-with-the-temperature-sensor" id="toc-interfacing-with-the-temperature-sensor" class="nav-link" data-scroll-target="#interfacing-with-the-temperature-sensor">Interfacing with the Temperature Sensor</a></li>
+  <li><a href="#website-design" id="toc-website-design" class="nav-link" data-scroll-target="#website-design">Website Design</a></li>
+  <li><a href="#hardware-design" id="toc-hardware-design" class="nav-link" data-scroll-target="#hardware-design">Hardware Design</a></li>
+  </ul></li>
+  <li><a href="#testing-debugging" id="toc-testing-debugging" class="nav-link" data-scroll-target="#testing-debugging">Testing &amp; Debugging</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -175,13 +214,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MicroPs Lab 6</h1>
+<h1 class="title">Lab 6: The Internet of Things and Serial Peripheral Interface</h1>
   <div class="quarto-categories">
     <div class="quarto-category">reflection</div>
     <div class="quarto-category">labreport</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    An application of SPI to Read Temperature
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -196,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 21, 2024</p>
+      <p class="date">November 5, 2024</p>
     </div>
   </div>
   
@@ -208,8 +252,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lab-6-the-internet-of-things-and-serial-peripheral-interface" class="level2">
-<h2 class="anchored" data-anchor-id="lab-6-the-internet-of-things-and-serial-peripheral-interface">Lab 6: The Internet of Things and Serial Peripheral Interface</h2>
+<section id="introduction-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-learning-objectives">Introduction &amp; Learning Objectives</h2>
+<p>In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.</p>
+This lab had the following learning objectives:
+<ul>
+<li>
+Designed and built a simple IoT device
+</li>
+<li>
+Written C libraries using the CMSIS device templates to implement the SPI functionality of the MCU
+</li>
+<li>
+Interfaced with a temperature sensor module over an SPI link
+</li>
+<li>
+Interfaced the MCU with an ESP8266 module over a UART link
+</li>
+<li>
+Use the logic analyze functionality of the scope in the Digital Lab to debug serial communication protocols and export captured signal data.
+</li>
+<li>
+Written a simple HTML page to control and display data from the peripherals connected to your MCU.
+</li>
+</ul>
+<p>The datasheet for the DS1722 temperature sensor can be found <a href="https://hmc-e155.github.io/assets/doc/ds1722.pdf">here</a>.</p>
+<p>The source code for the project can be found in the associated <a href="https://github.com/vparizot/e155-lab6">Github repository</a>.</p>
+</section>
+<section id="design" class="level2">
+<h2 class="anchored" data-anchor-id="design">Design</h2>
+<section id="mcu-spi-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="mcu-spi-configuration">MCU SPI Configuration</h3>
+<p>To implement SPI on the MCU, I implemented initSPI, a function to initialize SPI communication using a choosen baud rate, clock phase, and clock polarity,</p>
+<p>Recall that the SPI clk will be equal to <span class="math inline">\(\frac{master clock}{2^{BR+1}}\)</span>. I set the baud rate to be 6 so that the SPI clock would run slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.</p>
+<p>I opted to control my own chip enable, PA8, which I would manually toggle for each read and write operation. For my other SPI ports, I consulted the data sheet to see which pins were compatible with SPI1. Thus, I opted to set PA6 as the MISO line, PA12 as the MOSI line, and PA5 and the SCLK.</p>
+<p>My design uses the CMSIS library device templates, making it easier to decipher how bits are being set.</p>
+</section>
+<section id="interfacing-with-the-temperature-sensor" class="level3">
+<h3 class="anchored" data-anchor-id="interfacing-with-the-temperature-sensor">Interfacing with the Temperature Sensor</h3>
+<p>To communicate with the temperature sensor, I had to send the write address, 0x80, for the configuration bits followed by the configuration bits. These configuration bits were set depending on the wanted temperature resolution. Then I would read the LSB and MSB of the temperature bits by calling read address 0x01 or 0x02, respectfully. The Register Address structure and the bit structure of the temperature output is below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RegisterAddressStructure.png" class="img-fluid figure-img"></p>
+<figcaption>Register Address Structure for DS1722</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TemperatureBitStructure.png" class="img-fluid figure-img"></p>
+<figcaption>Temperature Bit Structure for DS1722</figcaption>
+</figure>
+</div>
+<p>The screenshot of the code for my SPI interaction is below to showcase the send/recieve format and how I toggle the Chip Enable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SPIcodeInteraction.png" class="img-fluid figure-img"></p>
+<figcaption>SPI Interaction with Temperature Sensor</figcaption>
+</figure>
+</div>
+<p>To be able to print the temperature, I used a bit map to isolate the sign bit in the MSB. I then used the other values of the MSB to determine the integer value of the temperature. Then, depending on if the temperature was positive or negative, I would add or subtract corresponding resolution bits.</p>
+</section>
+<section id="website-design" class="level3">
+<h3 class="anchored" data-anchor-id="website-design">Website Design</h3>
+<p>My website also allowed for a user to select the resolution of the temperature sensor. To implement this, I incorporated a form with a button for each resolution option. Depending on which button was selected, I would set the temperature configuration bits to reflect this. This HTML was sent via the ESP8266 with UART.</p>
+<p>Everytime the website would refresh, the DS1722 would read and print the updated temperature.</p>
+</section>
+<section id="hardware-design" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-design">Hardware Design</h3>
+<p>To implement in hardware, I attatched the corresponding pins of the DS1722 and ESP8266 to the MCU, based on the pin diagram below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pinDiagram.jpeg" class="img-fluid figure-img"></p>
+<figcaption>SPI Interaction with Temperature Sensor</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="testing-debugging" class="level2">
+<h2 class="anchored" data-anchor-id="testing-debugging">Testing &amp; Debugging</h2>
+<p>I tested using the debugger in Segger and the logic analyzer.</p>
+<p>The printf() function was used to reveal intermediate values of my temperature data, allowing me to see when the temperature data was not as expected. This technique was useful in confirming that my temperature conversions were as desired.</p>
+<p>The logic analyzer allowed me to look at the SPI communications. I could also convert the MISO and MOSI lines to the actual values being sent, which made deciphering the communication much easier. By using the logic analyzer I was able to find a bug: only my 0x80 send request was being sent and the rest of the communication was all zero. This led me to look at my wiring. Ultimately, I had forgotten to remove a jumper between the pin for my MISO line and GND.</p>
+<p>A sample SPI transaction from logic analyzer can be seen below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/DS1Z_QuickPrint12.png" class="img-fluid figure-img"></p>
+<figcaption>Lab 6 SPI Transaction on Logic Analyzer</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Lab 6 provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.</p>
+<p>Lab 6 meets all the requirements for excellence, and took me approximately 25 hours to complete.</p>
 
 
 </section>
