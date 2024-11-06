@@ -280,15 +280,13 @@ Implemented the timer functionality available on the MCU by reading the datashee
 </div>
 <section id="msi-clock" class="level3">
 <h3 class="anchored" data-anchor-id="msi-clock">MSI Clock</h3>
-<p>I set the MSI Clock at it’s default frequency of 4 Mhz. The clock’s output frequency can be calculated with: <span class="math inline">\(Output freq = (srcclk) * (N/M) / R\)</span></p>
-<p>I set N = 16, M = 1 and R = 16, to abide by N, M, R constraints.</p>
-<p>The Clock set up was dealt with in my RCC files.</p>
+<p>I left the MSI Clock at it’s default frequency of 4 Mhz and was used as the base clock for my subsequent timers.</p>
 </section>
 <section id="delay-timer-tim-15" class="level3">
 <h3 class="anchored" data-anchor-id="delay-timer-tim-15">Delay Timer (TIM 15)</h3>
-<p>Timer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx). As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.</p>
+<p>Timer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx) function. As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39.</p>
 <p><span class="math inline">\(Timer freq = \frac{clkfreq}{PSC + 1} = \frac{4 MHz}{40} = 100 kHz\)</span></p>
-<p>To use the delay timer, I implemented a delay_millis function, that took in a pointer to the Timer to use and an integers of the ms to delay for. The function utilized the ARR register, CNT register, and SR register to wait for x ms.</p>
+<p>To use the delay timer, I implemented a delay_millis function that took in a pointer to the Timer to use and an integers of the milliseconds to delay for. The function utilized the ARR register, CNT register, and SR register to wait for the desired amount of time.</p>
 <p>The Auto Reload Register (ARR) represents the maximum value that a timer can count to, where the count is incremented at the Timer frequency. Since our TIM15 frequency is 100 kHz, then the CNT register increments by 100 every millisecond. Therefore, the ARR was set to <span class="math inline">\(100*ms_{desired}\)</span>. The Counter (CNT) and Capture/Compare 1 (SR) were reset.</p>
 <p>Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached.</p>
 <p>To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported.</p>
@@ -299,20 +297,20 @@ Implemented the timer functionality available on the MCU by reading the datashee
 </section>
 <section id="minimum-delay-supported" class="level4">
 <h4 class="anchored" data-anchor-id="minimum-delay-supported">Minimum Delay Supported</h4>
-<p>The minimum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before,</p>
-<p><span class="math inline">\(\frac{ARR}{100} = \frac{1}{100} = 0.01ms\)</span></p>
-<p>we see that the minimum delay supported is 0.01ms.</p>
+<p>The minimum value of <span class="math inline">\(ARR = 2\)</span>, doing similair calculations as before,</p>
+<p><span class="math inline">\(\frac{ARR}{100} = \frac{2}{100} = 0.02ms\)</span></p>
+<p>we see that the minimum delay supported is 0.02ms.</p>
 </section>
 </section>
 <section id="pulse-width-modulation-pwm-timer-tim-16" class="level3">
 <h3 class="anchored" data-anchor-id="pulse-width-modulation-pwm-timer-tim-16">Pulse Width Modulation (PWM) Timer (TIM 16)</h3>
-<p>Timer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz with a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span></p>
+<p>Timer 16 was set up with PWM capabilities to generate square waves representing the frequency of each note. TIM16 was initialied with the initTIMpwm() funtion, that set TIM16 count frequency to 100 kHz by using a prescaler of 39, and the PWM duty cyle to 50%. For each note, the desired frequency was passed into a pitch function, which set ARR based on desired frequency, and recalculated for a 50% duty cylce, and triggered an update event. The ARR was calculated as: <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span></p>
 <p>We can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz:</p>
 <section id="percent-error-at-220-hz" class="level4">
 <h4 class="anchored" data-anchor-id="percent-error-at-220-hz">Percent Error at 220 Hz</h4>
 <p><span class="math inline">\(\% error = 100*\frac{{|calculated - actual|}}{actual}\)</span></p>
 <p><span class="math inline">\(ARR = \frac{100 kHz}{pitch_{desired}} = \frac{100000}{220} = 454.54\)</span></p>
-<p>The ARR would round this to 455, as it counts in integers $calculated = 100 kHz/ 455 = 219.78</p>
+<p>The ARR would round this to 455, as it counts in integers <span class="math inline">\(calculated = 100 kHz/ 455 = 219.78\)</span></p>
 <p><span class="math inline">\(\% error = 100*\frac{|219.78 - 220|}{220} = 0.1\%\)</span></p>
 </section>
 <section id="percent-error-at-1000-hz" class="level4">
@@ -324,17 +322,13 @@ Implemented the timer functionality available on the MCU by reading the datashee
 </section>
 <section id="minimum-frequency-supported" class="level4">
 <h4 class="anchored" data-anchor-id="minimum-frequency-supported">Minimum Frequency Supported</h4>
-<!-- The ARR is a 16 bit number, meaning the maximum value of $ARR_{max} = 2^{16} - 1$.
-Given the relationship that $ARR = \frac{100 kHz}{desired_{pitch}}$, the minimum frequncy supported is 
-
-$min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}$
-$min_{pitch} = 1.5259 Hz$ -->
+<p>The ARR is a 16 bit number, meaning the maximum value of <span class="math inline">\(ARR_{max} = 2^{16} - 1\)</span>. Given the relationship that <span class="math inline">\(ARR = \frac{100 kHz}{desired_{pitch}}\)</span>, the minimum frequncy supported is</p>
+<p><span class="math inline">\(min_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2^{16} - 1}\)</span> <span class="math inline">\(min_{pitch} = 1.5259 Hz\)</span></p>
 </section>
 <section id="maximum-frequency-supported" class="level4">
 <h4 class="anchored" data-anchor-id="maximum-frequency-supported">Maximum Frequency Supported</h4>
-<!-- The maximum value of $ARR = 1$, doing similair calculations as before, 
-$max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}$ = 100 kHz
-$max_{pitch} = 100 kHz$ -->
+<p>The maximum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before, <span class="math inline">\(max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}\)</span> = 100 kHz <span class="math inline">\(max_{pitch} = 100 kHz\)</span></p>
+<p>Based on the expected frequencies in both Für Elise and my choosen song, these max and min frequencies are adequate.</p>
 </section>
 </section>
 <section id="gpio-gpioa" class="level3">
@@ -344,7 +338,7 @@ $max_{pitch} = 100 kHz$ -->
 </section>
 <section id="hardware-design" class="level2">
 <h2 class="anchored" data-anchor-id="hardware-design">Hardware Design</h2>
-<p>An LM386 audio amplifier <a href="https://www.ti.com/lit/ds/symlink/lm386.pdf">[LM386 Datasheet]</a> was used to interface MCU pin PA6 with an 8 Ohm speaker.</p>
+<p>An LM386 audio amplifier <a href="https://www.ti.com/lit/ds/symlink/lm386.pdf">[LM386 Datasheet]</a> was used to interface MCU pin PA6 with an 8 Ohm speaker. I also employed a potentiometer to control the output volume.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/WiringDiagram.jpeg" class="img-fluid figure-img"></p>
@@ -360,7 +354,7 @@ $max_{pitch} = 100 kHz$ -->
 <h2 class="anchored" data-anchor-id="demonstration">Demonstration</h2>
 <p>My lab played Für Elise from provided starter code at the desired pitch and tempo.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/j1fOJsa13eE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>I also tranposed one of the best songs ever to play on my speaker as well:</p>
+<p>I also transposed one of the best songs ever to play on my speaker as well:</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JBc5Q4JrznM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="conclusion" class="level2">
