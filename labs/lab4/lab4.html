@@ -328,13 +328,13 @@ Implemented the timer functionality available on the MCU by reading the datashee
 </section>
 <section id="maximum-frequency-supported" class="level4">
 <h4 class="anchored" data-anchor-id="maximum-frequency-supported">Maximum Frequency Supported</h4>
-<p>The maximum value of <span class="math inline">\(ARR = 1\)</span>, doing similair calculations as before, <span class="math inline">\(max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}\)</span> = 100 kHz <span class="math inline">\(max_{pitch} = 100 kHz\)</span></p>
+<p>The maximum value of <span class="math inline">\(ARR = 2\)</span>, doing similiar calculations as before, <span class="math inline">\(max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2}\)</span> = 100 kHz <span class="math inline">\(max_{pitch} = 59 kHz\)</span></p>
 <p>Based on the expected frequencies in both Für Elise and my choosen song, these max and min frequencies are adequate.</p>
 </section>
 </section>
 <section id="gpio-gpioa" class="level3">
 <h3 class="anchored" data-anchor-id="gpio-gpioa">GPIO (GPIOA)</h3>
-<p>To interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.</p>
+<p>To interface with the frequency that we were generating, I used an alternate function pin. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.</p>
 </section>
 </section>
 <section id="hardware-design" class="level2">
