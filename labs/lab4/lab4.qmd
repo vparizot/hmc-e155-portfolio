@@ -94,14 +94,14 @@ $min_{pitch} = 1.5259 Hz$
 
 
 #### Maximum Frequency Supported
-The maximum value of $ARR = 1$, doing similair calculations as before, 
-$max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{1}$ = 100 kHz
-$max_{pitch} = 100 kHz$ 
+The maximum value of $ARR = 2$, doing similiar calculations as before, 
+$max_{pitch} = \frac{100 kHz}{ARR} = \frac{100 kHz}{2}$ = 100 kHz
+$max_{pitch} = 59 kHz$ 
 
 Based on the expected frequencies in both Für Elise and my choosen song, these max and min frequencies are adequate.
 
 ### GPIO (GPIOA)
-To interface with the frequency that we were generating, I used an alternate function pun. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.
+To interface with the frequency that we were generating, I used an alternate function pin. From page 57 on the datasheet, TIM16 correlates to PA6. PA6 was set to an alternate function using pinMode.
 
 ## Hardware Design
 An LM386 audio amplifier [[LM386 Datasheet]](https://www.ti.com/lit/ds/symlink/lm386.pdf) was used to interface MCU pin PA6 with an 8 Ohm speaker. I also employed a potentiometer to control the output volume.
