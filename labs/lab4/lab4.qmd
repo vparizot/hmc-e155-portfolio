@@ -44,7 +44,7 @@ The Auto Reload Register (ARR) represents the maximum value that a timer can cou
 Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached. 
 
 My calculations for duration are below.
-![Lab 4 Duration Calculations](images/durationCalc.jpeg.jpeg) 
+![Lab 4 Duration Calculations](images/durationCalc.jpeg) 
 
 To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported. 
 
@@ -113,7 +113,7 @@ This lab looked a lot at generating signals at desired frequencies and durations
 
 ## Demonstration
 My lab played Für Elise from provided starter code at the desired pitch and tempo. 
-{{< video https://youtu.be/j1fOJsa13eE >}}
+{{< video https://youtu.be/G4RtP4gDpaY >}}
 
 I also transposed one of the best songs ever to play on my speaker as well:
 {{< video https://youtu.be/JBc5Q4JrznM >}}
