@@ -43,6 +43,9 @@ The Auto Reload Register (ARR) represents the maximum value that a timer can cou
 
 Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached. 
 
+My calculations for duration are below.
+![Lab 4 Duration Calculations](images/durationCalc.jpeg.jpeg) 
+
 To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported. 
 
 #### Maximum Delay Supported
