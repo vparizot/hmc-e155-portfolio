@@ -284,7 +284,7 @@ Written a simple HTML page to control and display data from the peripherals conn
 <section id="mcu-spi-configuration" class="level3">
 <h3 class="anchored" data-anchor-id="mcu-spi-configuration">MCU SPI Configuration</h3>
 <p>To implement SPI on the MCU, I implemented initSPI, a function to initialize SPI communication using a choosen baud rate, clock phase, and clock polarity,</p>
-<p>Recall that the SPI clk will be equal to <span class="math inline">\(\frac{master clock}{2^{BR+1}}\)</span>. I set the baud rate to be 6 so that the SPI clock would run slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.</p>
+<p>Recall that the SPI clk will be equal to <span class="math inline">\(\frac{master clock}{2^{BR+1}}\)</span>. I set the baud rate divisor to be 6 so that the SPI clock would run at 31250 Hz, running slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.</p>
 <p>I opted to control my own chip enable, PA8, which I would manually toggle for each read and write operation. For my other SPI ports, I consulted the data sheet to see which pins were compatible with SPI1. Thus, I opted to set PA6 as the MISO line, PA12 as the MOSI line, and PA5 and the SCLK.</p>
 <p>My design uses the CMSIS library device templates, making it easier to decipher how bits are being set.</p>
 </section>
