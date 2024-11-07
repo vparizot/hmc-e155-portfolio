@@ -1,5 +1,5 @@
 ---
-title: "Balance and play in an Academic Environment"
+title: "Balance and Play in an Academic Environment"
 author: "Victoria Parizot"
 date: "11/08/2024"
 categories:
@@ -7,6 +7,9 @@ categories:
 draft: false
 ---
 
+![Galileo Hall at Harvey Mudd College](images/galileo.jpg) 
+
+## Balance and Play in Academics
 Something on my mind this week has been balance. 
 
 I think perhaps one of the most important elements to a sustainable existence is balance. I've been told this my entire life -- I have to finish my homework before I could play outside, I need to eat a balanced meal, I must maintain a proper work-life balance, and so on. 
