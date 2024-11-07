@@ -31,7 +31,7 @@ The source code for the project can be found in the associated [Github repositor
 ### MCU SPI Configuration
 To implement SPI on the MCU, I implemented initSPI, a function to initialize SPI communication using a choosen baud rate, clock phase, and clock polarity,  
 
-Recall that the SPI clk will be equal to $\frac{master clock}{2^{BR+1}}$. I set the baud rate to be 6 so that the SPI clock would run slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.
+Recall that the SPI clk will be equal to $\frac{master clock}{2^{BR+1}}$. I set the baud rate divisor to be 6 so that the SPI clock would run at 31250 Hz, running slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.
 
 I opted to control my own chip enable, PA8, which I would manually toggle for each read and write operation. For my other SPI ports, I consulted the data sheet to see which pins were compatible with SPI1. Thus, I opted to set PA6 as the MISO line, PA12 as the MOSI line, and PA5 and the SCLK.
 
