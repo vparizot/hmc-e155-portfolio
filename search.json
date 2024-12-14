@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "Balance and Play in an Academic Environment\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Systems and MicroPs in Halloween Animatrons\n\n\n\n\n\n\n\n\n\n\n\nOct 31, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nA Balance: Non-MicroPs\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Project Thoughts\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nBest Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
+    "text": "Intro\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nBalance and Play in an Academic Environment\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded Systems and MicroPs in Halloween Animatrons\n\n\n\n\n\n\n\n\n\n\n\nOct 31, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nA Balance: Non-MicroPs\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Project Thoughts\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nBest Project Idea Ever??\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art in PCB Design\n\n\n\n\n\n\n\n\n\n\n\nOct 2, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nConsiderations of an AI Chat Bot\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nThe Embedded Systems Surrounding us\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nAn Exploration of the Hidden Aesthetics of Electrical Components\n\n\n\n\n\nThe Design Behind Segment Displays\n\n\n\n\n\nSep 5, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Goals of MicroPs\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2024\n\n\nVictoria Parizot\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "machining/woodworking.html#wavy-chess-cutting-boards",
@@ -63,298 +63,95 @@
     "text": "Bill of Materials\n\n\n\nItem (link)\n\n\nPurpose\n\n\nCost\n\n\n\n\nPWM1808 ADC\n\n\nConvert stereo audio into digital format\n\n\n$2.39\n\n\n\n\n10k 1/10W Slide Potentiometer\n\n\nGain Slider\n\n\n$1.78 (shld buy 2)\n\n\n\n\nBreadboard-Friendly 3.5mm Stereo Headphone Jack : ID 1699\n\n\nStereo jack\n\n\n$0.95"
   },
   {
-    "objectID": "posts/first-post.html",
-    "href": "posts/first-post.html",
-    "title": "Learning Goals of MicroPs",
+    "objectID": "posts/post11.html",
+    "href": "posts/post11.html",
+    "title": "Victoria Parizot",
     "section": "",
-    "text": "I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main goal is to improve my confidence and ability with both FPGAs and MCUs!"
+    "text": "With E155 coming to a close, I would like to reflect on the class, especially the final project. In all my time at Mudd, I had never learned so much from nor given so much to a class. The first half of the class, we developed our debugging skills as we completed labs that familairized us with the FPGA and MCU. The last month, the class split into pairs to complete a final project of their choosing. My partner, Audrey, and I decided to make a DJ Deck."
   },
   {
-    "objectID": "posts/post2.html",
-    "href": "posts/post2.html",
-    "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
+    "objectID": "posts/post11.html#intro",
+    "href": "posts/post11.html#intro",
+    "title": "Victoria Parizot",
     "section": "",
-    "text": "This week I worked through and completed lab 1. Learn more about the specifications and implementation of lab 1 here. This blog is heavily inspired by Michiel de Boer (Posy)’s video on segmented displays.\nAs part of this lab, I worked to make a seven segment display count in hexadecimal based on the binary value of a DIP switch. Two requirement of the lab was that the:\n“7-segment display can display all sixteen hexadecimal digits from 0x0 through 0xF”\n“All digits are unique”\nThroughout the week, I was impressed how seven equally sized segments arranged in two stacked squares was able to display unique digits and letters A thru F. I also saw different ways people deployed the display to represent the number and letters – using lowercase, uppercase, centering on different sides, and so on. This led me to look more at the design of segmented displays.\nThe first recorded segmented display is from a 1903 patent by Carl Kingsey as a way to improve telegraph speeds. Since then, countless different segmented displays for different purposes has emerged.\nPerhaps the most common display is the stacked square design, which I used in lab 1. Looking closely at the display, you can observe the compromises that had been made to simplify the representation of numbers and some letters to fit into 7 equally sized segments. However, these inaccuracies have been heavily normalized to the point where I no longer recognize them. This design has been so heavily widespread that these digit representations are interchangeable with the numbers they represent.\nI ask you to look around your room and see how many segmented displays you can find. I did this exercise in my dorm room and found the segmented display used to show the volume of my speaker, settings of the AC unit, and tell the time from my watch.\nThe different implementations of the segmented display goes to show how small changes are used to improve accuracy and influence aesthetics. For example, the edges of the segments could be rounded or pointed. The middle segment is sometimes slanted. The thickness of the segments change from display to display, and sometimes the entire digit is italicized. Different changes will sacrifice complexity and the look of certain numbers in favor of the look of other numbers and letters.This can be particularly useful for displays that only need to display some of the digits.\nThese seemingly small changes can change the impact of the design, making them suitable for different applications. A seven segmented display on a sports watch will vary from the display of public transport or a toy.\nThis has led me to look more about the design choices made in embedded systems that I interact with. The rest of this blog is dedicated to share different segmented displays that surround me."
+    "text": "With E155 coming to a close, I would like to reflect on the class, especially the final project. In all my time at Mudd, I had never learned so much from nor given so much to a class. The first half of the class, we developed our debugging skills as we completed labs that familairized us with the FPGA and MCU. The last month, the class split into pairs to complete a final project of their choosing. My partner, Audrey, and I decided to make a DJ Deck."
   },
   {
-    "objectID": "posts/post2.html#segmented-displays-around-me",
-    "href": "posts/post2.html#segmented-displays-around-me",
-    "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
-    "section": "Segmented Displays Around Me",
-    "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
+    "objectID": "posts/post11.html#dac-troubles",
+    "href": "posts/post11.html#dac-troubles",
+    "title": "Victoria Parizot",
+    "section": "DAC Troubles",
+    "text": "DAC Troubles\nPerhaps the biggest technical stuggle of the lab was the disaster of outputting audio. We were able to read in audio into the FPGA two weeks into the project, using a PCM1808 ADC with I2S communication. However, we didn’t get audio playing until two days before final checkoffs.\nWe had originally planned to used I2S to communicate between the FPGA and MCU. However, the MCU did not have a I2S peripheral, only an configurable Serial Audio Interface (SAI). After reading the reference manual countless times, we had trouble aligning the needed Bit clock, Left/Right clock, Frame size, and Slot size. Moreover, online forums were discouraging the onboard DAC for outputting audio due to it’s low resolution. As a result, we decided to pivot to an external I2S DAC that could out directly from the FPGA. When we got the external DAC, we wired it according the the datasheet directly to the PCM1808 ADC with the FPGA acting as the clock controller. However, we were not getting an output from the DAC. Using the logic analyzer, we confirmed that the clock rates were as desired and that the ADC was outputting audio. We also confirmed the configuration with a multimeter against online tutorials. Despite being confident in our set up, the DAC was not outputting any signals.\nAt this point, we were running out of time. We decided to pivot back to using the MCU DAC, and opted to use SPI to comunicate the audio data. We already had one-way SPI communication to input filter values. Also, I had already configured DMA and the DAC on the MCU, such that once we read in the variable it would output.\nAfter a few all nighters, some second perspective from fellow students in the lab, and a LOT of debugging, we were finally able to send and output audio onto a speaker, only with a little problem – The audio sounded TERRIBLE. When looking at out output on the oscilliscope, the bottom half of the waves were inverted. After some thinking, and Prof Brake’s help we realizes that this was a casting issue. The ADC reading in the audio would output digital audio centered at zero, meaning that we were trying to output negative values on the DAC. As the DAC could only output positive voltages, it would read assume two’s complement.\nAfter fixing this bug, we still had an issue – We were only able to output frequencies below 400 Hz, or else we would get aliasing. My first thought was that timing was off. But, we were inputting and outputting audio at 44 kHz, which was the minimum frequency needed to capture the full range of human hearing by Nyquist’s Theorem. This caused us to look at the timing withing the system – before landing on the SPI clock – we were sending samples too slowly, causing some samples to be lost. To fix this problem, we maximized the SPI clock, to ensure that the entire system can keep up with the 44 kHz sampling rate.\nAt this point, we were hearing exactly what we wanted to from our speakers – and nothing could bring me and Audrey dowm. I was so happy, that as we commented our code and worked on our final report, I would listen to my playlists through the deck – and it sounded as good as if I were plugged into my own computer."
   },
   {
-    "objectID": "posts/post4.html",
-    "href": "posts/post4.html",
-    "title": "Considerations of an AI Chat Bot",
+    "objectID": "posts/post11.html#presentation-is-key",
+    "href": "posts/post11.html#presentation-is-key",
+    "title": "Victoria Parizot",
+    "section": "Presentation is Key",
+    "text": "Presentation is Key\nAt this point, Audrey and I wanted to go all out on Demo Day. I made a nice box in the wood shop to encapsulate our system, and we decided to bring a few props to Demo Day to truely provide the DJ vibes. We brough sunglasses, my disco ball, a spot light, and a smoke machine – all to set up in the DIGITAL lab (At this point, you might see the problem that neither sleep deprived Audrey nor I saw). We set everything up and plugged in the smoke machine, in the DIGITAL lab. The second that smoke machine went off, Audrey and my face dropped, realizing instantly how incredibly dumb our idea had been. Audrey rushed to shove something to stop the smoke and unplug the machine and I started to whip my sweater around to clear the smoke out of the room. Of course, Professor Harris had to walk in at this exact moment, giving a sympathetic and curious look. Audrey and I got UNBELIEVABLY lucky that the smoke detectors did not go off.\nWhen we told Professor Brake about our debacle during Demo Day, his response was that “this happened to me when I was in undergrad.” A very calm, characteristic response from Professor Brake. I think if Audrey and I had a few more hours of sleep between us, we would have saw the bad idea before the machines started going off"
+  },
+  {
+    "objectID": "posts/post11.html#shout-out-friends-community",
+    "href": "posts/post11.html#shout-out-friends-community",
+    "title": "Victoria Parizot",
+    "section": "Shout Out Friends & Community",
+    "text": "Shout Out Friends & Community\nOverall, I am happy about the outcome of this project. I learned a lot about debugging, spend A LOT of quality time with Audrey, and we had a working DJ deck at the end of it. I feel much more comfortable tackling embedded systems on my own, and got well aquainted with reading datasheets and reference manuals. This semester was full of curveballs, both from MicroPs and life, but I’m happy with the ability of my peers and I to finish the semester strong.\nHuge thank you to my fellow MicroP-ers –especially Audrey, Troy, Max, Luke, and Alisha– for their willingness to offer a second eye. Another huge thanks to Kavi, who would offer valuable advice and remind us why we wanted to do this project. Thank you to Claire and Lucie for being willing to leave a day later for Thanksgiving break. Finally, thank you to Professor Brake, Xavier, and Jacob for their help debugging!"
+  },
+  {
+    "objectID": "posts/post3.html",
+    "href": "posts/post3.html",
+    "title": "The Embedded Systems Surrounding us",
     "section": "",
-    "text": "Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used. This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals? This could negatively impact their education.\nWith this uncertainty in mind, it was interesting to learn the ways Khan Academy has minimized this risk. The plentiful testing and carefully choosen features lend itself to AI.\nMoreover, it was refreshing to see AI implemented cautiously, and for the overall goal of imoproving education access. Many implementations of AI seem to be a rushed reaction to the AI movement, and used to sell a product. Overall, his talk made me hopeful for the future of AI."
+    "text": "Throughout this course, I have been working with an MCU and FPGA extensively. As I do so, I admire the reprogrammable aspects, allowing me to test and implement a variety of systems. On the other end of this “reusability spectrum” spectrum lies the embedded system, which a specialized computer system for a specific task. In my blog this week, I want to look more at the embedded systems that surround me.\nFor starters, I wear an apple watch – a combination of sensors, software, and hardware on my wrist. This specialized system is able to monitor my daily steps, heartbeat, movements, as well as connect with my phone to share text messages. The apple watch uses an accelerometer, a gyroscope, a barometer, a Force Touch Sensor, and a Heart Rate Sensor. The accelerometer and gyroscope are critical for detecting orientation and movements – and seem quite intuitive to include. The barometer seems less intuitive – however the pressure readings can indicate elevation changes. The Force Touch Sensor is useful for inputing user’s intentions as they touch the screen. Finally, the Heart Rate Sensor uses photoplethysmography (light) to measure heart rate. I am always amazed by the accuracy of the apple watch. I often use my watch to record my swim workouts, and sometimes compare the stroke breakdown and yardage to reality, and am impresssed by how similair it is.\n\nAnother embedded system is my digital camera, which is able to perform image processing, autofocus, exposure, and picture stabilization. It features a variety of settings, spanning from completely manual to specialized automatic modes – like portrait and landscape mode.\nAir conditioning is also another embedded system. We recently just had a heat wave, with temperatures reaching 112 degrees. During which, the air conditioning broke. The HVAC system used in my dorm required replacements for highly specialized parts, which were difficult to source. This points out a down side of embedded systems – due to their task-specific nature, as embedded systems phase out, the parts and documentation can be hard to find."
   },
   {
-    "objectID": "posts/post7.html",
-    "href": "posts/post7.html",
-    "title": "Final Project Thoughts",
+    "objectID": "posts/post5.html",
+    "href": "posts/post5.html",
+    "title": "The Art in PCB Design",
     "section": "",
-    "text": "This week, we had our project proposals due. As a result, Audrey and I spent a lot of our time reading related final projects from previous years and brainstorming how to implement the FPGA and MCU for the DJ deck.\nThe components we opted to implement are tempo, gain, and filters. Our subgoals include the following:\n\n\nRead in a Stereo file into the MCU\n\n\nCommunicate audio data between MCU and FPGA\n\n\nImplement FFT using the FPGA\n\n\nImplement a low pass and high pass filter based on user filter input\n\n\nImplement tempo variations on the MCU based on user tempo input\n\n\nVary audio gain based on user input \n\n\nOutput the manipulated audio onto speakers \n\n\nMost of our brainstorming has been focused on what to implement on the FPGA and what to implement with the MCU. Due to the MCU interfacing and timing abilities, We are opting to use the MCU to pass in the stereo audio and implement tempo. Due to the FPGA’s strength in signal processing, we will implement the filters with the FPGA.\nWe are still confused about how to pass through the audio between the FPGA and MCU, however I think after Lab 6 we will understand SPI communications better.\nAfter our conversation with Professor Brake, we opted to use digital filters to implement high pass and low pass filters rather than apply FFTs. We are also going to look into the onboard DAC and ADC to use for our project."
+    "text": "In class this week, my peers and I are designing our own printed circuit board (PCB) using KiCad. This custom PCB board will interface with the DS1722 temperature sensor integrated circuit (IC). At the end of the week, our designs will be sent to be manufactured so that we can use them in Lab 7.\nPCBs are made up of a layers of substrate, copper, solder mask, solder finish, etc. These boards are the fundamental building blocks of any embedded system, ranging from simple boards that interface with temperature sensors to complex applications like computers, watches, and stereo systems.\nWhile PCBs are all around us, they remain invisible to most – hidden behind their protective encasings. Yet, the time and effort that engineers invest in these intricate components are far from neglible. In fact, to me, there seems to be a level of artistry involved in crafting a PCB, in both the technical layout and silkscreen designs. Engineers have the option of investing more effort to make their designs follow common standards, scalable, and easy to understand. This in itself is a feat to be appreciated by any future engineer or maker that will use their design. However, some engineers seem to go even farther, and become artists when designing these boards; And while this art is invisible to many, others who interact with the PCB can appreciate this.\nThe examples of PCBs as art seems to fall under three umbrellas:"
   },
   {
-    "objectID": "posts/post8.html",
-    "href": "posts/post8.html",
-    "title": "A Balance: Non-MicroPs",
+    "objectID": "posts/post5.html#silkscreen-easter-eggs",
+    "href": "posts/post5.html#silkscreen-easter-eggs",
+    "title": "The Art in PCB Design",
+    "section": "1. Silkscreen Easter Eggs",
+    "text": "1. Silkscreen Easter Eggs\nIn this category, designers integrate an unnecessary design into the silkscreen layer.\nThe silkscreen layer is commonly used to offer some level of applicable knowledge, like the revision history or operation data. However, some designers also integrate non-essential designs into the silkscreen layer.\n   \nThese designs could have been an inside joke for the design team, a signature, a political statement, or even a fun easter egg for the unexpected observer. Nonetheless, I think it is inherently beautiful that designer and engineers add these hidden detail for fellow engineers, fixers, and curious minds to stumble upon."
+  },
+  {
+    "objectID": "posts/post5.html#craftsmanship",
+    "href": "posts/post5.html#craftsmanship",
+    "title": "The Art in PCB Design",
+    "section": "2. Craftsmanship",
+    "text": "2. Craftsmanship\nThere is also the category of craftsmanship. This includes engineers that take pride in their craftsmanship, whether that be implementing an elegant solution to make a design more compact or completing a beautiful solder job. There’s something immensely satisfying about the precision and care that goes into attempting “perfection.”\nIf you have ever thought, “wow, that is a beautiful soldering job,” that would fall under this category.\n\nThis type of art also brings to mind the transparent electronics of the 90s, where the internal circuitry were a feature of the product – actively contributing to a very specific aesthetic that emphasizes the beauty of engineerings."
+  },
+  {
+    "objectID": "posts/post5.html#pcb-look-for-other-applications",
+    "href": "posts/post5.html#pcb-look-for-other-applications",
+    "title": "The Art in PCB Design",
+    "section": "3. PCB Look for other Applications",
+    "text": "3. PCB Look for other Applications\nThere are also designs that capitalize on the PCB look, without any thought for technical purposes. These creations often embrace the classic green plated copper look, but step away from practical uses.\nAn example of this is the entry badge for a maker convention I went to this past summer with my brother. These badges were working PCBs – able to light up two LEDs if you soldered it. However, they were definitely designed for the primary use of a badge – being irregularly shaped and larger than needed to light up two LEDs."
+  },
+  {
+    "objectID": "posts/post6.html",
+    "href": "posts/post6.html",
+    "title": "Best Project Idea Ever??",
     "section": "",
-    "text": "One of my favorite hobbies (not including MicroPs) is woodworking. It offers a pretty cool release outside of regular academic responsibilities. This week I spent some extra time in the woodshop, working on the wood lathe on my most recent project: stackable bowls.\nThis set of four bowls started as a 3x3x6” rectangular block of canary wood. The first step, before mounting on the lathe is to get the wood as cylindrical as possible, which saves a lot of time and frustration when it is time to shape it on the lathe.\nAfter I sanded down the corners, and accidentally snapped the belt on the belt sander (don’t worry, I replaced it), it was time to mount my wood on the lathe. Since I didn’t want to drill into the wood, I opted to mount my wood between two live centers.\nAfter I had my wood shaped into a cylinder, it was time to cut the wood into four smaller cylinders. For this, I opted to use the lathe parting tool, which I had never used before. I made sure that the corner of the tool wouldn’t catch, and was fairly successfull. I opted to finish the cuts with the japanese saw, which allowed me to get a flush cut.\nNext, I moved to carving the foot of each bowl. To do this, I mounted each cylinder onto the adjustable self centering lathe chuck and shaped a foot for each bowl. To allow each bowl to stack, I inset each foot. To account for future wood warping, I carved out the feet.\nThe feet also offered a mounting point for the adjustable lathe chuck to grab as I carved the inside of each bowl. When carving the inside of each bowl, I practiced with different tool angle and placements. It was a fun practice, and resulted in bowls with interior right angles and a bowl with a ring holder.\nOne of my favorite things about woodworking is that the measurements are all a vibe. As long as the bowls were roughly the same height, thickness, and depth I would be happy. As I shaped the bowls, I made sure that everything would be flush when stacked.\nAfter all the bowls were shaped, it was time to sand. It was enjoyable to sand as I could just run the lathe.\nFinally, it was time to polish the pieces. I opted to use a Beeswax & Orange oil based wood conditioner. I applied the conditioner and allowed it to soak overnight before wiping off the excess.\nUltimately I am happy with how it turned out. Since all the bowls came from the same piece of wood, it can be stacked with the grain continuing through the bowls."
+    "text": "Let me paint a picture…\nAfter wrapping up the digital audio lab, I was sitting in Platt, doing my other (non-mircoP) homework. Then Audrey walks in, also to do her own homework. I convince her to sit with me, even though she says she can’t afford to yap. So I tell her, that’s okay, we’ll listen to our own music. But then SHE starts yapping first, and causually drops the best potential final project idea. Then, after getting me all hyped up with a good idea, she rushed to put back on her headphones to work on the 83 she doesn’t have due for over a week. (She’s as biased as an LM386)\nI’ve made a super realistic reenactment of what happened:\n\n\n\nA super realistic reenactment of what happened.\n\n\nI’ll explain the idea in a sec. But first, let me provide some context. My friends and I have been brainstorming project ideas since we registered for the course, often sending photos or texts when an idea arises. Like over the summer, anything cool that we saw or a fun idea would warrant a text: an automated pasta machine, a jetpack like the one in Spy Kids, a thermal printer photobooth, a self-balancing platform to hold a ball, a pong robot, battle bots, etc.\nUp until Audrey shared her magical idea, my top idea was creating an animatron, like the ones that they have at Stew Leonard’s. For context, Stew Leonard’s is “The World’s Largest Dairy Store,” with seven supermarkets based in the Northeast, with the FIRST and BIGGEST location based in Norwalk, Connecticut (My Home Town!). Stew Leonard’s is as much as a grocery store as a riveting, carnival-esque experience. As you walk through the store, they have animatrons that will swing and sing to you. They also had the cheapest milk and egg prices, and is located on the way home from my swim practice, so I frequented the store often growing up.\nIn case you are having problems visualizing this, here are some photos and videos. My favorite is the Milk Carton Band. When I was a kid, I would race my brothers to press the button first.\n\n\nThe Animatrons of Stew Leonards\n\n\n\nFarm Fresh Five is a band made up of dairy products\n\n\n\n\n\nThis one used to scare me as a kid.\n\n\n\n\nThere are a bunch of different stuffed animals scattered throughout the store, constantly doing different acrobatics.\n\n\n\n\nThis room also has a huge train track tracing the ceiling\n\n\n\n\n\nThe cover band for Norwalk’s OG Farm Fresh Five, at another (non-Norwalk) Stew’s\n\n\n\n\n\nThe Avocado Girls at Stew’s in Norwalk – a more recent animatron\n\n\n\n\nChiquita Banana is in the produce section. I used to be impressed how she could balance so much fruit on her head.\n\n Also, side note about Stew Leonards: When I was was in 3rd grade I was in Oddessy of the Mind, where other kids and I made a seven minute skit to perform, with homemade props and a script. Our play was heavily based on Stew’s (they gave us empty cartons for props). We won the regional competition, so they gave us a behind-the-scenes tour of Stew Leonards, (we saw the milk and bread factory), and my photo was on their billboard for a week! \n\n\n\nMe as a Stew Leonard’s corn! Behind us, you can see the corner of the Stew Leonard milk cartons that we used in our skit.\n\n\nTherefore, for the final project I wanted to create an interactive animatron, that could do different tricks based on user input. Maybe we could even donate it to the store. However, this didn’t feel like a true microPs project.\n\n\nBack to Platt…\nHere’s where Audrey’s idea comes to the rescue. Let’s jump back to my conversation in Platt, where we had just finished “Lab 4: Digital Audio.” Audrey brings up the best idea.\n\nShe suggests: “What if we made a DJ deck”\nBoom, this was an idea that finally clicked.\nTo provide some context, Audrey learned how to DJ last semester with one of her Scripps friends, and it has been a huge boost for our friendship. She has performed for 15 minutes in a 1C, and the first 30 minutes of TWO 5C. I’m her biggest fan.\n\n\n\nPhotos of Audrey in Her Element\n\n\n\nAudrey mesmerizes the crowd!\n\n\n\n\n\nA true pro at DJing!\n\n\n\n\n\nWhat song to play next?\n\n\nOver this past summer, we decided that we would both learn how to DJ (we were both in the Bay). She got a small DJ deck, and I had a deck from when a coworker left her’s at my house years ago.\nUnfortunately, over the summer we realized that our true passions did not lie in DJing. I do have a new found respect for all DJs tho.\nNonetheless, we both thing DJing is cool, and have fun doing really bad transitions together.\n\n\nBack to the idea…\nSo, when Audrey suggested this idea, we were both super into it. We could use potentiometers to act as the faders, we can implement low pass and high pass filters, and we can alter the duration and pitch of a song to change the tempo.\nOverall, it’s something we are excited about – and I’m curious to see if and how this will transform into a final project.\nIf we do end up pursuing this path, I want to convince our Linde president friends to let us DJ at the start of their 5C party using our MicroPs board. Not sure how we will be able to handle the current required to go into 5 different speakers, but it’s a cool idea and a thinking exercise.\n\n\n\nMenace in the Lab"
   },
   {
-    "objectID": "posts/post8.html#bringing-it-back-to-microps",
-    "href": "posts/post8.html#bringing-it-back-to-microps",
-    "title": "A Balance: Non-MicroPs",
-    "section": "Bringing it Back to MicroPs",
-    "text": "Bringing it Back to MicroPs\nYou might be thinking: How does this relate to microPs??\nWell it doesn’t… mostly. As I wrote up my process of making the bowls, I realized that it echoes the process of completing a lab: There’s a design stage, research stage, a debugging stage, a polishing stage, and then a sense of pride with my finished work. And, most importantly, I walk away understanding a little more about how it all works.\nIn this case, the design stage involved deciding how the bowls will fit into eachother. For the labs, it often looks like drawing block diagrams and talking out methods with my peers. The research stage here involved watching videos on how to use the parting tool, wheras for the labs it involves reading the documentation. The breaking of the belt sander was a bug that got resolved once I understood how I ripped it and replaced the belt. Finally, the sanding and polishing of the bowls is simialir to the final touches of the lab, where I connect all my modules and add function stubs to ensure my work is cohesive.\nYou might think that I’m reaching here, but nonetheless I am glad I spent some time in the woodshop this week."
-  },
-  {
-    "objectID": "labs/lab3/lab3.html",
-    "href": "labs/lab3/lab3.html",
-    "title": "Lab 3: Keypad Scanner",
+    "objectID": "posts/post9.html",
+    "href": "posts/post9.html",
+    "title": "Embedded Systems and MicroPs in Halloween Animatrons",
     "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+    "text": "Around this time of year, Halloween decorations are unavoidable. If you have ever gone trick-or-treating or gone to a Spirit Halloween, you might have been startled by one of those scary animatron.\nThis Halloween, I’ve engaged with these decorations differently – and admire the embedded systems that allow these guys to run. To understand these systems better, I have looked at some dissassembly videos, and see that most of these systems have a relatively simple core and intricate housings. For example, motors, LED lights, and sound modules connect to a central controller to produce a jarring effect.\nNow that I have some experience designing embedded systems, I can imagine how I can use my electronics tool box to create my own animatron. For my blog I opted to do a brainstorming exercise of how I would design a halloween animatron with the MCU and FPGA.\nOne animatron I saw this season was of a witch that would stir a cauldron and laugh when motion was detected.\nThis design would require a motion sensor, motor, speaker, and controller. If I were to design this, I would treat the motion sensor as a trigger that would envoke a series of motor and speaker operations. I would use an FSM to wait until motion was detected by waiting for an voltage input connected to a motion sensor like this one was high.\nI think my FSM would look something like this:\nWhat I am amazed by is the simplicity of a system that can be so effective, going to show that usually not the difficulty of a project that makes a project effective, but the idea."
   },
   {
-    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "",
-    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab3/lab3.html#design",
-    "href": "labs/lab3/lab3.html#design",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Design",
-    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
-  },
-  {
-    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
-    "href": "labs/lab3/lab3.html#simulation-and-testing",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Simulation and Testing",
-    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
-  },
-  {
-    "objectID": "labs/lab3/lab3.html#implementation",
-    "href": "labs/lab3/lab3.html#implementation",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Implementation",
-    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
-  },
-  {
-    "objectID": "labs/lab3/lab3.html#conclusion",
-    "href": "labs/lab3/lab3.html#conclusion",
-    "title": "Lab 3: Keypad Scanner",
-    "section": "Conclusion",
-    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
-  },
-  {
-    "objectID": "labs/lab5/lab5.html",
-    "href": "labs/lab5/lab5.html",
-    "title": "Lab 5: Interrupts",
-    "section": "",
-    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#introduction-learning-objectives",
-    "href": "labs/lab5/lab5.html#introduction-learning-objectives",
-    "title": "Lab 5: Interrupts",
-    "section": "",
-    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#design",
-    "href": "labs/lab5/lab5.html#design",
-    "title": "Lab 5: Interrupts",
-    "section": "Design",
-    "text": "Design\nMy design utilized two external interrupts triggered by rising and falling edges of Pin 6 and Pin 8. I used two timers: TIM16 to determine motor speed and TIM2 to control the frequency in which we print the motor speed and direction. I then calculated the speed and direction from the deltaCount between the edges of the encoder pulses.\n\nInterrupt Design\nI used hardware interrupts so that the interrupt handler can be triggered at the falling and rising edge of each encoder pulse. To do so, I followed the procedure listed in “13.3.4 Hardware Interrupt” Selection on page 327 of the reference manual\nI configured the interrupts to enable on the rising and falling edge of each encoder pulse, to achieve the highest resolution measurement. As I used Pin A6 for Encoder Signal A and Pin A8 for Encoder Signal B, both interrupts were handled by the EXTI9_5_IRQHandler. To determine which Encoder triggered the interrupt, I checked the flag in EXTI-&gt;PR1 at the pin offset.\nBelow is a flowchart showing each interrupt and the main loop that is executed.\n\n\n\nInterrupt Flow Chart\n\n\nWe know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable.\n\n\n\ndelCount with the Encoder Pulses\n\n\nI minimized the code in the interrupts by saving values needed in calculation into global variables, and computing the speed and direction outside of the interrupt.\n\n\nTimer Design\nI used TIM16 as the count timer between encoder pulse edges, which was ultimately used to determine the speed. TIM16 was configured to run at 1 MHz.\nI used TIM2 to act as a delay timer to slow down the printing rate. I counted at a 1ms time base, or a frequency of 1 kHz. To abide by the requirement, “Design measures and displays speed of motor in units of m/s with an update rate of at least 1 Hz,” the delay cannot exceed 1000ms.\nFor more information on timers, see Lab 4.\n\n\nCalculating Speed and Direction\nTo convert the delCount variable to speed in revolutions/second, I used the following conversion. Note that I divide delCount by \\(1,000,000\\) to convert from counts per quarter pulse to seconds per quarter pulse, based on the clock frequency of 1 MHz.\n\n\n\nCalculating speed in [rev/s] from delCount\n\n\nTo determine the direction of the motor, I used conditional statements in my interrupt handler, where the signal’s edge that triggered the interrupt could be used to compute direction.\n\nSmoothing the Speed\nWhen I printed my speed, I noticed that there was a lot of small fluctuation. After some evaluation of the encoder signals with the oscilloscope, I saw that the motors encoder signals had small variations in duty cycle and distance, that when scaled to get the speed would be exacerbated. As a result I implemented a sliding window, that calculated the average of the last 10 delCount variables to smooth the out speed. This caused a significant improvement in the readability of the output speed, with minimal impact on accuracy.\n\n\n\nHardware Design\nThe encoders used for this lab operate at a 5V logic level. I used PA6 and PA8 as these pins a 5V tolerant, as listed in Tables 13-14 in the STM32L432KC Datasheet.\nThis lab used a 25GA-370 DC Motor datasheet, with the following color coding.\n\n\n\nEncoder Wiring Color Coding\n\n\nI powered the motor with a voltage source, and attatched to my MCU, following the below wiring diagram."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#testing-debugging",
-    "href": "labs/lab5/lab5.html#testing-debugging",
-    "title": "Lab 5: Interrupts",
-    "section": "Testing & Debugging",
-    "text": "Testing & Debugging\nTo test, I compared the oscilloscope and printed values at 12 V.\nWhen running the motor at 12V and evaluating the encoder signals with the oscilloscope, I found that the motor ran at 10.417 revolutions/s.\n \nAt 12 V, my MCU read a speed of 10.313 revoluions/s.\nThe motor provided in the lab is expected to spin at approximately 10 rev/s. Both values align with what we would expect."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#demonstration",
-    "href": "labs/lab5/lab5.html#demonstration",
-    "title": "Lab 5: Interrupts",
-    "section": "Demonstration",
-    "text": "Demonstration\nBelow is a photo of the printed output of the motor as I vary the motor input voltage."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#comparing-with-polling",
-    "href": "labs/lab5/lab5.html#comparing-with-polling",
-    "title": "Lab 5: Interrupts",
-    "section": "Comparing with Polling",
-    "text": "Comparing with Polling\nInterrupts are more suitable than manual polling at high speeds for the motor encoder When using interrupts, the system signals the CPU when it needs attention, and will jump out of the main loop to undergo the interrupt service protocol. This ensures that each encoder edge is read. When using polling, the CPU continuously the encoder status in the main loop, leaving potential to miss encoder pulses, resulting in an inaccurate speed and direction measurement. This would be especially detrimental due to my print delays."
-  },
-  {
-    "objectID": "labs/lab5/lab5.html#conclusion",
-    "href": "labs/lab5/lab5.html#conclusion",
-    "title": "Lab 5: Interrupts",
-    "section": "Conclusion",
-    "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately 11 hours to complete"
-  },
-  {
-    "objectID": "labs/lab6/lab6.html",
-    "href": "labs/lab6/lab6.html",
-    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "section": "",
-    "text": "In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.\nThis lab had the following learning objectives:\n\n\nDesigned and built a simple IoT device\n\n\nWritten C libraries using the CMSIS device templates to implement the SPI functionality of the MCU\n\n\nInterfaced with a temperature sensor module over an SPI link\n\n\nInterfaced the MCU with an ESP8266 module over a UART link\n\n\nUse the logic analyze functionality of the scope in the Digital Lab to debug serial communication protocols and export captured signal data.\n\n\nWritten a simple HTML page to control and display data from the peripherals connected to your MCU.\n\n\nThe datasheet for the DS1722 temperature sensor can be found here.\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab6/lab6.html#introduction-learning-objectives",
-    "href": "labs/lab6/lab6.html#introduction-learning-objectives",
-    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "section": "",
-    "text": "In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.\nThis lab had the following learning objectives:\n\n\nDesigned and built a simple IoT device\n\n\nWritten C libraries using the CMSIS device templates to implement the SPI functionality of the MCU\n\n\nInterfaced with a temperature sensor module over an SPI link\n\n\nInterfaced the MCU with an ESP8266 module over a UART link\n\n\nUse the logic analyze functionality of the scope in the Digital Lab to debug serial communication protocols and export captured signal data.\n\n\nWritten a simple HTML page to control and display data from the peripherals connected to your MCU.\n\n\nThe datasheet for the DS1722 temperature sensor can be found here.\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab6/lab6.html#design",
-    "href": "labs/lab6/lab6.html#design",
-    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "section": "Design",
-    "text": "Design\n\nMCU SPI Configuration\nTo implement SPI on the MCU, I implemented initSPI, a function to initialize SPI communication using a choosen baud rate, clock phase, and clock polarity,\nRecall that the SPI clk will be equal to \\(\\frac{master clock}{2^{BR+1}}\\). I set the baud rate divisor to be 6 so that the SPI clock would run at 31250 Hz, running slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.\nI opted to control my own chip enable, PA8, which I would manually toggle for each read and write operation. For my other SPI ports, I consulted the data sheet to see which pins were compatible with SPI1. Thus, I opted to set PA6 as the MISO line, PA12 as the MOSI line, and PA5 and the SCLK.\nMy design uses the CMSIS library device templates, making it easier to decipher how bits are being set.\n\n\nInterfacing with the Temperature Sensor\nTo communicate with the temperature sensor, I had to send the write address, 0x80, for the configuration bits followed by the configuration bits. These configuration bits were set depending on the wanted temperature resolution. Then I would read the LSB and MSB of the temperature bits by calling read address 0x01 or 0x02, respectfully. The Register Address structure and the bit structure of the temperature output is below.\n\n\n\nRegister Address Structure for DS1722\n\n\n\n\n\nTemperature Bit Structure for DS1722\n\n\nThe screenshot of the code for my SPI interaction is below to showcase the send/recieve format and how I toggle the Chip Enable.\n\n\n\nSPI Interaction with Temperature Sensor\n\n\nTo be able to print the temperature, I used a bit map to isolate the sign bit in the MSB. I then used the other values of the MSB to determine the integer value of the temperature. Then, depending on if the temperature was positive or negative, I would add or subtract corresponding resolution bits.\n\n\nWebsite Design\nMy website also allowed for a user to select the resolution of the temperature sensor. To implement this, I incorporated a form with a button for each resolution option. Depending on which button was selected, I would set the temperature configuration bits to reflect this. This HTML was sent via the ESP8266 with UART.\nEverytime the website would refresh, the DS1722 would read and print the updated temperature.\n\n\nHardware Design\nTo implement in hardware, I attatched the corresponding pins of the DS1722 and ESP8266 to the MCU, based on the pin diagram below.\n\n\n\nSPI Interaction with Temperature Sensor"
-  },
-  {
-    "objectID": "labs/lab6/lab6.html#testing-debugging",
-    "href": "labs/lab6/lab6.html#testing-debugging",
-    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "section": "Testing & Debugging",
-    "text": "Testing & Debugging\nI tested using the debugger in Segger and the logic analyzer.\nThe printf() function was used to reveal intermediate values of my temperature data, allowing me to see when the temperature data was not as expected. This technique was useful in confirming that my temperature conversions were as desired.\nThe logic analyzer allowed me to look at the SPI communications. I could also convert the MISO and MOSI lines to the actual values being sent, which made deciphering the communication much easier. By using the logic analyzer I was able to find a bug: only my 0x80 send request was being sent and the rest of the communication was all zero. This led me to look at my wiring. Ultimately, I had forgotten to remove a jumper between the pin for my MISO line and GND.\nA sample SPI transaction from logic analyzer can be seen below.\n\n\n\nLab 6 SPI Transaction on Logic Analyzer"
-  },
-  {
-    "objectID": "labs/lab6/lab6.html#conclusion",
-    "href": "labs/lab6/lab6.html#conclusion",
-    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "section": "Conclusion",
-    "text": "Conclusion\nLab 6 provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.\nLab 6 meets all the requirements for excellence, and took me approximately 25 hours to complete."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html",
-    "href": "labs/lab1/lab1.html",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "",
-    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#introduction-learning-objectives",
-    "href": "labs/lab1/lab1.html#introduction-learning-objectives",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "",
-    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
-    "href": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Development Board: Soldering and Set up",
-    "text": "Development Board: Soldering and Set up\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided BOM.\n\n\n\nCompleted E155 Development Board\n\n\nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#design-implementation",
-    "href": "labs/lab1/lab1.html#design-implementation",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Design & Implementation",
-    "text": "Design & Implementation\n\n\nLab Requirements\nThe next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables.\n\n\n\n\nSignal Name\n\n\nSignal Type\n\n\nDescription\n\n\n\n\n\n\nclk\n\n\ninput\n\n\n48 MHz clock on FPGA\n\n\n\n\ns[3:0]\n\n\ninput\n\n\nthe four DIP switches (on the board, SW6)\n\n\n\n\nled[2:0]\n\n\noutput\n\n\n3 LEDs (you may use the on-board LEDs)\n\n\n\n\nseg[6:0]\n\n\noutput\n\n\nthe segments of a common-anode 7-segment display\n\n\n\n\n\nThe following tables define the relationship of the LEDs to the switches and clock.\n\n\n\n\n\n\nS1\n\n\nS0\n\n\nled[0]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nON\n\n\n\n\n1\n\n\n0\n\n\nON\n\n\n\n\n1\n\n\n1\n\n\nOFF\n\n\n\n\n\n\n\n\n\n\nS3\n\n\nS2\n\n\nled[1]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nOFF\n\n\n\n\n1\n\n\n0\n\n\nOFF\n\n\n\n\n1\n\n\n1\n\n\nON\n\n\n\n\n\n\n\n\n\n\nled[2]\n\n\n\n\n\n\nBlink at 2.4 Hz\n\n\n\n\n\n\n\n\nDesign\nTo organize my thoughts I used a block diagram to map the logic.\n\n\n\nLab 1 Block Diagram\n\n\n\nLed Logic Design\nThe truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.\nTo have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require \\(2*10^7\\) ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every \\(10^7\\) clicks.\n\n\nSeven Segment Logic Design\nTo interface the seven segment display with the board, I conferred with the datasheet to determine resistor values. \n\n\n\nResistor Calculations for Seven Segment Display\n\n\nI opted to use resistor values of 240 ohms, producing 6.25 mA of current.\nA wiring schematic is shown below. \nHere is a photo of the implemented design!"
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#testing",
-    "href": "labs/lab1/lab1.html#testing",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Testing",
-    "text": "Testing\n\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected.\n\n\n\nWave forms of test bench\n\n\nI tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#conclusion",
-    "href": "labs/lab1/lab1.html#conclusion",
-    "title": "Lab 1: FPGA and MCU Setup and Testing",
-    "section": "Conclusion",
-    "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
-  },
-  {
-    "objectID": "labs/lab7/lab7.html",
-    "href": "labs/lab7/lab7.html",
-    "title": "Lab 7: The Advanced Encryption Standard",
-    "section": "",
-    "text": "In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives:\n\n\nLearned to read and implement a complex specification\n\n\nBuilt a nontrivial system on an FPGA that requires thoughtful architecture to fit on the chip\n\n\nDesigned and implemented an interface to communicate between the FPGA and microprocessor on your MCU\n\n\nLearned how to use a logic analyzer to analyze and debug your system\n\n\nGained experience with hardware accelerators\n\n\nThe AES algorithm specifications can be found here and a helpful visualization of the AES algorithm can be found here.\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab7/lab7.html#introduction-learning-objectives",
-    "href": "labs/lab7/lab7.html#introduction-learning-objectives",
-    "title": "Lab 7: The Advanced Encryption Standard",
-    "section": "",
-    "text": "In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives:\n\n\nLearned to read and implement a complex specification\n\n\nBuilt a nontrivial system on an FPGA that requires thoughtful architecture to fit on the chip\n\n\nDesigned and implemented an interface to communicate between the FPGA and microprocessor on your MCU\n\n\nLearned how to use a logic analyzer to analyze and debug your system\n\n\nGained experience with hardware accelerators\n\n\nThe AES algorithm specifications can be found here and a helpful visualization of the AES algorithm can be found here.\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab7/lab7.html#design",
-    "href": "labs/lab7/lab7.html#design",
-    "title": "Lab 7: The Advanced Encryption Standard",
-    "section": "Design",
-    "text": "Design\nThe size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round.\nMy design goes through ten rounds, where the round being implemented influences the flow of the signals through the modules. For example, the output for rounds 1-9 passes through the mixColumns module, while for round 10 it does not.\nThis method allows me to use only one instance of subBytes, shiftRows, mixcolumns, and keyExpansionRound. Important variables are updated and kept in global variables.\nI originally opted for not using a FSM for ‘simplicity’, but boy was I wrong. As a result, my design implied many muxes and presented my hardware in an extremely convoluted way, as reflected in the complex block diagram. An FSM would have been a way more organized way to handle the hardware design and varying cases.\nMy design is summarized in my Block and Pin diagram below.\n\n\n\nBlock Diagram of FPGA Operations\n\n\n\n\n\nPin Diagram for Lab 7"
-  },
-  {
-    "objectID": "labs/lab7/lab7.html#testing-debugging",
-    "href": "labs/lab7/lab7.html#testing-debugging",
-    "title": "Lab 7: The Advanced Encryption Standard",
-    "section": "Testing & Debugging",
-    "text": "Testing & Debugging\nDue to the intense recursive nature of this algorithm, once a signal is incorrect, all subsequent signals are incorrect. As a result, it was beneficial to me to text each module and functionality separately, before testing the entire AES through the included AES_Core testbench. I used ModelSim’s wave window to understand the timing of my system, and to isolate my bugs.\nMy design passes both the AES core and AES SPI simulation testbenches. \n\n\n\nMy Design Passes the AES SPI Simulation Textbench\n\n\nAfter confirming my code works as expected in simulation, is was time to upload my code using Segger and Radiant.\nDuring my hardware integration I ran into a problem of not having enough RAM to map my design onto my FPGA. This was because I had originally made a new module for each round. To solve this issue, I implemented a recurssive design that minimized the number of modules required to go through the 10 rounds.\nI also hooked up my SPI communication to the logic analyzer, where I set D0 as SCK, D2 as MOSI, D4 as Done, D5 as MISO, and D7 as the chip select. The SPI communication is displayed below:\n\n\n\nSPI Communication on Logic Analyzer\n\n\n\n\n\nSPI Communication on Logic Analyzer"
-  },
-  {
-    "objectID": "labs/lab7/lab7.html#conclusion",
-    "href": "labs/lab7/lab7.html#conclusion",
-    "title": "Lab 7: The Advanced Encryption Standard",
-    "section": "Conclusion",
-    "text": "Conclusion\nIn lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high.\nWhen running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html",
-    "href": "labs/lab2/lab2.html",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "",
-    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#design",
-    "href": "labs/lab2/lab2.html#design",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Design",
-    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#testing",
-    "href": "labs/lab2/lab2.html#testing",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Testing",
-    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#implementation",
-    "href": "labs/lab2/lab2.html#implementation",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Implementation",
-    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#conclusion",
-    "href": "labs/lab2/lab2.html#conclusion",
-    "title": "Lab 2: Multiplexed 7-Segment Display",
-    "section": "Conclusion",
-    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
+    "objectID": "posts/post9.html#sources",
+    "href": "posts/post9.html#sources",
+    "title": "Embedded Systems and MicroPs in Halloween Animatrons",
+    "section": "Sources:",
+    "text": "Sources:\nHere are the youtube videos of the dissassemblies that I watched.\nhttps://www.youtube.com/watch?v=b-kKYJtPMec https://www.youtube.com/watch?v=t6dM9zDjjXo https://www.youtube.com/watch?v=ccejC5heTpA"
   },
   {
     "objectID": "labs/lab4/lab4.html",
@@ -406,60 +203,298 @@
     "text": "Conclusion\nLab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.\nLab 4 meets all the requirements, and took me approximately 24 hours to complete."
   },
   {
-    "objectID": "posts/post9.html",
-    "href": "posts/post9.html",
-    "title": "Embedded Systems and MicroPs in Halloween Animatrons",
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "",
-    "text": "Around this time of year, Halloween decorations are unavoidable. If you have ever gone trick-or-treating or gone to a Spirit Halloween, you might have been startled by one of those scary animatron.\nThis Halloween, I’ve engaged with these decorations differently – and admire the embedded systems that allow these guys to run. To understand these systems better, I have looked at some dissassembly videos, and see that most of these systems have a relatively simple core and intricate housings. For example, motors, LED lights, and sound modules connect to a central controller to produce a jarring effect.\nNow that I have some experience designing embedded systems, I can imagine how I can use my electronics tool box to create my own animatron. For my blog I opted to do a brainstorming exercise of how I would design a halloween animatron with the MCU and FPGA.\nOne animatron I saw this season was of a witch that would stir a cauldron and laugh when motion was detected.\nThis design would require a motion sensor, motor, speaker, and controller. If I were to design this, I would treat the motion sensor as a trigger that would envoke a series of motor and speaker operations. I would use an FSM to wait until motion was detected by waiting for an voltage input connected to a motion sensor like this one was high.\nI think my FSM would look something like this:\nWhat I am amazed by is the simplicity of a system that can be so effective, going to show that usually not the difficulty of a project that makes a project effective, but the idea."
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
   },
   {
-    "objectID": "posts/post9.html#sources",
-    "href": "posts/post9.html#sources",
-    "title": "Embedded Systems and MicroPs in Halloween Animatrons",
-    "section": "Sources:",
-    "text": "Sources:\nHere are the youtube videos of the dissassemblies that I watched.\nhttps://www.youtube.com/watch?v=b-kKYJtPMec https://www.youtube.com/watch?v=t6dM9zDjjXo https://www.youtube.com/watch?v=ccejC5heTpA"
-  },
-  {
-    "objectID": "posts/post6.html",
-    "href": "posts/post6.html",
-    "title": "Best Project Idea Ever??",
+    "objectID": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "href": "labs/lab2/lab2.html#introduction-learning-objectives",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
     "section": "",
-    "text": "Let me paint a picture…\nAfter wrapping up the digital audio lab, I was sitting in Platt, doing my other (non-mircoP) homework. Then Audrey walks in, also to do her own homework. I convince her to sit with me, even though she says she can’t afford to yap. So I tell her, that’s okay, we’ll listen to our own music. But then SHE starts yapping first, and causually drops the best potential final project idea. Then, after getting me all hyped up with a good idea, she rushed to put back on her headphones to work on the 83 she doesn’t have due for over a week. (She’s as biased as an LM386)\nI’ve made a super realistic reenactment of what happened:\n\n\n\nA super realistic reenactment of what happened.\n\n\nI’ll explain the idea in a sec. But first, let me provide some context. My friends and I have been brainstorming project ideas since we registered for the course, often sending photos or texts when an idea arises. Like over the summer, anything cool that we saw or a fun idea would warrant a text: an automated pasta machine, a jetpack like the one in Spy Kids, a thermal printer photobooth, a self-balancing platform to hold a ball, a pong robot, battle bots, etc.\nUp until Audrey shared her magical idea, my top idea was creating an animatron, like the ones that they have at Stew Leonard’s. For context, Stew Leonard’s is “The World’s Largest Dairy Store,” with seven supermarkets based in the Northeast, with the FIRST and BIGGEST location based in Norwalk, Connecticut (My Home Town!). Stew Leonard’s is as much as a grocery store as a riveting, carnival-esque experience. As you walk through the store, they have animatrons that will swing and sing to you. They also had the cheapest milk and egg prices, and is located on the way home from my swim practice, so I frequented the store often growing up.\nIn case you are having problems visualizing this, here are some photos and videos. My favorite is the Milk Carton Band. When I was a kid, I would race my brothers to press the button first.\n\n\nThe Animatrons of Stew Leonards\n\n\n\nFarm Fresh Five is a band made up of dairy products\n\n\n\n\n\nThis one used to scare me as a kid.\n\n\n\n\nThere are a bunch of different stuffed animals scattered throughout the store, constantly doing different acrobatics.\n\n\n\n\nThis room also has a huge train track tracing the ceiling\n\n\n\n\n\nThe cover band for Norwalk’s OG Farm Fresh Five, at another (non-Norwalk) Stew’s\n\n\n\n\n\nThe Avocado Girls at Stew’s in Norwalk – a more recent animatron\n\n\n\n\nChiquita Banana is in the produce section. I used to be impressed how she could balance so much fruit on her head.\n\n Also, side note about Stew Leonards: When I was was in 3rd grade I was in Oddessy of the Mind, where other kids and I made a seven minute skit to perform, with homemade props and a script. Our play was heavily based on Stew’s (they gave us empty cartons for props). We won the regional competition, so they gave us a behind-the-scenes tour of Stew Leonards, (we saw the milk and bread factory), and my photo was on their billboard for a week! \n\n\n\nMe as a Stew Leonard’s corn! Behind us, you can see the corner of the Stew Leonard milk cartons that we used in our skit.\n\n\nTherefore, for the final project I wanted to create an interactive animatron, that could do different tricks based on user input. Maybe we could even donate it to the store. However, this didn’t feel like a true microPs project.\n\n\nBack to Platt…\nHere’s where Audrey’s idea comes to the rescue. Let’s jump back to my conversation in Platt, where we had just finished “Lab 4: Digital Audio.” Audrey brings up the best idea.\n\nShe suggests: “What if we made a DJ deck”\nBoom, this was an idea that finally clicked.\nTo provide some context, Audrey learned how to DJ last semester with one of her Scripps friends, and it has been a huge boost for our friendship. She has performed for 15 minutes in a 1C, and the first 30 minutes of TWO 5C. I’m her biggest fan.\n\n\n\nPhotos of Audrey in Her Element\n\n\n\nAudrey mesmerizes the crowd!\n\n\n\n\n\nA true pro at DJing!\n\n\n\n\n\nWhat song to play next?\n\n\nOver this past summer, we decided that we would both learn how to DJ (we were both in the Bay). She got a small DJ deck, and I had a deck from when a coworker left her’s at my house years ago.\nUnfortunately, over the summer we realized that our true passions did not lie in DJing. I do have a new found respect for all DJs tho.\nNonetheless, we both thing DJing is cool, and have fun doing really bad transitions together.\n\n\nBack to the idea…\nSo, when Audrey suggested this idea, we were both super into it. We could use potentiometers to act as the faders, we can implement low pass and high pass filters, and we can alter the duration and pitch of a song to change the tempo.\nOverall, it’s something we are excited about – and I’m curious to see if and how this will transform into a final project.\nIf we do end up pursuing this path, I want to convince our Linde president friends to let us DJ at the start of their 5C party using our MicroPs board. Not sure how we will be able to handle the current required to go into 5 different speakers, but it’s a cool idea and a thinking exercise.\n\n\n\nMenace in the Lab"
+    "text": "In Lab 2, I implemented a time-multiplexing scheme to drive two seven-segment displays with a single set of FPGA I/O pins. These displayed two independent hexadecimal numbers read from seperate DIP switches and was driven by a single seven-segment decoder HDL module. I also displayed the sum of the numbers on five LEDs. In doing so, I practiced application of transistors and modular verilog.\nMore information on the lab requirements can be found on the E155 Lab 2 Course Page."
   },
   {
-    "objectID": "posts/post5.html",
-    "href": "posts/post5.html",
-    "title": "The Art in PCB Design",
+    "objectID": "labs/lab2/lab2.html#design",
+    "href": "labs/lab2/lab2.html#design",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Design",
+    "text": "Design\n\nTo implement this lab, I had to consider: How should I organize this module in Verilog? How fast should I switch between displays? What transistor type should I use? How do I trigger the transistor? Should I use an anode or cathode display? What resisitor values should I use to protect the FPGA? And so on.\nTo work my way through these questions, I drew a block diagram. Essentially I pass through two 4 bit signals from the two DIP switches. I then use the on-board high-speed oscillator to act as an selector signal into a 2-to-1 mux that will select a input signal to pass through the single seven-segment decoder HDL module. I then send the decoded signal to both seven-segment cathod displays. I then utilized the selector signal to drive transistors to trigger each display when needed. By using an NPN transistor, I was able to ensure that the current draw/sink on all FPGA pins are below the currents specified in the recommended operating conditions.\n\n\n\nBlock Diagram\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#testing",
+    "href": "labs/lab2/lab2.html#testing",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Testing",
+    "text": "Testing\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated testbenches to test each module. In my testing, I considered edge cases and general cases to examine the behavior of each module. For example, I tested the summing LEDs to ensure that they correctly summed the values of the two DIP switches in binary when they would cause overflow.\nThe wave forms are below, and the behavior is as expected.\n\n\n\nWave forms for validation testing of 2-to-1 mux\n\n\n\n\n\nWave forms for validation testing of summing LEDs\n\n\n\n\n\nWave forms for validation testing of seven segment module"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#implementation",
+    "href": "labs/lab2/lab2.html#implementation",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Implementation",
+    "text": "Implementation\nAfter confirming that my design would work in simulation, it was time to wire everything up based on the following circuit schematic. In my design, I used a cathode seven segment display along with NPN transistors for each digit.\nSince the display requires substantial current, more than an FPGA output pin can drive, I used an NPN transistor to drive the large current. To calculate the resistor values, I went to the data sheet and found that FPGA pins drive at 3.3 V and 8 mA.\n\n\n\nResistor calculations for NPN transistors\n\n\nI also implemented the necessary resistors for all led display, based on lab 1 calculations.\n\n\n\nCircuit Schematic\n\n\nHere is a video of the completed design! Completed design demo!\nThrough trial and error, a suitable switching speed was found so that both sides of the display look like they are on!"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#conclusion",
+    "href": "labs/lab2/lab2.html#conclusion",
+    "title": "Lab 2: Multiplexed 7-Segment Display",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nLab 2 provided an introduction to implementing multiplexing in a visual manner. As a result, I grew more familiar with the different type of transistors and calculations for current draw.\nLab 2 meets all the requirements, and took me approximately 13 hours."
+  },
+  {
+    "objectID": "labs/lab7/lab7.html",
+    "href": "labs/lab7/lab7.html",
+    "title": "Lab 7: The Advanced Encryption Standard",
     "section": "",
-    "text": "In class this week, my peers and I are designing our own printed circuit board (PCB) using KiCad. This custom PCB board will interface with the DS1722 temperature sensor integrated circuit (IC). At the end of the week, our designs will be sent to be manufactured so that we can use them in Lab 7.\nPCBs are made up of a layers of substrate, copper, solder mask, solder finish, etc. These boards are the fundamental building blocks of any embedded system, ranging from simple boards that interface with temperature sensors to complex applications like computers, watches, and stereo systems.\nWhile PCBs are all around us, they remain invisible to most – hidden behind their protective encasings. Yet, the time and effort that engineers invest in these intricate components are far from neglible. In fact, to me, there seems to be a level of artistry involved in crafting a PCB, in both the technical layout and silkscreen designs. Engineers have the option of investing more effort to make their designs follow common standards, scalable, and easy to understand. This in itself is a feat to be appreciated by any future engineer or maker that will use their design. However, some engineers seem to go even farther, and become artists when designing these boards; And while this art is invisible to many, others who interact with the PCB can appreciate this.\nThe examples of PCBs as art seems to fall under three umbrellas:"
+    "text": "In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives:\n\n\nLearned to read and implement a complex specification\n\n\nBuilt a nontrivial system on an FPGA that requires thoughtful architecture to fit on the chip\n\n\nDesigned and implemented an interface to communicate between the FPGA and microprocessor on your MCU\n\n\nLearned how to use a logic analyzer to analyze and debug your system\n\n\nGained experience with hardware accelerators\n\n\nThe AES algorithm specifications can be found here and a helpful visualization of the AES algorithm can be found here.\nThe source code for the project can be found in the associated Github repository."
   },
   {
-    "objectID": "posts/post5.html#silkscreen-easter-eggs",
-    "href": "posts/post5.html#silkscreen-easter-eggs",
-    "title": "The Art in PCB Design",
-    "section": "1. Silkscreen Easter Eggs",
-    "text": "1. Silkscreen Easter Eggs\nIn this category, designers integrate an unnecessary design into the silkscreen layer.\nThe silkscreen layer is commonly used to offer some level of applicable knowledge, like the revision history or operation data. However, some designers also integrate non-essential designs into the silkscreen layer.\n   \nThese designs could have been an inside joke for the design team, a signature, a political statement, or even a fun easter egg for the unexpected observer. Nonetheless, I think it is inherently beautiful that designer and engineers add these hidden detail for fellow engineers, fixers, and curious minds to stumble upon."
-  },
-  {
-    "objectID": "posts/post5.html#craftsmanship",
-    "href": "posts/post5.html#craftsmanship",
-    "title": "The Art in PCB Design",
-    "section": "2. Craftsmanship",
-    "text": "2. Craftsmanship\nThere is also the category of craftsmanship. This includes engineers that take pride in their craftsmanship, whether that be implementing an elegant solution to make a design more compact or completing a beautiful solder job. There’s something immensely satisfying about the precision and care that goes into attempting “perfection.”\nIf you have ever thought, “wow, that is a beautiful soldering job,” that would fall under this category.\n\nThis type of art also brings to mind the transparent electronics of the 90s, where the internal circuitry were a feature of the product – actively contributing to a very specific aesthetic that emphasizes the beauty of engineerings."
-  },
-  {
-    "objectID": "posts/post5.html#pcb-look-for-other-applications",
-    "href": "posts/post5.html#pcb-look-for-other-applications",
-    "title": "The Art in PCB Design",
-    "section": "3. PCB Look for other Applications",
-    "text": "3. PCB Look for other Applications\nThere are also designs that capitalize on the PCB look, without any thought for technical purposes. These creations often embrace the classic green plated copper look, but step away from practical uses.\nAn example of this is the entry badge for a maker convention I went to this past summer with my brother. These badges were working PCBs – able to light up two LEDs if you soldered it. However, they were definitely designed for the primary use of a badge – being irregularly shaped and larger than needed to light up two LEDs."
-  },
-  {
-    "objectID": "posts/post3.html",
-    "href": "posts/post3.html",
-    "title": "The Embedded Systems Surrounding us",
+    "objectID": "labs/lab7/lab7.html#introduction-learning-objectives",
+    "href": "labs/lab7/lab7.html#introduction-learning-objectives",
+    "title": "Lab 7: The Advanced Encryption Standard",
     "section": "",
-    "text": "Throughout this course, I have been working with an MCU and FPGA extensively. As I do so, I admire the reprogrammable aspects, allowing me to test and implement a variety of systems. On the other end of this “reusability spectrum” spectrum lies the embedded system, which a specialized computer system for a specific task. In my blog this week, I want to look more at the embedded systems that surround me.\nFor starters, I wear an apple watch – a combination of sensors, software, and hardware on my wrist. This specialized system is able to monitor my daily steps, heartbeat, movements, as well as connect with my phone to share text messages. The apple watch uses an accelerometer, a gyroscope, a barometer, a Force Touch Sensor, and a Heart Rate Sensor. The accelerometer and gyroscope are critical for detecting orientation and movements – and seem quite intuitive to include. The barometer seems less intuitive – however the pressure readings can indicate elevation changes. The Force Touch Sensor is useful for inputing user’s intentions as they touch the screen. Finally, the Heart Rate Sensor uses photoplethysmography (light) to measure heart rate. I am always amazed by the accuracy of the apple watch. I often use my watch to record my swim workouts, and sometimes compare the stroke breakdown and yardage to reality, and am impresssed by how similair it is.\n\nAnother embedded system is my digital camera, which is able to perform image processing, autofocus, exposure, and picture stabilization. It features a variety of settings, spanning from completely manual to specialized automatic modes – like portrait and landscape mode.\nAir conditioning is also another embedded system. We recently just had a heat wave, with temperatures reaching 112 degrees. During which, the air conditioning broke. The HVAC system used in my dorm required replacements for highly specialized parts, which were difficult to source. This points out a down side of embedded systems – due to their task-specific nature, as embedded systems phase out, the parts and documentation can be hard to find."
+    "text": "In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives:\n\n\nLearned to read and implement a complex specification\n\n\nBuilt a nontrivial system on an FPGA that requires thoughtful architecture to fit on the chip\n\n\nDesigned and implemented an interface to communicate between the FPGA and microprocessor on your MCU\n\n\nLearned how to use a logic analyzer to analyze and debug your system\n\n\nGained experience with hardware accelerators\n\n\nThe AES algorithm specifications can be found here and a helpful visualization of the AES algorithm can be found here.\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab7/lab7.html#design",
+    "href": "labs/lab7/lab7.html#design",
+    "title": "Lab 7: The Advanced Encryption Standard",
+    "section": "Design",
+    "text": "Design\nThe size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round.\nMy design goes through ten rounds, where the round being implemented influences the flow of the signals through the modules. For example, the output for rounds 1-9 passes through the mixColumns module, while for round 10 it does not.\nThis method allows me to use only one instance of subBytes, shiftRows, mixcolumns, and keyExpansionRound. Important variables are updated and kept in global variables.\nI originally opted for not using a FSM for ‘simplicity’, but boy was I wrong. As a result, my design implied many muxes and presented my hardware in an extremely convoluted way, as reflected in the complex block diagram. An FSM would have been a way more organized way to handle the hardware design and varying cases.\nMy design is summarized in my Block and Pin diagram below.\n\n\n\nBlock Diagram of FPGA Operations\n\n\n\n\n\nPin Diagram for Lab 7"
+  },
+  {
+    "objectID": "labs/lab7/lab7.html#testing-debugging",
+    "href": "labs/lab7/lab7.html#testing-debugging",
+    "title": "Lab 7: The Advanced Encryption Standard",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging\nDue to the intense recursive nature of this algorithm, once a signal is incorrect, all subsequent signals are incorrect. As a result, it was beneficial to me to text each module and functionality separately, before testing the entire AES through the included AES_Core testbench. I used ModelSim’s wave window to understand the timing of my system, and to isolate my bugs.\nMy design passes both the AES core and AES SPI simulation testbenches. \n\n\n\nMy Design Passes the AES SPI Simulation Textbench\n\n\nAfter confirming my code works as expected in simulation, is was time to upload my code using Segger and Radiant.\nDuring my hardware integration I ran into a problem of not having enough RAM to map my design onto my FPGA. This was because I had originally made a new module for each round. To solve this issue, I implemented a recurssive design that minimized the number of modules required to go through the 10 rounds.\nI also hooked up my SPI communication to the logic analyzer, where I set D0 as SCK, D2 as MOSI, D4 as Done, D5 as MISO, and D7 as the chip select. The SPI communication is displayed below:\n\n\n\nSPI Communication on Logic Analyzer\n\n\n\n\n\nSPI Communication on Logic Analyzer"
+  },
+  {
+    "objectID": "labs/lab7/lab7.html#conclusion",
+    "href": "labs/lab7/lab7.html#conclusion",
+    "title": "Lab 7: The Advanced Encryption Standard",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high.\nWhen running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html",
+    "href": "labs/lab1/lab1.html",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "href": "labs/lab1/lab1.html#introduction-learning-objectives",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "",
+    "text": "In this lab, I familiarized myself with the STM32L432KC microcontroller unit (MCU) and UPduino v3.1 field-programmable gate array (FPGA) development boards I will be using throughout the semester. This involved assembling my board, initial testing, and implementing Verilog to control LEDs and a 7-segment display using Radiant, Segger Embedded Studio, and ModelSim.\nMore information on the lab requirements can be found on the E155 Lab 1 Course Page."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
+    "href": "labs/lab1/lab1.html#development-board-soldering-and-set-up",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Development Board: Soldering and Set up",
+    "text": "Development Board: Soldering and Set up\nThe first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided BOM.\n\n\n\nCompleted E155 Development Board\n\n\nAfter soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#design-implementation",
+    "href": "labs/lab1/lab1.html#design-implementation",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Design & Implementation",
+    "text": "Design & Implementation\n\n\nLab Requirements\nThe next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables.\n\n\n\n\nSignal Name\n\n\nSignal Type\n\n\nDescription\n\n\n\n\n\n\nclk\n\n\ninput\n\n\n48 MHz clock on FPGA\n\n\n\n\ns[3:0]\n\n\ninput\n\n\nthe four DIP switches (on the board, SW6)\n\n\n\n\nled[2:0]\n\n\noutput\n\n\n3 LEDs (you may use the on-board LEDs)\n\n\n\n\nseg[6:0]\n\n\noutput\n\n\nthe segments of a common-anode 7-segment display\n\n\n\n\n\nThe following tables define the relationship of the LEDs to the switches and clock.\n\n\n\n\n\n\nS1\n\n\nS0\n\n\nled[0]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nON\n\n\n\n\n1\n\n\n0\n\n\nON\n\n\n\n\n1\n\n\n1\n\n\nOFF\n\n\n\n\n\n\n\n\n\n\nS3\n\n\nS2\n\n\nled[1]\n\n\n\n\n\n\n0\n\n\n0\n\n\nOFF\n\n\n\n\n0\n\n\n1\n\n\nOFF\n\n\n\n\n1\n\n\n0\n\n\nOFF\n\n\n\n\n1\n\n\n1\n\n\nON\n\n\n\n\n\n\n\n\n\n\nled[2]\n\n\n\n\n\n\nBlink at 2.4 Hz\n\n\n\n\n\n\n\n\nDesign\nTo organize my thoughts I used a block diagram to map the logic.\n\n\n\nLab 1 Block Diagram\n\n\n\nLed Logic Design\nThe truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2.\nTo have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed oscillator from the HSOSC Library. A frequency of 2.4 Hz would have a full cycle of 0.4167 second. Dividing this by the frequency of the internal oscillator, we get that a full cycle would require \\(2*10^7\\) ticks. To achieve a duty cycle of 50%, I implemented a flip flop that switched led[2] every \\(10^7\\) clicks.\n\n\nSeven Segment Logic Design\nTo interface the seven segment display with the board, I conferred with the datasheet to determine resistor values. \n\n\n\nResistor Calculations for Seven Segment Display\n\n\nI opted to use resistor values of 240 ohms, producing 6.25 mA of current.\nA wiring schematic is shown below. \nHere is a photo of the implemented design!"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#testing",
+    "href": "labs/lab1/lab1.html#testing",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Testing",
+    "text": "Testing\n\nTo verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected.\n\n\n\nWave forms of test bench\n\n\nI tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#conclusion",
+    "href": "labs/lab1/lab1.html#conclusion",
+    "title": "Lab 1: FPGA and MCU Setup and Testing",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nIn all, Lab 1 offered a cohesive introduction to the work flow for the coming labs. I was able to practice my sodering technique, interfacing with different software, assigning pins, and testing my design with ModelSim.\nThe design meets all the requirements. I spent roughly 15 hours on this lab."
+  },
+  {
+    "objectID": "labs/lab6/lab6.html",
+    "href": "labs/lab6/lab6.html",
+    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
+    "section": "",
+    "text": "In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.\nThis lab had the following learning objectives:\n\n\nDesigned and built a simple IoT device\n\n\nWritten C libraries using the CMSIS device templates to implement the SPI functionality of the MCU\n\n\nInterfaced with a temperature sensor module over an SPI link\n\n\nInterfaced the MCU with an ESP8266 module over a UART link\n\n\nUse the logic analyze functionality of the scope in the Digital Lab to debug serial communication protocols and export captured signal data.\n\n\nWritten a simple HTML page to control and display data from the peripherals connected to your MCU.\n\n\nThe datasheet for the DS1722 temperature sensor can be found here.\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#introduction-learning-objectives",
+    "href": "labs/lab6/lab6.html#introduction-learning-objectives",
+    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
+    "section": "",
+    "text": "In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.\nThis lab had the following learning objectives:\n\n\nDesigned and built a simple IoT device\n\n\nWritten C libraries using the CMSIS device templates to implement the SPI functionality of the MCU\n\n\nInterfaced with a temperature sensor module over an SPI link\n\n\nInterfaced the MCU with an ESP8266 module over a UART link\n\n\nUse the logic analyze functionality of the scope in the Digital Lab to debug serial communication protocols and export captured signal data.\n\n\nWritten a simple HTML page to control and display data from the peripherals connected to your MCU.\n\n\nThe datasheet for the DS1722 temperature sensor can be found here.\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#design",
+    "href": "labs/lab6/lab6.html#design",
+    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
+    "section": "Design",
+    "text": "Design\n\nMCU SPI Configuration\nTo implement SPI on the MCU, I implemented initSPI, a function to initialize SPI communication using a choosen baud rate, clock phase, and clock polarity,\nRecall that the SPI clk will be equal to \\(\\frac{master clock}{2^{BR+1}}\\). I set the baud rate divisor to be 6 so that the SPI clock would run at 31250 Hz, running slower than the clock for the temperature sensor. I also set the packet size to 8 bits to align with what the temperature sensor will output.\nI opted to control my own chip enable, PA8, which I would manually toggle for each read and write operation. For my other SPI ports, I consulted the data sheet to see which pins were compatible with SPI1. Thus, I opted to set PA6 as the MISO line, PA12 as the MOSI line, and PA5 and the SCLK.\nMy design uses the CMSIS library device templates, making it easier to decipher how bits are being set.\n\n\nInterfacing with the Temperature Sensor\nTo communicate with the temperature sensor, I had to send the write address, 0x80, for the configuration bits followed by the configuration bits. These configuration bits were set depending on the wanted temperature resolution. Then I would read the LSB and MSB of the temperature bits by calling read address 0x01 or 0x02, respectfully. The Register Address structure and the bit structure of the temperature output is below.\n\n\n\nRegister Address Structure for DS1722\n\n\n\n\n\nTemperature Bit Structure for DS1722\n\n\nThe screenshot of the code for my SPI interaction is below to showcase the send/recieve format and how I toggle the Chip Enable.\n\n\n\nSPI Interaction with Temperature Sensor\n\n\nTo be able to print the temperature, I used a bit map to isolate the sign bit in the MSB. I then used the other values of the MSB to determine the integer value of the temperature. Then, depending on if the temperature was positive or negative, I would add or subtract corresponding resolution bits.\n\n\nWebsite Design\nMy website also allowed for a user to select the resolution of the temperature sensor. To implement this, I incorporated a form with a button for each resolution option. Depending on which button was selected, I would set the temperature configuration bits to reflect this. This HTML was sent via the ESP8266 with UART.\nEverytime the website would refresh, the DS1722 would read and print the updated temperature.\n\n\nHardware Design\nTo implement in hardware, I attatched the corresponding pins of the DS1722 and ESP8266 to the MCU, based on the pin diagram below.\n\n\n\nSPI Interaction with Temperature Sensor"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#testing-debugging",
+    "href": "labs/lab6/lab6.html#testing-debugging",
+    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging\nI tested using the debugger in Segger and the logic analyzer.\nThe printf() function was used to reveal intermediate values of my temperature data, allowing me to see when the temperature data was not as expected. This technique was useful in confirming that my temperature conversions were as desired.\nThe logic analyzer allowed me to look at the SPI communications. I could also convert the MISO and MOSI lines to the actual values being sent, which made deciphering the communication much easier. By using the logic analyzer I was able to find a bug: only my 0x80 send request was being sent and the rest of the communication was all zero. This led me to look at my wiring. Ultimately, I had forgotten to remove a jumper between the pin for my MISO line and GND.\nA sample SPI transaction from logic analyzer can be seen below.\n\n\n\nLab 6 SPI Transaction on Logic Analyzer"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#conclusion",
+    "href": "labs/lab6/lab6.html#conclusion",
+    "title": "Lab 6: The Internet of Things and Serial Peripheral Interface",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 6 provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.\nLab 6 meets all the requirements for excellence, and took me approximately 25 hours to complete."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html",
+    "href": "labs/lab5/lab5.html",
+    "title": "Lab 5: Interrupts",
+    "section": "",
+    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#introduction-learning-objectives",
+    "href": "labs/lab5/lab5.html#introduction-learning-objectives",
+    "title": "Lab 5: Interrupts",
+    "section": "",
+    "text": "In Lab 5, I used an MCU to determine the speed of a motor by reading from a quadrature encoder using interrupts. The Learning Objectives of this lab are to:\n\n\nImplement an algorithm to sense quadrature encoder pulses and convert those pulses into a motor velocity.\n\n\nWrite code to display the measured velocity and direction to a user with an update rate of at least 1 Hz.\n\n\nUnderstand the quadrature encoder protocol and implemented a multi-interrupt routine on the MCU to interface with it.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#design",
+    "href": "labs/lab5/lab5.html#design",
+    "title": "Lab 5: Interrupts",
+    "section": "Design",
+    "text": "Design\nMy design utilized two external interrupts triggered by rising and falling edges of Pin 6 and Pin 8. I used two timers: TIM16 to determine motor speed and TIM2 to control the frequency in which we print the motor speed and direction. I then calculated the speed and direction from the deltaCount between the edges of the encoder pulses.\n\nInterrupt Design\nI used hardware interrupts so that the interrupt handler can be triggered at the falling and rising edge of each encoder pulse. To do so, I followed the procedure listed in “13.3.4 Hardware Interrupt” Selection on page 327 of the reference manual\nI configured the interrupts to enable on the rising and falling edge of each encoder pulse, to achieve the highest resolution measurement. As I used Pin A6 for Encoder Signal A and Pin A8 for Encoder Signal B, both interrupts were handled by the EXTI9_5_IRQHandler. To determine which Encoder triggered the interrupt, I checked the flag in EXTI-&gt;PR1 at the pin offset.\nBelow is a flowchart showing each interrupt and the main loop that is executed.\n\n\n\nInterrupt Flow Chart\n\n\nWe know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable.\n\n\n\ndelCount with the Encoder Pulses\n\n\nI minimized the code in the interrupts by saving values needed in calculation into global variables, and computing the speed and direction outside of the interrupt.\n\n\nTimer Design\nI used TIM16 as the count timer between encoder pulse edges, which was ultimately used to determine the speed. TIM16 was configured to run at 1 MHz.\nI used TIM2 to act as a delay timer to slow down the printing rate. I counted at a 1ms time base, or a frequency of 1 kHz. To abide by the requirement, “Design measures and displays speed of motor in units of m/s with an update rate of at least 1 Hz,” the delay cannot exceed 1000ms.\nFor more information on timers, see Lab 4.\n\n\nCalculating Speed and Direction\nTo convert the delCount variable to speed in revolutions/second, I used the following conversion. Note that I divide delCount by \\(1,000,000\\) to convert from counts per quarter pulse to seconds per quarter pulse, based on the clock frequency of 1 MHz.\n\n\n\nCalculating speed in [rev/s] from delCount\n\n\nTo determine the direction of the motor, I used conditional statements in my interrupt handler, where the signal’s edge that triggered the interrupt could be used to compute direction.\n\nSmoothing the Speed\nWhen I printed my speed, I noticed that there was a lot of small fluctuation. After some evaluation of the encoder signals with the oscilloscope, I saw that the motors encoder signals had small variations in duty cycle and distance, that when scaled to get the speed would be exacerbated. As a result I implemented a sliding window, that calculated the average of the last 10 delCount variables to smooth the out speed. This caused a significant improvement in the readability of the output speed, with minimal impact on accuracy.\n\n\n\nHardware Design\nThe encoders used for this lab operate at a 5V logic level. I used PA6 and PA8 as these pins a 5V tolerant, as listed in Tables 13-14 in the STM32L432KC Datasheet.\nThis lab used a 25GA-370 DC Motor datasheet, with the following color coding.\n\n\n\nEncoder Wiring Color Coding\n\n\nI powered the motor with a voltage source, and attatched to my MCU, following the below wiring diagram."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#testing-debugging",
+    "href": "labs/lab5/lab5.html#testing-debugging",
+    "title": "Lab 5: Interrupts",
+    "section": "Testing & Debugging",
+    "text": "Testing & Debugging\nTo test, I compared the oscilloscope and printed values at 12 V.\nWhen running the motor at 12V and evaluating the encoder signals with the oscilloscope, I found that the motor ran at 10.417 revolutions/s.\n \nAt 12 V, my MCU read a speed of 10.313 revoluions/s.\nThe motor provided in the lab is expected to spin at approximately 10 rev/s. Both values align with what we would expect."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#demonstration",
+    "href": "labs/lab5/lab5.html#demonstration",
+    "title": "Lab 5: Interrupts",
+    "section": "Demonstration",
+    "text": "Demonstration\nBelow is a photo of the printed output of the motor as I vary the motor input voltage."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#comparing-with-polling",
+    "href": "labs/lab5/lab5.html#comparing-with-polling",
+    "title": "Lab 5: Interrupts",
+    "section": "Comparing with Polling",
+    "text": "Comparing with Polling\nInterrupts are more suitable than manual polling at high speeds for the motor encoder When using interrupts, the system signals the CPU when it needs attention, and will jump out of the main loop to undergo the interrupt service protocol. This ensures that each encoder edge is read. When using polling, the CPU continuously the encoder status in the main loop, leaving potential to miss encoder pulses, resulting in an inaccurate speed and direction measurement. This would be especially detrimental due to my print delays."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#conclusion",
+    "href": "labs/lab5/lab5.html#conclusion",
+    "title": "Lab 5: Interrupts",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 5 meets all the requirements, and took me approximately 11 hours to complete"
+  },
+  {
+    "objectID": "labs/lab3/lab3.html",
+    "href": "labs/lab3/lab3.html",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "",
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "href": "labs/lab3/lab3.html#introduction-learning-objectives",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "",
+    "text": "In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:\n\n\nDesign does not lock up when multiple buttons are pressed at once.\n\n\nDesign only registers first button press if additional buttons are pressed down while holding down one button.\n\n\nEach button press registered only once (e.g., no switch bouncing)\n\n\nSeven segment displays are same brightness regardless of how many segments are illuminated.\n\n\nDesign has no latches.\n\n\nDesign has no tristate buffers.\n\n\nDesign uses synchronizers on asynchronous inputs to mitigate metastability.\n\n\nThe source code for the project can be found in the associated Github repository."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#design",
+    "href": "labs/lab3/lab3.html#design",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Design",
+    "text": "Design\nTo quote Professor Brake, “This is a thinking person’s lab.” As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect.\n\nScanning FSM\nThe FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. \n\n\nKey Debouncing FSM\nI then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed.\n\n\n\nButton Debouncing FSM\n\n\n\n\nSeven Segment Display\nWith the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals.\nPrinting and multiplexing the seven segment display was handled with the code from Lab 2\n\n\nDesign Tradeoffs\n\nMy design was broken up into many different modules, with different FSMs or combinational logic being used to implement my design. I opted for this approach so that it would be easier to test smaller behaviors, and allowed me to edit functionalities without impacting other functionalities.\nFor example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM – using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from “thinking like a programmer” and start thinking about the hardware.\nA block diagram of my entire design is here:"
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#simulation-and-testing",
+    "href": "labs/lab3/lab3.html#simulation-and-testing",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Simulation and Testing",
+    "text": "Simulation and Testing\nThe first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches – as I wrote test benches for each individual model to ensure expected behavior.\nMy waveforms for each model is below: \n\n\n\nShifter Test Bench\n\n\n\n\n\nkeyBounce Test Bench\n\n\nMy mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#implementation",
+    "href": "labs/lab3/lab3.html#implementation",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Implementation",
+    "text": "Implementation\nThe circuit diagram of my implementation, including pin mapping, is here: \n\nDebugging in Implementation\nDuring the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.\n\n\nHandling Metastability\nTo handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge."
+  },
+  {
+    "objectID": "labs/lab3/lab3.html#conclusion",
+    "href": "labs/lab3/lab3.html#conclusion",
+    "title": "Lab 3: Keypad Scanner",
+    "section": "Conclusion",
+    "text": "Conclusion\nLab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug.\nLab 3 meets all the requirements, and took me approximately 30 hours to complete"
+  },
+  {
+    "objectID": "posts/post8.html",
+    "href": "posts/post8.html",
+    "title": "A Balance: Non-MicroPs",
+    "section": "",
+    "text": "One of my favorite hobbies (not including MicroPs) is woodworking. It offers a pretty cool release outside of regular academic responsibilities. This week I spent some extra time in the woodshop, working on the wood lathe on my most recent project: stackable bowls.\nThis set of four bowls started as a 3x3x6” rectangular block of canary wood. The first step, before mounting on the lathe is to get the wood as cylindrical as possible, which saves a lot of time and frustration when it is time to shape it on the lathe.\nAfter I sanded down the corners, and accidentally snapped the belt on the belt sander (don’t worry, I replaced it), it was time to mount my wood on the lathe. Since I didn’t want to drill into the wood, I opted to mount my wood between two live centers.\nAfter I had my wood shaped into a cylinder, it was time to cut the wood into four smaller cylinders. For this, I opted to use the lathe parting tool, which I had never used before. I made sure that the corner of the tool wouldn’t catch, and was fairly successfull. I opted to finish the cuts with the japanese saw, which allowed me to get a flush cut.\nNext, I moved to carving the foot of each bowl. To do this, I mounted each cylinder onto the adjustable self centering lathe chuck and shaped a foot for each bowl. To allow each bowl to stack, I inset each foot. To account for future wood warping, I carved out the feet.\nThe feet also offered a mounting point for the adjustable lathe chuck to grab as I carved the inside of each bowl. When carving the inside of each bowl, I practiced with different tool angle and placements. It was a fun practice, and resulted in bowls with interior right angles and a bowl with a ring holder.\nOne of my favorite things about woodworking is that the measurements are all a vibe. As long as the bowls were roughly the same height, thickness, and depth I would be happy. As I shaped the bowls, I made sure that everything would be flush when stacked.\nAfter all the bowls were shaped, it was time to sand. It was enjoyable to sand as I could just run the lathe.\nFinally, it was time to polish the pieces. I opted to use a Beeswax & Orange oil based wood conditioner. I applied the conditioner and allowed it to soak overnight before wiping off the excess.\nUltimately I am happy with how it turned out. Since all the bowls came from the same piece of wood, it can be stacked with the grain continuing through the bowls."
+  },
+  {
+    "objectID": "posts/post8.html#bringing-it-back-to-microps",
+    "href": "posts/post8.html#bringing-it-back-to-microps",
+    "title": "A Balance: Non-MicroPs",
+    "section": "Bringing it Back to MicroPs",
+    "text": "Bringing it Back to MicroPs\nYou might be thinking: How does this relate to microPs??\nWell it doesn’t… mostly. As I wrote up my process of making the bowls, I realized that it echoes the process of completing a lab: There’s a design stage, research stage, a debugging stage, a polishing stage, and then a sense of pride with my finished work. And, most importantly, I walk away understanding a little more about how it all works.\nIn this case, the design stage involved deciding how the bowls will fit into eachother. For the labs, it often looks like drawing block diagrams and talking out methods with my peers. The research stage here involved watching videos on how to use the parting tool, wheras for the labs it involves reading the documentation. The breaking of the belt sander was a bug that got resolved once I understood how I ripped it and replaced the belt. Finally, the sanding and polishing of the bowls is simialir to the final touches of the lab, where I connect all my modules and add function stubs to ensure my work is cohesive.\nYou might think that I’m reaching here, but nonetheless I am glad I spent some time in the woodshop this week."
+  },
+  {
+    "objectID": "posts/post7.html",
+    "href": "posts/post7.html",
+    "title": "Final Project Thoughts",
+    "section": "",
+    "text": "This week, we had our project proposals due. As a result, Audrey and I spent a lot of our time reading related final projects from previous years and brainstorming how to implement the FPGA and MCU for the DJ deck.\nThe components we opted to implement are tempo, gain, and filters. Our subgoals include the following:\n\n\nRead in a Stereo file into the MCU\n\n\nCommunicate audio data between MCU and FPGA\n\n\nImplement FFT using the FPGA\n\n\nImplement a low pass and high pass filter based on user filter input\n\n\nImplement tempo variations on the MCU based on user tempo input\n\n\nVary audio gain based on user input \n\n\nOutput the manipulated audio onto speakers \n\n\nMost of our brainstorming has been focused on what to implement on the FPGA and what to implement with the MCU. Due to the MCU interfacing and timing abilities, We are opting to use the MCU to pass in the stereo audio and implement tempo. Due to the FPGA’s strength in signal processing, we will implement the filters with the FPGA.\nWe are still confused about how to pass through the audio between the FPGA and MCU, however I think after Lab 6 we will understand SPI communications better.\nAfter our conversation with Professor Brake, we opted to use digital filters to implement high pass and low pass filters rather than apply FFTs. We are also going to look into the onboard DAC and ADC to use for our project."
+  },
+  {
+    "objectID": "posts/post4.html",
+    "href": "posts/post4.html",
+    "title": "Considerations of an AI Chat Bot",
+    "section": "",
+    "text": "Last week, Sal Khan came to speak at my school. As someone who learned how to factor from his videos, I was very excited for it. In his talk, he introduced Khanmigo, Khan Academy’s AI-Powered teaching assistant. He explained its many benefits, including helping students complete assignments and assisting teachers create lesson plans through personal, albeit experimental, help. His perspective of using AI as an assistant emphasized increased throughput while still preserving effort, allowing teachers and students to be more effective with their time.\nHearing about AI being incorporated into a platform that I grew up using was exciting to me. In the past year, we have witnessed a crazy progression of AI as it gets incorporated into existing products – Nearly every search engine includes AI generated answers, Adobe products have started to include generative fill, and social media has started using AI to maximize engagement. Like many, I am suprised by how quickly AI Chat Bots have improved.\nI remember last winter break showing my mom ChatGPT. I just completed a class on Zora Neale Hurston, with my final paper analyzing one of her books. In an effort to show my mom how quickly ChatGPT can generate content, I asked it to create a final paper for the same prompt, using my original bare-bone outline. We were both impressed as ChatGPT delivered a polished paper, including quotations and references to her other works. However, upon closer inspection, I realized that I did not recall any of the ChatGPT proclaimed quotes from the book. Instead, these ‘quotes’ were made up to support ChatGPT’s arguments, using the similair langauge style that Hurston had used. This caused me to reconsider the strengths and weaknesses of AI Chat Bots. They can be useful in idea generation and pointing someone in the general direction, however lose accuracy in details.\nWith this personal experience under my belt, I was hesitant at Sal Khan’s optimism about Khanmigo. What would happen in Khanmigo was wrong about something as a student learns the fundamentals? This could negatively impact their education.\nWith this uncertainty in mind, it was interesting to learn the ways Khan Academy has minimized this risk. The plentiful testing and carefully choosen features lend itself to AI.\nMoreover, it was refreshing to see AI implemented cautiously, and for the overall goal of imoproving education access. Many implementations of AI seem to be a rushed reaction to the AI movement, and used to sell a product. Overall, his talk made me hopeful for the future of AI."
+  },
+  {
+    "objectID": "posts/post2.html",
+    "href": "posts/post2.html",
+    "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
+    "section": "",
+    "text": "This week I worked through and completed lab 1. Learn more about the specifications and implementation of lab 1 here. This blog is heavily inspired by Michiel de Boer (Posy)’s video on segmented displays.\nAs part of this lab, I worked to make a seven segment display count in hexadecimal based on the binary value of a DIP switch. Two requirement of the lab was that the:\n“7-segment display can display all sixteen hexadecimal digits from 0x0 through 0xF”\n“All digits are unique”\nThroughout the week, I was impressed how seven equally sized segments arranged in two stacked squares was able to display unique digits and letters A thru F. I also saw different ways people deployed the display to represent the number and letters – using lowercase, uppercase, centering on different sides, and so on. This led me to look more at the design of segmented displays.\nThe first recorded segmented display is from a 1903 patent by Carl Kingsey as a way to improve telegraph speeds. Since then, countless different segmented displays for different purposes has emerged.\nPerhaps the most common display is the stacked square design, which I used in lab 1. Looking closely at the display, you can observe the compromises that had been made to simplify the representation of numbers and some letters to fit into 7 equally sized segments. However, these inaccuracies have been heavily normalized to the point where I no longer recognize them. This design has been so heavily widespread that these digit representations are interchangeable with the numbers they represent.\nI ask you to look around your room and see how many segmented displays you can find. I did this exercise in my dorm room and found the segmented display used to show the volume of my speaker, settings of the AC unit, and tell the time from my watch.\nThe different implementations of the segmented display goes to show how small changes are used to improve accuracy and influence aesthetics. For example, the edges of the segments could be rounded or pointed. The middle segment is sometimes slanted. The thickness of the segments change from display to display, and sometimes the entire digit is italicized. Different changes will sacrifice complexity and the look of certain numbers in favor of the look of other numbers and letters.This can be particularly useful for displays that only need to display some of the digits.\nThese seemingly small changes can change the impact of the design, making them suitable for different applications. A seven segmented display on a sports watch will vary from the display of public transport or a toy.\nThis has led me to look more about the design choices made in embedded systems that I interact with. The rest of this blog is dedicated to share different segmented displays that surround me."
+  },
+  {
+    "objectID": "posts/post2.html#segmented-displays-around-me",
+    "href": "posts/post2.html#segmented-displays-around-me",
+    "title": "An Exploration of the Hidden Aesthetics of Electrical Components",
+    "section": "Segmented Displays Around Me",
+    "text": "Segmented Displays Around Me\n\n\n\nMultimeter in the digital lab included additional asymetrical segments – My favorite segmented display yet!\n\n\n\n\n\nA Variety of segmented displays available in the engineering stockroom.\n\n\n\n\n\nThe temperature gauge in the engineering building.\n\n\n\n\n\nThe microwave uses a traditional design.\n\n\n\n\n\nThe water fountain uses a matrix display.\n\n\n\n\n\nIt seems like most water fountains use the matrix display."
+  },
+  {
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "Learning Goals of MicroPs",
+    "section": "",
+    "text": "I am currently taking MicroPs, a course where I can engage hands-on with embedded systems. In this course, I will improve both technical and professional skills. My main goal is to improve my confidence and ability with both FPGAs and MCUs!"
   },
   {
     "objectID": "posts/post10.html",
