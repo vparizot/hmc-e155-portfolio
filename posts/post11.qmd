@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "MicroPs Coming to a Close"
 author: "Victoria Parizot"
 date: "12/13/2024"
 categories:
