@@ -18,7 +18,11 @@ Victoria Parizot is a senior at [Harvey Mudd College](https://hmc.edu), majoring
 
 At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing. 
 
+### Project PariVo
+For her final project, Victoria worked with Audrey Vo to create a functional DJ mixer that manipulates audio files based on user inputs. Their mixer was able to control the frequency and gain of audio files passed in via an AUX cord based on physical inputs from the user. Learn more about the project on their project website, [here](https://projectparivo.github.io/ProjectParivoPortfolio/).
 
+A demo of the final project is here:
+{{< video https://youtu.be/2ftOxwlH3vE>}}
 
 
 
